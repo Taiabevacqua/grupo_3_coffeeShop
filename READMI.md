@@ -1,8 +1,9 @@
 ## CAFEINATOPIA Coffee Shop
 
 
->**CAFEINATOPIA** es una cafetería online en donde podrás disfrutar de una amplia variedad de café en granos y en capsulas Nespresso de _alta calidad_, explorar y saborear el mundo del café desde la comodidad de sus propios hogares.
-> Adicionalmente contamos con cafeteras compatibles con Dolce Gusto que nos abren una abanico infinito de posibilidades, ofreciendo a nuestros clientes una _experiencia de consumo única_.
+>**CAFEINATOPIA** es una tienda online en donde podrás disfrutar de una amplia variedad de café en granos y en capsulas de _alta calidad_, explorar y saborear el mundo del café desde la comodidad de sus propios hogares.
+> Contamos con cafeteras compatibles con Dolce Gusto y Nespresso que nos abren una abanico infinito de posibilidades, ofreciendo a nuestros clientes una _experiencia de consumo única_.
+>Somos los creadores de  Coffee Capsule Box que te permite personalizar tu experiencia de café. Puedes seleccionar y combinar diferentes sabores de nuestras cápsulas para armar tu caja de café ideal, adaptada a tus gustos personales.
 >Este revolucionario sistema nos permite asegurar un alcance de publico general, garantizando diferentes experiencias de consumo sin perder _deliciosos **sabores y aromas**_.
 
 
