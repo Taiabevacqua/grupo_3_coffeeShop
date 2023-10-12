@@ -27,7 +27,7 @@
 
 ---
 
-## Buscar ispnspiracion en referentes del mercado
+## Buscar inspiracion en referentes del mercado
 
 Por los productos o servicios que ofrecen
 Presentamos una lista de 5 sitios de referencia que hemos seleccionado para inspirarnos en la creación de nuestra página de venta de café. Cada sitio fue elegido por razones específicas que consideramos relevantes para nuestro proyecto:
@@ -49,7 +49,7 @@ Cafe Delirante (https://www.cafedelirante.com/)
 
 Estos sitios nos servirán como fuentes de inspiración y referencia a medida que desarrollamos nuestra propia tienda en línea de café de especialidad.
 
-Por los clientes a los que apuntan
+#### Por los clientes a los que apuntan
 
 La venta de café en línea apunta a diversos tipos de clientes, ya que el café es una bebida popular que atrae a una amplia audiencia.
 
@@ -71,7 +71,7 @@ Aventureros culinarios: Personas que disfrutan explorando diferentes orígenes y
 Personas ocupadas: Aquellas que valoran la conveniencia de recibir café fresco en la puerta de su casa sin tener que desplazarse a una tienda física.
 
 
->Por la estética que presentan
+#### Por la estética que presentan
 
 https://www.coffeebreak.com.ar/
 
@@ -89,7 +89,7 @@ https://www.thecoffeestore.com/
 
 ## Crear un wireframe y un boceto del sitio
 
-### -Home
+### - Home
 
 https://www.figma.com/file/QPJLixWdGW275bCajYcMnH/Untitled?type=design&node-id=0%3A1&mode=design&t=K5A3lioqgCVX7Flb-1
 
@@ -97,13 +97,13 @@ https://www.figma.com/file/QPJLixWdGW275bCajYcMnH/Untitled?type=design&node-id=0
 ![HOME](./WIREFRAMES/HOME%202.png)
 
 
-### -Detalle de Producto
+### - Detalle de Producto
 
 https://www.figma.com/file/tn6G0TuBWDBpKs9kSauQtl/Untitled?type=design&node-id=0%3A1&mode=design&t=xocniJYWWoez54GP-1
 
 ![DETALLE DE PRODUCTO](./WIREFRAMES/DETALLE%20DE%20PRODUCTO.png)
 
-### -Carrito de compras
+### - Carrito de compras
 
 https://www.figma.com/file/X5C9mmjrZsKauEA1JD1DUb/Wireframe-Carrito?type=design&node-id=0%3A1&mode=design&t=1s14X4SajLMrvlp1-1
 
@@ -112,19 +112,19 @@ https://www.figma.com/file/X5C9mmjrZsKauEA1JD1DUb/Wireframe-Carrito?type=design&
 ![CARRITO DE COMPRAS](./WIREFRAMES/CARRITO%203.png)
 ![CARRITO DE COMPRAS](./WIREFRAMES/CARRITO%204.png)
 
-### -Formulario de registro
+### - Formulario de registro
 
 https://www.figma.com/file/pNCruL0OQMKcNotnhinP8X/Untitled?type=design&mode=design&t=1s14X4SajLMrvlp1-1
 
 ![FORMULARIO DE REGISTRO](./WIREFRAMES/FORMULARIO%20REGISTRO.png)
 
-### -Formulario de loguin
+### - Formulario de loguin
 
 https://www.figma.com/file/Ne03hhqiPLW1Oov3je5E3N/Prototipo-interactivo-de-p%C3%A1gina-web-para-personas-con-dificultades-visuales-(Community)?type=design&node-id=303%3A42&mode=design&t=5qvp6yVUqVbG75c8-1
 
 ![FORMULARIO DE LOGUIN](./WIREFRAMES/LOGUIN.png)
 
-### -Brand Sheet de la marca(Logo, Colores y Tipografías)
+### - Brand Sheet de la marca(Logo, Colores y Tipografías)
 Brand Sheet CAFEINATOPIA - COFFEE SHOP.pdf
 
 ![BRAND SHEET](./DESING/a41f21db-2e81-487f-92df-e473b1623982.jpg)
