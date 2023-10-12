@@ -27,8 +27,9 @@
 
 ---
 
->Por los productos o servicios que ofrecen
->Presentamos una lista de 5 sitios de referencia que hemos seleccionado para inspirarnos en la creación de nuestra página de venta de café. Cada sitio fue elegido por razones específicas que consideramos relevantes para nuestro proyecto:
+
+Por los productos o servicios que ofrecen
+Presentamos una lista de 5 sitios de referencia que hemos seleccionado para inspirarnos en la creación de nuestra página de venta de café. Cada sitio fue elegido por razones específicas que consideramos relevantes para nuestro proyecto:
 
 Martínez (https://www.cafemartinez.com.ar/)
    - Elegimos Café Martínez debido a su excelente diseño y experiencia de usuario. Nos inspira la forma en que presentan sus productos y cuentan la historia de su café.
@@ -69,7 +70,8 @@ Aventureros culinarios: Personas que disfrutan explorando diferentes orígenes y
 Personas ocupadas: Aquellas que valoran la conveniencia de recibir café fresco en la puerta de su casa sin tener que desplazarse a una tienda física.
 
 
-C. Por la estética que presentan
+>Por la estética que presentan
+
 https://www.coffeebreak.com.ar/
 
 
