@@ -29,7 +29,7 @@
 
 ## Buscar inspiracion en referentes del mercado
 
-####·Por los productos o servicios que ofrecen
+#### ·Por los productos o servicios que ofrecen
 Presentamos una lista de 5 sitios de referencia que hemos seleccionado para inspirarnos en la creación de nuestra página de venta de café. Cada sitio fue elegido por razones específicas que consideramos relevantes para nuestro proyecto:
 
 Martínez (https://www.cafemartinez.com.ar/)
