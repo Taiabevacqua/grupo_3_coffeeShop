@@ -29,7 +29,7 @@
 
 ## Buscar inspiracion en referentes del mercado
 
-Por los productos o servicios que ofrecen
+####·Por los productos o servicios que ofrecen
 Presentamos una lista de 5 sitios de referencia que hemos seleccionado para inspirarnos en la creación de nuestra página de venta de café. Cada sitio fue elegido por razones específicas que consideramos relevantes para nuestro proyecto:
 
 Martínez (https://www.cafemartinez.com.ar/)
@@ -49,7 +49,8 @@ Cafe Delirante (https://www.cafedelirante.com/)
 
 Estos sitios nos servirán como fuentes de inspiración y referencia a medida que desarrollamos nuestra propia tienda en línea de café de especialidad.
 
-#### Por los clientes a los que apuntan
+
+#### ·Por los clientes a los que apuntan
 
 La venta de café en línea apunta a diversos tipos de clientes, ya que el café es una bebida popular que atrae a una amplia audiencia.
 
@@ -58,6 +59,7 @@ Amantes del café gourmet: Personas que buscan café de alta calidad, con sabore
 Consumidores regulares de café: Aquellos que beben café a diario y buscan una fuente confiable de suministros frescos y sabrosos.
 
 Empresas y oficinas: Muchas empresas compran café a granel para proporcionar a sus empleados. Puedes apuntar a oficinas que buscan opciones de café de calidad para sus empleados.
+
 Cafeterías y restaurantes: Establecimientos de alimentos y bebidas que desean ofrecer café de alta calidad a sus clientes.
 
 Amantes de la cafeína: Personas que buscan una amplia variedad de café con diferentes niveles de cafeína, desde descafeinado hasta café con un alto contenido de cafeína.
@@ -71,10 +73,9 @@ Aventureros culinarios: Personas que disfrutan explorando diferentes orígenes y
 Personas ocupadas: Aquellas que valoran la conveniencia de recibir café fresco en la puerta de su casa sin tener que desplazarse a una tienda física.
 
 
-#### Por la estética que presentan
+#### ·Por la estética que presentan
 
 https://www.coffeebreak.com.ar/
-
 
 
 https://www.cafemartinez.com/
