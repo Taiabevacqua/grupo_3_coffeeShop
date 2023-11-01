@@ -100,7 +100,7 @@ https://www.figma.com/file/QPJLixWdGW275bCajYcMnH/Untitled?type=design&node-id=0
 
 https://www.figma.com/file/tn6G0TuBWDBpKs9kSauQtl/Untitled?type=design&node-id=0%3A1&mode=design&t=xocniJYWWoez54GP-1
 
-![DETALLE DE PRODUCTO](./WIREFRAMES/DETALLE%20DE%20PRODUCTO.png)
+
 
 ### - Carrito de compras
 
