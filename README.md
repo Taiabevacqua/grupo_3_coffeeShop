@@ -94,8 +94,6 @@ https://www.thecoffeestore.com/
 
 https://www.figma.com/file/QPJLixWdGW275bCajYcMnH/Untitled?type=design&node-id=0%3A1&mode=design&t=K5A3lioqgCVX7Flb-1
 
-![HOME](./WIREFRAMES/HOME.png)
-![HOME](./WIREFRAMES/HOME%202.png)
 
 
 ### - Detalle de Producto
@@ -108,27 +106,24 @@ https://www.figma.com/file/tn6G0TuBWDBpKs9kSauQtl/Untitled?type=design&node-id=0
 
 https://www.figma.com/file/X5C9mmjrZsKauEA1JD1DUb/Wireframe-Carrito?type=design&node-id=0%3A1&mode=design&t=1s14X4SajLMrvlp1-1
 
-![CARRITO DE COMPRAS](./WIREFRAMES/CARRITO%201.png)
-![CARRITO DE COMPRAS](./WIREFRAMES/CARRITO%202.png)
-![CARRITO DE COMPRAS](./WIREFRAMES/CARRITO%203.png)
-![CARRITO DE COMPRAS](./WIREFRAMES/CARRITO%204.png)
+
 
 ### - Formulario de registro
 
 https://www.figma.com/file/pNCruL0OQMKcNotnhinP8X/Untitled?type=design&mode=design&t=1s14X4SajLMrvlp1-1
 
-![FORMULARIO DE REGISTRO](./WIREFRAMES/FORMULARIO%20REGISTRO.png)
+
 
 ### - Formulario de loguin
 
 https://www.figma.com/file/Ne03hhqiPLW1Oov3je5E3N/Prototipo-interactivo-de-p%C3%A1gina-web-para-personas-con-dificultades-visuales-(Community)?type=design&node-id=303%3A42&mode=design&t=5qvp6yVUqVbG75c8-1
 
-![FORMULARIO DE LOGUIN](./WIREFRAMES/LOGUIN.png)
+
 
 ### - Brand Sheet de la marca(Logo, Colores y Tipografías)
 Brand Sheet CAFEINATOPIA - COFFEE SHOP.pdf
 
-![BRAND SHEET](./DESING/a41f21db-2e81-487f-92df-e473b1623982.jpg)
+
 
 
 
