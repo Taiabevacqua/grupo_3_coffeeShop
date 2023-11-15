@@ -18,10 +18,11 @@
 - Mantener la colaboración: La colaboración ha sido clave en el éxito de nuestro grupo. Y pusimos como premisa seguir  fomentando un espíritu de equipo donde todos aportemos y colaboremos para lograr nuestro objetivo común.
 
 ### **3. Hacer menos:**
-Considerando que sentimos que nuestro equipo ha demostrado un buen desempeño , nos fue difícil identificar áreas específicas que debamos “hacer menos”. No obstante, podríamos explorar la posibilidad de optimizar ciertos procesos rutinarios para asegurarnos de que estamos utilizando nuestro tiempo de manera eficiente. Esto podría implicar revisar nuestras prácticas actuales y eliminar aquellas que no contribuyen significativamente a nuestros objetivos, sin comprometer la calidad de nuestro trabajo.
+- Considerando que sentimos que nuestro equipo ha demostrado un buen desempeño , nos fue difícil identificar áreas específicas que debamos “hacer menos”. No obstante, podríamos explorar la posibilidad de optimizar ciertos procesos rutinarios para asegurarnos de que estamos utilizando nuestro tiempo de manera eficiente. Esto podría implicar revisar nuestras prácticas actuales y eliminar aquellas que no contribuyen significativamente a nuestros objetivos, sin comprometer la calidad de nuestro trabajo.
 
 ### **4. Dejar de hacer:**
-No hemos observado prácticas perjudiciales que necesitemos dejar de hacer de inmediato. Sin embargo, queremos considerar un enfoque proactivo para identificar cualquier tarea o proceso que no aporte valor significativo a nuestro proyecto y que podría eliminarse para simplificar nuestra operación sin afectar negativamente los resultados.
+- No hemos observado prácticas perjudiciales que necesitemos dejar de hacer de inmediato. Sin embargo, queremos considerar un enfoque proactivo para identificar cualquier tarea o proceso que no aporte valor significativo a nuestro proyecto y que podría eliminarse para simplificar nuestra operación sin afectar negativamente los resultados.
+
 
 En resumen, nuestra capacidad de trabajar bien como equipo nos ha heho alcanzar la entrega de nuestro primer sprint en tiempo y forma, contentos de nuestro proyecto. De todos modos , estamos atentos a revisar regularmente nuestras acciones para identificar posibles procedimientos que no sumen a nuestro desarrollo y entrega de proyecto.
 Estamos muy entusiasmados con nuestro proyecto! por lo que creemos vamos a  lograr juntos culminar un buen producto final. Confiamos en que con nuestra dedicación, comunicación y colaboración continua, llegaremos al objetivo
