@@ -9,18 +9,18 @@
 - Coordinar mejor los horarios en común para las reuniones largas: Las responsabilidades de cada uno hace un poco complejo coordinar este punto, pero sabemos de la importancia de las reunioneslos prolongadas. Si bien las hemos logrado realizar, costó mucho que todos estemos en estas reuniones. Tenemos como objetivo a partir de este sprint tratar de coordinar horario en común para  garantizando la participación activa de todos los miembros.
 
 ### **2. Hacer más:**
-**- Continuar reuniéndonos:** Nuestras reuniones diarias(Dailys) han sido fundamentales para el éxito de esta primera etapa del proyecto. Nos propusimos mantener la regularidad y la participación activa en estas sesiones para asegurar una colaboración continua y eficaz. Por lo que tenemos pautados días y horarios para estos encuentros.
+- Continuar reuniéndonos: Nuestras reuniones diarias(Dailys) han sido fundamentales para el éxito de esta primera etapa del proyecto. Nos propusimos mantener la regularidad y la participación activa en estas sesiones para asegurar una colaboración continua y eficaz. Por lo que tenemos pautados días y horarios para estos encuentros.
 
-**- Tener constancia:** La consistencia en nuestras acciones y esfuerzos ha sido notable. Queremos seguir con este nivel de constancia para asegurar resultados positivos a largo plazo.
+- Tener constancia: La consistencia en nuestras acciones y esfuerzos ha sido notable. Queremos seguir con este nivel de constancia para asegurar resultados positivos a largo plazo.
 
-**- Mantener la comunicación:** La comunicación abierta y transparente ha sido uno de nuestros puntos fuertes. Vamos a seguir fomentando un ambiente donde todos nos sintamos siempre cómodos compartiendo ideas y actualizando regularmente sobre el progreso individual y del grupo.
+- Mantener la comunicación: La comunicación abierta y transparente ha sido uno de nuestros puntos fuertes. Vamos a seguir fomentando un ambiente donde todos nos sintamos siempre cómodos compartiendo ideas y actualizando regularmente sobre el progreso individual y del grupo.
 
-**- Mantener la colaboración:** La colaboración ha sido clave en el éxito de nuestro grupo. Y pusimos como premisa seguir  fomentando un espíritu de equipo donde todos aportemos y colaboremos para lograr nuestro objetivo común.
+- Mantener la colaboración: La colaboración ha sido clave en el éxito de nuestro grupo. Y pusimos como premisa seguir  fomentando un espíritu de equipo donde todos aportemos y colaboremos para lograr nuestro objetivo común.
 
 ### **3. Hacer menos:**
 Considerando que sentimos que nuestro equipo ha demostrado un buen desempeño , nos fue difícil identificar áreas específicas que debamos “hacer menos”. No obstante, podríamos explorar la posibilidad de optimizar ciertos procesos rutinarios para asegurarnos de que estamos utilizando nuestro tiempo de manera eficiente. Esto podría implicar revisar nuestras prácticas actuales y eliminar aquellas que no contribuyen significativamente a nuestros objetivos, sin comprometer la calidad de nuestro trabajo.
 
-###**4. Dejar de hacer:**
+### **4. Dejar de hacer:**
 No hemos observado prácticas perjudiciales que necesitemos dejar de hacer de inmediato. Sin embargo, queremos considerar un enfoque proactivo para identificar cualquier tarea o proceso que no aporte valor significativo a nuestro proyecto y que podría eliminarse para simplificar nuestra operación sin afectar negativamente los resultados.
 
 En resumen, nuestra capacidad de trabajar bien como equipo nos ha heho alcanzar la entrega de nuestro primer sprint en tiempo y forma, contentos de nuestro proyecto. De todos modos , estamos atentos a revisar regularmente nuestras acciones para identificar posibles procedimientos que no sumen a nuestro desarrollo y entrega de proyecto.
