@@ -17,7 +17,7 @@
 
 **Johana Uva Albarracin**, edad 29 años vivo en la ciudad de trenque lauquen y actualmente estoy estudiando programacion web full stak
 
-**René Chumacero**, tengo 37 años y vivo en la cuida de salta y actualmente estoy cursando la carrera de desarrollo full stack
+**René Chumacero**, tengo 37 años y vivo en la cuida de salta y actualmente estoy cursando la carrera de desarrollo full stack.
 
 **Jairo Abarca Caravaca**, tengo 34 años mi ocupación actual es de Personal de Salud, vivo en Hurlingham y actualmente estoy cursando la carrera de desarrollo full stack.
 
