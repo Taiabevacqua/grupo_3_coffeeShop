@@ -1,3 +1,206 @@
 .header{
     width: 100% ;
 }
+
+.header__datos {
+    background-color: var(--colorrojo);
+    color: var(--colorblanco);
+    font-size: 9px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 35px;
+    text-align: center;
+}
+
+.header__datos__tel {
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__datos__email {
+    width: 30%;
+}
+
+.header__datos__sucursales {
+    width: 30%;
+}
+
+.header__menu {
+    background-color: var(--colorocre);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header__menu img {
+    width: 20%;
+}
+
+.header__bars {
+    color: var(--colorrojo);
+    font-size: 30px;
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.header__nav a {
+    color: var(--colorrojo);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.search-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.header__iconos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70px;
+}
+
+.user {
+    color: var(--colorrojo);
+}
+
+.cart {
+    color: var(--colorrojo);
+}
+
+.search-bar input {
+    background-color: var(--colorblanco);
+    border: none;
+    outline: none;
+    width: 90%;
+    font-size: 14px;
+}
+
+.lupa {
+    border: 0;
+    background-color: var(--colorblanco);
+    cursor: pointer;
+    position: absolute;
+    right: 22%;
+    top: 8.5%;
+    font-size: 13px;
+}
+
+
+.header__env-mediosPago {
+    background-color: var(--colorblanco);
+    color: var(--colorGrisOscuro);
+    font-size: 11px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+
+
+
+/*mobile*/
+@media (max-width: 480px) {
+   .header__nav {
+    display: none;
+   }
+}
+
+
+
+/*tablet*/
+@media (min-width: 481px) {
+    .header__bars {
+        display: none;
+    }
+
+    .header__datos {
+        width: 100%;
+        font-size: 14px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        height: auto;
+    }
+
+    .header__menu img {
+        width: 13%;
+    }
+
+    .header__nav {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    }
+
+    .header__nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 10px;
+    }
+
+    .header__nav a {
+        font-size: 18px;
+    }
+
+    .search-bar {
+        width: 15%;
+    }
+
+    .lupa {
+        right: 12.5%;
+        top: 9.2%;
+    }
+
+    .header__iconos {
+        width: 10%;
+        justify-content: space-around;
+    }
+
+    .header__env-mediosPago {
+        font-size: 15px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 80px;
+    }
+}
+
+
+
+/*desktop*/
+@media (min-width: 1024px) {
+    .header__menu {
+        height: auto;
+    }
+    
+    .header__menu img {
+        padding: 15px;
+        }
+    
+    .header__nav ul {
+        gap: 30px;
+    }
+    
+    .lupa {
+        right: 12.5%;
+        top: 12%;
+    }
+  
+}
