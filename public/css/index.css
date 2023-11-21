@@ -1,0 +1,388 @@
+/*sección slide*/
+.index__main__banner {
+    width: 100%;
+}
+
+
+/*contenedores*/
+
+.index__div__container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.index__photo__capsulas{
+    width: 90%;
+    padding: 10px;
+}
+
+
+.index__photo__cafeteras {
+    width: 90%;
+    padding: 10px;
+}
+
+.capsulas {
+position: absolute;
+text-align: center;
+background-color: rgba(189, 183, 186, 0.7);
+width: 85%;
+font-size: 26px;
+color: var(--colorrojo);
+font-weight: 800;
+padding: 5px 0;
+}
+
+.cafe-molido {
+position: absolute;
+top: 0.2;
+text-align: center;
+background-color: rgba(189, 183, 186, 0.7);
+width: 85%;
+font-size: 26px;
+color: var(--colorrojo);
+font-weight: 800;
+padding: 5px 0;
+}
+
+.cafeteras {
+position: absolute;
+top: 0.2;
+text-align: center;
+background-color: rgba(189, 183, 186, 0.7);
+width: 85%;
+font-size: 26px;
+color: var(--colorrojo);
+font-weight: 800;
+padding: 5px 0;
+}
+
+.index__section__slide__sabor {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.index__section__slide__sabor h2 {
+    color: var(--colorrojo);
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.index__section__slide__sabor__capsula-crema {
+    width: 45%;
+
+}
+
+.index__section__slide__sabor__capsula-violeta {
+    width: 45%;
+}
+
+.index__section__box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    
+}
+
+.box {
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    bottom: 400px;
+}
+
+.index__section__box__coffee-capsule {
+    background-color: var(--colorocre);
+    width: 85%;
+    height: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    position: relative;
+    order: -1;
+    top: 230px;
+}
+
+.index__section__box__coffee-capsule h3 {
+    font-size: 24px;
+    color: var(--colorrojo);
+    font-weight: 700px;
+    padding-bottom: 15px;
+    margin-top: 15px;
+    
+}
+
+.index__section__box__coffee-capsule p {
+    font-size: 20px;
+    color: var(--colorrojo);
+    font-weight: 400px;
+    padding: 10px;
+}
+
+.index__section__box__coffee-capsule-button {
+    border: none;
+    background-color: var(--colorrojo);
+    color: var(--colorblanco);
+    width: 200px;
+    height: 45px;
+    margin: 15px 15px 30px 15px;
+    border-radius: 5px;
+    position: relative;
+    left: 45px;
+}
+
+.index__section__carrousel__destacados {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.index__section__carrousel__destacados h2 {
+    color: var(--colorrojo);
+    font-size: 30px;
+    font-weight: 700;
+    margin: 15px 0;
+    position: relative;
+    bottom: 150px;
+}
+
+.index__section__carrousel__destacados__producto-cafetera {
+    width: 85%;
+    justify-content: center;
+    position: relative;
+    bottom: 120px;
+}
+
+.index__section__complementos {
+    color: var(--colorrojo);
+    font-weight: 400px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.index__section__complementos img {
+    display: flex;
+    width: 60%;
+    height: 60%;
+    position: relative;
+    bottom: 80px;
+    position: relative;
+    bottom: 280px;
+    right: 40px;
+}  
+
+.complementos {
+    background-color: var(--colorGrisClaro);
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 25px;
+    position: relative;
+    bottom: 50px;
+
+}
+
+
+.complementos h3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 18px;
+    position: relative;
+    left: 50px;
+    margin-top: 10px;
+}
+
+.complementos p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    text-align: center;
+    position: relative;
+    left: 50px;
+}
+
+.complementos button { 
+border: none;
+background-color: var(--colorrojo);
+color: var(--colorblanco);
+width: 100px;
+height: 30px;
+margin: 15px 15px 30px 15px;
+border-radius: 5px;
+position: relative;
+left: 170px;
+}
+
+
+/*mobile*/
+@media (max-width:480px) { 
+
+.index__section__complementos img {
+    order: 1;
+}
+
+.index__section__carrousel__destacados__producto {
+    display: none;
+}
+
+}
+
+
+
+
+
+/*tablet*/
+@media (min-width:481px){ 
+
+.index__contenedores {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: row;
+}
+
+
+.index__div__container {
+    width: 33%;
+    
+}
+
+.index__photo__capsulas {
+    padding: 5px 0 0 0;
+}
+
+.index__section__slide__sabor {
+    margin-top: 35px;
+}
+
+.index__section__slide__sabor h2 {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.index__section__box__coffee-capsule {
+    position: relative;
+    left: 60px;
+    
+}
+
+.index__section__box__coffee-capsule h3 {
+    font-size: 32px;
+    position: relative;
+    left: 150px;
+    bottom: 50px;
+}
+
+.index__section__box__coffee-capsule p {
+    font-size: 22px;
+    width: 55%;
+    position: relative;
+    left: 300px;
+    bottom: 50px;
+}
+
+.index__section__box__coffee-capsule-button {
+    position: relative;
+    left: 380px;
+    bottom: 35px;
+}
+
+.box {
+    position: relative;
+    right: 180px;
+    bottom: 320px;
+    width: 570px;
+    height: 570px;
+
+}
+
+.index__section__carrousel__destacados h2 {
+    font-size: 38px;
+    position: relative;
+    left: 300px;
+    bottom: 280px;
+}
+
+.index__section__carrousel__destacados__producto {
+    width: 35%;
+    position: relative;
+    right: 100px;
+    bottom: 150px;
+   }
+
+.index__section__carrousel__destacados__producto-cafetera {
+ width: 35%;
+ position: relative;
+ right: 65px;
+ bottom: 150px;
+}
+
+.complementos {
+ width: 100%;  
+ height: 350px;
+ position: relative;
+ top: 70px;
+}
+
+.complementos h3 {
+    font-size: 33px;
+    position: relative;
+    left: 150px;
+    margin-top: 10px;
+}
+
+.complementos p {
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+    left: 150px;
+    top: 20px;
+}
+
+.complementos button { 
+    font-size: 24px;
+    width: 180px;
+    height: 50px;
+    margin: 15px 15px 30px 15px;
+    border-radius: 5px;
+    position: relative;
+    left: 420px;
+    top: 40px;
+    }
+
+
+.index__section__complementos img {
+    width: 550px;
+    height: 550px;
+    position: relative;
+    right: 90px;
+    bottom: 450px;
+    order: 1;
+}
+
+}
+
+
+/*desktop*/
+@media (min-width:1024px) {
+
+}
+

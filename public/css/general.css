@@ -22,7 +22,8 @@ li{
 
 body {
     font-family: 'inter';
-    background-image: url('/img/fondo-accesorios-cafe.PNG');
+    background-image: url(/img/fondo-accesorios-cafe.PNG);
+    /*max-width: 1180px;*/
 }
 
 
