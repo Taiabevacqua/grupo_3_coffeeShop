@@ -1,13 +1,104 @@
 <!DOCTYPE html>
-<html lang="es">
+<lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafeinatopia| Register</title>
     <link rel="stylesheet" href="/css/styles.css">
  <script src="https://kit.fontawesome.com/c65f2f1cc8.js" crossorigin="anonymous"></script>
+ <a target="_blank" href="https://icons8.com/icon/62765/logotipo-mastercard">Logotipo Mastercard</a> icono de <a target="_blank" href="https://icons8.com">Icons8</a>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+      
 </head>
 <body>
     
+        <div class="container">
+          <div class="login-section">
+            <h2 class="ClientesRegistrados">CLIENTES REGISTRADOS</h2>
+            <p class="CorreoElectronico">
+              Si tenés una cuenta, inicia sesión con tu dirección de correo
+              electrónico
+            </p>
+            <form id="loginForm" class="formulario">
+              <div class="input-group input-Email">
+                <label for="email">Nombre*</label>
+                <input
+                  class="inputBig"
+                  type="email"
+                  id="email"
+                  required
+                  placeholder="Ejemplo: juanperez@gmail.com"
+                />
+              </div>
+              <div class="contenedorCampoObligatorio">
+                <p class="CampoObligatorio">Este campo es obligatorio</p>
+              </div>
+              <div class="input-group">
+                <label for="password">Contraseña*</label>
+                <input class="inputBig" type="password" id="password" required />
+              </div>
+              <div class="contenedorCampoObligatorio">
+                <p class="CampoObligatorio">Este campo es obligatorio</p>
+              </div>
+              <div class="Campo2">
+                <a href="#" class="TextPassword">¿Olvidaste tu contraseña?</a>
+              </div>
+              <div class="CheckboxCaptchaContainer">
+                <div class="CheckboxContainer">
+                  <input class="checkbox" type="checkbox" id="rememberMe" />
+                  <label class="TextPassword" for="rememberMe">Recordarme</label>
+                </div>
+                <div class="CaptchaContainer">
+                  <input class="checkboxBig" type="checkbox" id="rememberMe" />
+                  <div class="TextCaptchaContainer">
+                    <p class="TextCaptcha">i´am not a robot</p>
+                  </div>
+                  <div class="CaptchaImageContainer">
+                    <img
+                      class="captcha"
+                      src="img/LogoRecaptcha.png"
+                      alt="30%"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="botonesContainer">
+                <button class="boton-personalizado1">INICIAR SESIÓN</button>
+                <button class="social-btn social-btn-fb">
+                  <div class="socialImageContainer">
+                    <img
+                      class="socialImage"
+                      src="img/LogoFacebookLite.png"
+                      alt="Facebook logo"
+                    />
+                  </div>
+                  Continuar con Facebook
+                </button>
+                <button class="social-btn">
+                  <div class="socialImageContainer">
+                    <img
+                      class="socialImage"
+                      src="img/GooglePhoto.jpg"
+                      alt="Google logo"
+                    />
+                  </div>
+                  Continuar con Google
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="register-section">
+            <h2>NUEVOS CLIENTES</h2>
+            <div class="containerFrase">
+              <p class="ParrafoResponsive">
+                Crear una cuenta tiene muchos beneficios. Paga más rápido, puede
+                guardar más de una dirección, seguimiento de pedido y mucho más.
+              </p>
+            </div>
+            <button class="boton-personalizado2">CREAR UNA CUENTA</button>
+          </div>
+        </div>  
 </body>
 </html>
