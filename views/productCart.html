@@ -5,9 +5,208 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafeinatopia |</title>
     <link rel="stylesheet" href="/css/styles.css">
+    
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
  <script src="https://kit.fontawesome.com/c65f2f1cc8.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <main class="main_productcart">
+
+        <div class="div_imagen_logo_productcart">
+        <img class="imagen_logo_productcart" src="/img/Logo-Cafeinatopia-1.png" alt="">
+    </div>
+
+        <swiper-container class="mySwiper" space-between="30" pagination="true" pagination-clickable="true">
+            
+            
+            
+            <swiper-slide>
+
+                <section class="uno_productcart">
+
+                <h1 class="num">1</h1><h1 class="titular_productcart">Identificacion</h1>
+        
+                <form id="Formulario" method="post">
+        
+                  <div class="form_box_productcart">
+                  <label for="Nombre"></label>
+                  <input type="text" id="Nombre" name="Nombre" placeholder="Nombre" >
+                  </div>
+        
+                  <div class="form_box_productcart">
+                  <label for="Apellido"></label>
+                  <input type="text" id="Apellido" name="Apellido" placeholder="Apellido" >
+                </div>
+        
+                  <div class="form_box_productcart">
+                  <label for="documento"></label>
+                  <input type="number" id="documento" name="documento" placeholder="DNI" >
+                  </div>
+        
+                  <div class="form_box_productcart">
+                    <label for="telefono"></label>
+                    <input type="number" id="telefono" name="telefono" placeholder="Telefono/Movil" >
+                    </div>
+        
+                  <div class="form_box_productcart">
+                  <label for="email"></label>
+                  <input type="email" id="email" name="email" placeholder="Email" >
+                </div>
+        
+                  <div class="form_box_productcart">
+                  <label for="FechaDeNacimiento"></label>
+                  <input type="date" id="FechaDeNacimiento" name="FechaDeNacimiento"  >
+                </div>
+        
+                <div class="form_box_checkbox">
+                    <label  id="productcart_checkbox"></label>
+                      <input class="productcart_checkbox" type="checkbox" name="productcart_checkbox" value="productcart_checkbox">Quiero recibir informacion sobre novedades y promociones
+                    </div>
+        
+                    <button class="button_productcart" onclick="goToNextSlide()" type="submit">IR A LA ENTREGA</button>
+        
+                 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+                 <script>
+                   var swiper = new Swiper('.swiper-container', {
+                     navigation: {
+                       nextEl: '.swiper-button-next',
+                       prevEl: '.swiper-button-prev',
+                     },
+                   });
+               
+                   function goToNextSlide() {
+                     swiper.slideNext();
+                   }
+                 </script>
+
+
+
+
+
+
+
+            </section>
+        
+        </swiper-slide>
+            
+            
+            
+            <swiper-slide>
+                <section class="dos_productcart">
+
+                    <h1 class="num">2</h1> <h1 class="titular_productcart">Entrega</h1>
     
+                    
+                    <div class="form_box_productcart">
+                        <label for="codigopostal"></label>
+                        <input type="text" id="codigopostal" name="codigopostal" placeholder="Codigo postal" required>
+                      </div>
+            
+                      <div class="form_box_productcart">
+                        <label for="domicilio">Complete su direccion de entrega</label>
+                        <input type="text" id="domicilio" name="domicilio" placeholder="Ciudad" required>
+                      </div>
+
+                      <div class="form_box_productcart">
+                        <label for="domicilio"></label>
+                        <input type="text" id="domicilio" name="domicilio" placeholder="Calle" required>
+                      </div>
+
+                      <div class="form_box_productcart">
+                        <label for="domicilio"></label>
+                        <input type="text" id="domicilio" name="domicilio" placeholder="Numero" required>
+                      </div>
+
+                      <div class="form_box_productcart">
+                        <label for="domicilio"></label>
+                        <input type="text" id="domicilio" name="domicilio" placeholder="Informacion adicional (ejemplo Depto)" required>
+                      </div>
+
+                      <div class="form_box_productcart">
+                        <label for="domicilio"></label>
+                        <input type="text" id="domicilio" name="domicilio" placeholder="Destinatario" required>
+                      </div>
+
+                      <div class="form_box_checkbox">
+                        <label for="entrega">Andreani Estandar</label>
+                        <input type="checkbox" id="entrega" name="entrega" value="Andreani Estandar" checked>
+                      </div>
+
+                      <button class="button_productcart" onclick="goToNextSlide()" type="submit">IR AL PAGO</button>
+
+
+                </section>
+
+            </swiper-slide>
+
+
+            <swiper-slide>
+
+                <section class="tres_productcart">
+
+                    <h1 class="num">3</h1> <h1 class="titular_productcart">Pago</h1>
+                    
+                    <form action="#">
+                        <label for="tarjeta">Medio de pago</label>
+                        <select name="tarjeta" id="tarjeta">
+                          <option value="Mercadopago">Mercado Pago</option>
+                          <option value="visa">Visa debito</option>
+                          <option value="master">Mastercad debito</option>
+                          <option value="transferencia">transferencia</option>
+                        </select>
+                  </form>
+
+                  <div class="form_box_productcart">
+                    <label for="numero"></label>
+                    <input type="number" id="numero" name="numero" placeholder="Numero de tarjeta" >
+                  </div>
+
+                  <div class="form_box_productcart">
+                    <label for="cuota">Cuotas disponibles</label>
+                    <select name="cuota" id="cuota">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                    </select>
+                  </div>
+
+                  <form action="" method="POST" class="fecha">
+                    <div class="col">
+                         <label for="fecha">Fecha de vencimiento</label>
+                         <input type="date" name="fecha" id="fecha" class="form-control" value="2019-08">
+                    </div>
+                </form>
+
+                <div class="form_box_productcart">
+                        <label for="codigodeseguridad"></label>
+                        <input type="codigodeseguridad" id="codigodeseguridad" name="codigodeseguridad" placeholder="Codigo de seguridad" required>
+                      </div>
+                
+                
+                      <button class="button_productcart" type="submit">IR AL PAGO</button>
+
+
+                </section>
+
+
+
+            </swiper-slide>
+
+            
+          </swiper-container>
+
+
+    </main>
+
+    
+
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 </body>
 </html>
