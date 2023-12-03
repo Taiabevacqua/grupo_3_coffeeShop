@@ -55,7 +55,7 @@ img {
     text-align: center;
     font-family: Inter;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 10px;
     border-radius: 5px;
 }
@@ -64,7 +64,7 @@ img {
     align-items: center;
     color: var(--colorrojo);
     border: 1px solid;
-    position: relative;
+    border-radius: 5%;
     width: 96px;
     
     
@@ -73,9 +73,12 @@ img {
   .boton-menos,
   .boton-mas {
     font-size: 16px;
+    border-radius: 2%;
     padding: 5px 10px;
     cursor: pointer;
     color: var(--colorrojo);
+    
+    
   }
   
   .numero {
@@ -98,10 +101,10 @@ img {
   }
   .product__container-mas{
     margin-top: 5%;
-    margin-left: 60%;
+    margin-left: 30%;
     position: relative;
     width: 44%; 
-    height: 28.5%;  
+    height: 30%;  
     border: 0.5px solid var(--colorrojo);
   }
 .intensidad-img{
@@ -147,21 +150,32 @@ img {
   }
 /*/destokp 1024*/
 @media (min-width: 1024px) {
-  .product {
-    max-width: 100px;
-    margin: 0.5%;
-  }
+  .produc-Detail{
+    display: flex;
+  
+    flex-direction: column;
 
-
-  .product__container-img {
-    width: 80%;
-    border: 0.5px solid;
   }
+  .product__container-h {
+    display: flex;
+    justify-content: space-between; 
+    flex: 2;
+      
+}
 
-  img {
-    max-width: 60%;
-    height: auto;
-  }
+.product__container-img {
+    flex: 1; 
+    max-width: 50%; 
+}
+h2{
+  font-weight: bold;
+}
+.product_conteiner-arti {
+    flex: 1; 
+    max-width: 50%; 
+    font-family: Inter;
+    
+}
 
   .product__container-mas {
     position: relative;
