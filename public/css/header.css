@@ -32,6 +32,7 @@
     background-color: var(--colorocre);
     display: flex;
     flex-wrap: wrap;
+    padding: 10px 0px 10px;
 }
 
 .header__menu img {
@@ -45,6 +46,8 @@
     display: flex;
     justify-content: space-around;
     padding-top: 20px;
+    position: relative;
+    top: 8px;
 }
 
 .header__nav a {
@@ -58,14 +61,37 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 40%;
+    width: 20%;
 }
+
+.search-bar input {
+    background-color: var(--colorblanco);
+    /*border: none;
+    outline: none;*/
+    width: 90%;
+}
+
+.search-bar button {
+    /*border: 0;
+    background-color: var(--colorblanco);
+    cursor: pointer;
+    position: absolute;
+    right: 10%;
+    top: 8.5%;*/
+    font-size: 13px;
+}
+
+#lupa-mobile {
+    color: var(--colorrojo);
+}
+
 
 .header__iconos {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 70px;
+    width: 120px;
+    font-size: 22px;
 }
 
 .user {
@@ -75,25 +101,6 @@
 .cart {
     color: var(--colorrojo);
 }
-
-.search-bar input {
-    background-color: var(--colorblanco);
-    border: none;
-    outline: none;
-    width: 90%;
-    font-size: 14px;
-}
-
-.lupa {
-    border: 0;
-    background-color: var(--colorblanco);
-    cursor: pointer;
-    position: absolute;
-    right: 22%;
-    top: 8.5%;
-    font-size: 13px;
-}
-
 
 .header__env-mediosPago {
     background-color: var(--colorblanco);
@@ -106,12 +113,30 @@
     gap: 10px;
 }
 
+.header__env-mediosPago i {
+    font-size: 20px;
+    position: relative;
+    left: 10px;
+}
+
 
 
 
 /*mobile*/
 @media (max-width: 480px) {
    .header__nav {
+    display: none;
+   }
+
+   .header__datos {
+    display: none;
+   }
+
+   .search-bar input {
+    display: none;
+   }
+
+   .search-bar button {
     display: none;
    }
 }
@@ -133,15 +158,58 @@
         align-items: center;
         text-align: center;
         padding: 10px;
-        height: auto;
+        height: 70px;
+    }
+
+    .header__datos__tel {
+        position: relative;
+        bottom: 12px;
+    }
+
+    .header__datos__tel i {
+        display: flex;
+        font-size: 20px;
+        width: 20px;
+        position: relative;
+        top: 18px;
+        left: 20px;
+        
+    }
+
+    .header__datos__email {
+        position: relative;
+        bottom: 12px;
+    }
+
+    .header__datos__email i {
+        display: flex;
+        font-size: 20px;
+        width: 20px;
+        position: relative;
+        top: 18px;
+        left: 2px;
+    }
+
+    .header__datos__sucursales {
+        position: relative;
+        bottom: 12px;
+    }
+
+    .header__datos__sucursales i {
+        display: flex;
+        font-size: 20px;
+        width: 20px;
+        position: relative;
+        top: 18px;
+        left: 42px;
     }
 
     .header__menu img {
-        width: 13%;
+        width: 15%;
     }
 
     .header__nav {
-    width: 60%;
+    width: 57%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -156,29 +224,70 @@
     }
 
     .header__nav a {
-        font-size: 18px;
+        font-size: 16px;
+        display: flex;
+        margin: 5px;
     }
 
     .search-bar {
         width: 15%;
+        justify-content: space-evenly;
     }
 
-    .lupa {
-        right: 12.5%;
-        top: 9.2%;
+    #input {
+        border-radius: 5%;
+    }
+
+    .search-bar button {
+        cursor: pointer;
+        position: absolute;
+        right: 110px;
+        top: 13.5%;
+        transform: translateY(-50%);
+        border: none;
+
     }
 
     .header__iconos {
         width: 10%;
         justify-content: space-around;
+        font-size: 20px;
+    }
+
+    #lupa-mobile {
+        display: none;
     }
 
     .header__env-mediosPago {
         font-size: 15px;
         width: 100%;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         padding: 10px 80px;
+    }
+
+    #truck {
+        display: flex;
+        font-size: 22px;
+        position: relative;
+        left: 35px;
+    }
+
+    .truck-h4 {
+        position: relative;
+        right: 10px;
+    }
+
+    #credit-card {
+        display: flex;
+        font-size: 22px;
+        position: relative;
+        left: 25px;
+    }
+
+    .credit-card-h4 {
+        position: relative;
+        right: 20px;
     }
 }
 
@@ -193,14 +302,59 @@
     .header__menu img {
         padding: 15px;
         }
-    
-    .header__nav ul {
+
+    .header__datos__tel i{
+        display: flex;
+        position: relative;
+        left: 55px;
+    }
+
+    .header__datos__email i {
+        display: flex;
+        position: relative;
+        left: 40px;
+    }
+
+    .header__datos__sucursales i {
+        display: flex;
+        position: relative;
+        left: 80px;
+    }
+
+    .header__nav a{
         gap: 30px;
+        font-size: 20px;
     }
     
-    .lupa {
-        right: 12.5%;
-        top: 12%;
+    .search-bar button {
+        cursor: pointer;
+        position: relative;
+        left: -20px;
+        top: 5%;
+        border: none;
     }
   
+    #truck {
+        display: flex;
+        font-size: 22px;
+        position: relative;
+        left: 75px;
+    }
+
+    .truck-h4 {
+        position: relative;
+        right: 50px;
+    }
+
+    /*#credit-card {
+        display: flex;
+        font-size: 22px;
+        position: relative;
+        left: 25px;
+    }*/
+
+    .credit-card-h4 {
+        position: relative;
+        right: 100px;
+    }
 }
