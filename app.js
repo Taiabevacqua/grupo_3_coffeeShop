@@ -6,7 +6,7 @@ const PORT =3030;
 
 app.use(express.static(path.join(__dirname,'public')));
 
-app.get('/',(req,res) => res.sendFile(path.join(__dirname, 'views' , 'index.html')))
+app.get('/index',(req,res) => res.sendFile(path.join(__dirname, 'views' , 'index.html')))
 app.get('/footer',(req,res) => res.sendFile(path.join(__dirname, 'views' , 'partials' , 'footer.html')))
 app.get('/header',(req,res) => res.sendFile(path.join(__dirname, 'views' , 'partials' , 'header.html')))
 app.get('/login',(req,res) => res.sendFile(path.join(__dirname, 'views' , 'login.html')))

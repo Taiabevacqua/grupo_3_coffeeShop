@@ -4,47 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cafeinatopia| productDetail</title>
+    <title>Cafeinatopia | Detalle del Producto</title>
     <link rel="stylesheet" href="/css/styles.css">
     <script src="https://kit.fontawesome.com/c65f2f1cc8.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="produc-Detail-b">
-    <header>
-        
-    </header>
-    <main class="produc-Detail"> 
-        <ul class="product_casita">
-            <li>
-                <a href="#"><i class="fa-solid fa-house" style="color: #991F1F;"></i></a>
-                <p class="casita-p">Café Molido / Premium</p>
-            </li>
-        </ul>
 
+     <main class="produc-Detail">
+        <!-- Navegación o información del producto -->
+        <nav class="product_casita">
+            <!-- Icono de casa y categoría del producto -->
+           <ul>
+            <li><a href="#"><i class="fa-solid fa-house" style="color: #991F1F;"></i></a></li>
+        </ul>
+        <p class="casita-p">Café Molido / Premium</p>
+        </nav>
+
+        <!-- Contenedor de la imagen del producto -->
         <div class="product__container-img">
             <img src="/img/cafe molido producto.png" alt="Nombre del Producto">
         </div>
 
-        <div class="product__container-h"> 
+        <!-- Contenedor de detalles del producto -->
+        <div class="product__container-h">
             <h1>Cafeinatopia</h1>
             <h2>Café Molido Premium</h2>
             <h2>400g</h2>
             <h3>Precio: $8500</h3>
             <p>_________________________________________________________________________</p>
-            <h2>Cantidad</h2>
+        </div>
+            <!-- Sección de cantidad -->
+            
+            <article class="cantidad">
+                <h3>Cantidad</h3>
+            </article>
             <div class="contador">
                 <button class="boton-menos">-</button>
                 <span class="numero">1</span>
                 <button class="boton-mas">+</button>
             </div>
 
+            <!-- Botón de agregar al carrito -->
             <button class="button_A">Añadir al Carrito</button>
+
+            <!-- Descripción del producto -->
             <div class="product_conteiner-arti">
+                <h2>Descripción del Producto</h2>
+
+
                 <article>
-                    <h3>Nuestro café en grano premium proviene de las
-                        regiones cafeteras más selectas del mundo.
+                    <h3>Nuestro café en grano premium proviene de las regiones cafeteras más selectas del mundo.
                         Cosechado a mano y tostado con esmero, este café
-                        ofrece una experiencia con notas de sabor suave y
+                        ofrece una experiencia con notas de sabor suave y 
                         aterciopelada.
                         Perfecto para los amantes del café más exigentes.
                     </h3>
@@ -52,32 +64,35 @@
                 </article>
                 <p>_____________________________________________________________________________________________________________________</p>
             </div>
+       
+
+        <!-- Sección de productos recomendados -->
+        <div class="product-visto"> 
+            <h2>Productos más vistos</h2>
+            <section class="product__container-mas">
+                <!-- Producto 1 -->
+                <img src="/img/capsulavioleta.png" alt="capsula">
+                <h4>Cápsulas Desf Pack x6 UN. $2250</h4>
+                <button class="button_Amas">Añadir al Carrito</button>
+            </section>
+            <section class="product__container-mas">
+                <!-- Producto 2 -->
+                <img src="/img/pack cafe molido.png" alt="">
+                <h4>Café Molido Intensp 260 G. $3350</h4>
+                <button class="button_Amas">Añadir al Carrito</button>
+            </section>
+            <section class="product__container-mas">
+                <!-- Producto 3 -->
+                <img src="/img/maquinadecafe.png" alt="">
+                <h4>Cafetera Ocean Negra. $110.000</h4>
+                <button class="button_Amas">Añadir al Carrito</button>
+            </section>
         </div>
-          <div class="product-visto"> 
-        <h2>Productos más vistos</h2>
-        <section class="product__container-mas">
-            <img src="/img/capsulavioleta.png" alt="capsula">
-            <h4>Cápsulas Desf Pack x6 UN. $2250</h4>
-            <button class="button_Amas">Añadir al Carrito</button>
-        </section>
-        <section class="product__container-mas">
-            <img src="/img/pack cafe molido.png" alt="">
-            <h4>Café Molido Intensp 260 G. $3350</h4>
-            <button class="button_Amas">Añadir al Carrito</button>
-        </section>
-        <section class="product__container-mas">
-            <img src="/img/maquinadecafe.png" alt="">
-            <h4>Cafetera Ocean Negra. $110.000</h4>
-            <button class="button_Amas">Añadir al Carrito</button>
-        </section>
-    </div>
     </main>
-</body>
 
- <footer>
+    <footer>
 
-
- </footer>
+    </footer>
 </body>
 
 </html>
