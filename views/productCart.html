@@ -88,15 +88,10 @@
         <img class="imagen_logo_productcart" src="/img/Logo-Cafeinatopia-1.png" alt="">
     </div>
 
-        <swiper-container class="mySwiper" space-between="30" pagination="true" pagination-clickable="true">
-            
-            
-            
-            <swiper-slide>
-
+       <div class="productCart_container">
                 <section class="uno_productcart">
 
-                <h1 class="num">1</h1><h1 class="titular_productcart">Identificacion</h1>
+                 <h1 class="titular_productcart">Identificacion</h1>
         
                 <form id="Formulario" method="post">
         
@@ -135,38 +130,16 @@
                       <input class="productcart_checkbox" type="checkbox" name="productcart_checkbox" value="productcart_checkbox">Quiero recibir informacion sobre novedades y promociones
                     </div>
         
-                    <button class="button_productcart" onclick="goToNextSlide()" type="submit">IR A LA ENTREGA</button>
+                    <button class="button_productcart"  href="#entrega"  type="submit">IR A LA ENTREGA</button>
         
-                 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-                 <script>
-                   var swiper = new Swiper('.swiper-container', {
-                     navigation: {
-                       nextEl: '.swiper-button-next',
-                       prevEl: '.swiper-button-prev',
-                     },
-                   });
-               
-                   function goToNextSlide() {
-                     swiper.slideNext();
-                   }
-                 </script>
-
-
-
-
-
-
-
             </section>
-        
-        </swiper-slide>
-            
-            
-            
-            <swiper-slide>
-                <section class="dos_productcart">
+          </div>
 
-                    <h1 class="num">2</h1> <h1 class="titular_productcart">Entrega</h1>
+          <div class="productCart_container">
+            
+                <section id="entrega" class="dos_productcart">
+
+                  <h1 class="titular_productcart">Entrega</h1>
     
                     
                     <div class="form_box_productcart">
@@ -204,19 +177,19 @@
                         <input type="checkbox" id="entrega" name="entrega" value="Andreani Estandar" checked>
                       </div>
 
-                      <button class="button_productcart" onclick="goToNextSlide()" type="submit">IR AL PAGO</button>
+                      <button href="" class="button_productcart" onclick="goToNextSlide()" type="submit">IR AL PAGO</button>
 
 
                 </section>
 
-            </swiper-slide>
+                  </div>
+
+                  <div class="productCart_container">
 
 
-            <swiper-slide>
+                <section id="pago" class="tres_productcart">
 
-                <section class="tres_productcart">
-
-                    <h1 class="num">3</h1> <h1 class="titular_productcart">Pago</h1>
+            <h1 class="titular_productcart">Pago</h1>
                     
                     <form action="#">
                         <label for="tarjeta">Medio de pago</label>
@@ -264,11 +237,9 @@
                 </section>
 
 
-
-            </swiper-slide>
+              </div>
 
             
-          </swiper-container>
 
 
     </main>
