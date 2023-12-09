@@ -1,15 +1,16 @@
 {
-  "dependencies": {
-    "express": "^4.18.2"
-  },
   "name": "grupo_3_coffeeshop",
-  "description": ">**CAFEINATOPIA** es una tienda online en donde podrás disfrutar de una amplia variedad de café en granos y en capsulas de _alta calidad_, explorar y saborear el mundo del café desde la comodidad de sus propios hogares.\r > Contamos con cafeteras compatibles con Dolce Gusto y Nespresso que nos abren una abanico infinito de posibilidades, ofreciendo a nuestros clientes una _experiencia de consumo única_.",
-  "version": "1.0.0",
-  "main": "app.js",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./src/bin/www"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
+  }
 }
