@@ -4,6 +4,12 @@ const router = express.Router();
 
 
 
+router
+.get('/detalle/:id?', detail)
+
+
+
+
 module.exports = router;
 
 

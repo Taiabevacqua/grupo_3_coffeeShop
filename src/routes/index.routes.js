@@ -1,6 +1,6 @@
 const express = require('express');
 
-const { index, cart } = require('../controllers/indexController');
+const { index, cart, admin } = require('../controllers/indexController');
 const { detail } = require('../controllers/productController');
 const { login, register } = require('../controllers/userController');
 
@@ -13,6 +13,7 @@ router
     .get('/productDetail:id?', detail)
     .get('/login', login)
     .get('/register', register)
+    .get('/admin',admin)
 
 
 module.exports = router;
