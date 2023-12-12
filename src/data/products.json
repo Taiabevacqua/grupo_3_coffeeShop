@@ -1,0 +1,31 @@
+[
+    {
+
+        "id": 1,
+        "name": "Caferetas",
+        "description": "",
+        "mainImage":"cafeteras-cafeinatopia.png",
+        "images": []
+    },
+    {
+        "id": 2,
+        "name": "Chocolate con Almendras",
+        "description": "Disfruta de nuestas inigualables almendras, bañadas con el mas delicioso chocolate, deleita tu paladar con un inigualable sabor",
+        "mainImage": "chocolate-con-almendras.png",
+        "images": []
+    },
+    { 
+        "id": 3,
+        "name": "Capsulas Variadas",
+        "description": "Pruebas nuestra varidad de capsulas en una sola caja, con nuestras capsulas variadas, date una caricia a tu almas con nuestra mejor selección de café en capsulas",
+        "mainImage": "caja-seleccion-cafeinatopia.png",
+        "images": []
+    },
+    {
+        "id": 4,
+        "name": "Café en Grano",
+        "description": "Nuestro café en grano premium proviene de las regiones cafeteras más selectas del mundo. Cosechado a mano y tostado con esmero, este café ofrece una experiencia con notas de sabor suave y aterciopelada.Perfecto para los amantes del café más exigentes.",
+        "mainImage": "cafe molido producto.png",
+        "images": []
+    }
+]
