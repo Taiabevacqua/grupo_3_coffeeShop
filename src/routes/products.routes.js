@@ -1,7 +1,10 @@
 const express = require('express');
-const { detail } = require('../controllers/productController');
+const {add, detail} = require('../controllers/productController');
 const router = express.Router();
 
+/* /Products */ 
+
+router.get('/agregar', add, detail);
 
 
 module.exports = router;
