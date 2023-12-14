@@ -25,4 +25,9 @@ body {
     background-image: url(/img/fondo-accesorios-cafe.PNG);
 }
 
+textarea {
+    resize: none;
+
+}
+
 

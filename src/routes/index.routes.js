@@ -13,7 +13,7 @@ router
     .get('/productDetail:id?', detail)
     .get('/login', login)
     .get('/register', register)
-    .get('/admin',admin)
+    .get('/dashboard',admin)
 
 
 module.exports = router;

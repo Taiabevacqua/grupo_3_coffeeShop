@@ -1,11 +1,12 @@
 const express = require('express');
-const { detail } = require('../controllers/productController');
+const { detail, add } = require('../controllers/productController');
 const router = express.Router();
 
 
 
 router
 .get('/detalle/:id?', detail)
+.get('/agregar',add)
 
 
 
