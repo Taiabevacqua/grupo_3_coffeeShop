@@ -1,0 +1,80 @@
+[
+    {
+
+        "id": 1,
+        "name": "Caferetas",
+        "description": "Con nuestra Cafetera podes mostra tus habilidades como un barista profecional, asi prodras destacar tus  reuniones con un toque inigualable  ",
+        "price": "110000",
+        "mainImage":"cafeteras-cafeinatopia.png",
+        "images": []
+    },
+    {
+        "id": 2,
+        "name": "Chocolate con Almendras",
+        "description": "Disfruta de nuestas inigualables almendras, bañadas con el mas delicioso chocolate, deleita tu paladar con un inigualable sabor",
+        "price": "5600",
+        "mainImage": "chocolate-con-almendras.png",
+        "images": []
+    },
+    { 
+        "id": 3,
+        "name": "Capsulas Variadas",
+        "description": "Pruebas nuestra varidad de capsulas en una sola caja, con nuestras capsulas variadas, date una caricia a tu almas con nuestra mejor selección de café en capsulas",
+        "price": "4200",
+        "mainImage": "caja-seleccion-cafeinatopia.png",
+        "images": []
+    },
+    {
+        "id": 4,
+        "name": "Café en Grano",
+        "description": "Nuestro café en grano premium proviene de las regiones cafeteras más selectas del mundo. Cosechado a mano y tostado con esmero, este café ofrece una experiencia con notas de sabor suave y aterciopelada.Perfecto para los amantes del café más exigentes.",
+        "price": "8500",
+        "mainImage": "cafe molido producto.png",
+        "images": []
+    },
+    {
+
+        "id": 5,
+        "name": "Capsula espresso",
+        "description": "Sumergite en el sabor unico de nuestra capsula espresso, activa tus sentidos y llena tus momentos de energia ",
+        "price": "3200",
+        "mainImage":"capsulavioleta.png",
+        "images": []
+    },
+    {
+
+        "id": 6,
+        "name": "Café Molido",
+        "description": "Un Café molido con esmero y pasión que te va a transportar a otro nivel",
+        "price": "3350",
+        "mainImage":"pack cafe molido.png",
+        "images": []
+    },
+    {
+
+        "id": 7,
+        "name": "Capsula Crema",
+        "description": "Con nuestra inigualeble crema le vas a dar un toque suave y espumoso a tu café",
+        "price": "3500",
+        "mainImage":"capsulacrema.png",
+        "images": []
+    },
+    {
+
+        "id": 8,
+        "name": "Capsula de Café Americano",
+        "description": "Nuestra inigualable capsula con 100% cafe arábica,con un tostado suave sus notas florales y sabores citricos, con una delicada crema te dara una caricia al alma",
+        "price": "3200",
+        "mainImage":"capsularoja.png",
+        "images": []
+    },
+    {
+
+        "id": 9,
+        "name": "Capsula break office Descafeinado",
+        "description": "Date un pequeño descanso para sentir la esencia de nuestro café con sutiles notas de chocolate, equilibrado entre sabor y suavidad, ideales para máquinas de café de oficina  ",
+        "price": "3200",
+        "mainImage":"capsulamarron.png",
+        "images": []
+    }
+]
