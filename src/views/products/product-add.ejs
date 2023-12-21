@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('../partials/head',{
+    title: 'Nuevo'
+}) %>
+
+
+<body>
+    <%- include('../partials/header-admin') %>
+<main class="container">
+    <section class="row my-5"> 
+        <div class="col-12.col-md-10 mx-auto">
+            <div class="card">
+                <div class ="card-header">
+                    <h4 class="cart-title">Agregar productos</h4>
+                    <hr>
+                    
+                </div>
+                <div class="card-body">
+                    <form action="" class="row">
+                        <div class=".col-12.col col-md-6 mb-3">
+                            <div class="form-floating">
+ 
+                                <input type="text" class="form-control" id="Name" placeholder="Nombre de la cafeteria">
+                                <label for="Name">Nombre</label>
+                              </div>
+
+                        </div>
+                        <div class=".col-12.col col-md-6">
+                        
+                          <div class="form-floating">
+                            <input type="text" class="form-control" id="Price" placeholder="Password">
+                            <label for="price">precio</label>
+                          </div>
+                        </div>
+                        <div class="col-12 mb-3">
+                            <div class="form-floating">
+                                <textarea class="form-control"  id="description" sytle="height: 200px";></textarea>
+                                <label for="floatingTextarea">Descripcion</label>
+                              </div>
+                              <div class=".col-12.col col-md-6 mb-3">
+                        
+                                <div class="form-floating">
+                                    <select class="form-select" id="category" aria-label="Floating label select example">
+                                      <option selected hidden>Seleccionar</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                    </select>
+                                    <label for="category">Categorias</label>
+                                  </div>
+                                </div>
+                                <div class="col-12.col-md 3 col-mb-3">
+                        
+                                    
+                                      <input type="file" class="form-control" id="mainImage" hidden >
+                                      <label class="btn btn-lg btn-outline-dark w-50" for="mainImage">Imagen principal</label>
+                                    </div>
+                                    <div class="col-12.col-md 3 col-mb-3">
+                        
+                                    
+                                        <input type="file" class="form-control" id="images" hidden >
+                                        <label class="btn btn-lg btn-outline-dark w-50" for="images">Imagenes</label>
+                                      </div>
+                              </div>
+                        
+
+                    </form>
+                    
+                        
+                    
+                </div>
+                    
+            </div>
+                    
+        </div>
+
+
+            
+        
+
+    </section>
+
+
+
+</main>
+    
+
+
+    
+    <%- include('../partials/scripts') %>
+</body>
+</html>

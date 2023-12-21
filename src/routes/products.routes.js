@@ -1,11 +1,11 @@
 const express = require('express');
-const { detail } = require('../controllers/productsController');
+const { detail, add } = require('../controllers/productsController');
 const router = express.Router();
 
 
 router
     .get('/productDetail:id?', detail)
-
+    .get('/agregar', add)
 
 module.exports = router;
 
