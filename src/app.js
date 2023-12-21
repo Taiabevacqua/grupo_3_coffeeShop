@@ -6,7 +6,7 @@ const logger = require('morgan');
 
 const indexRouter = require('./routes/index.routes');
 const usersRouter = require('./routes/users.routes');
-const productRouter = require('./routes/products.routes');
+const productsRouter = require('./routes/products.routes');
 const { log } = require('console');
 
 
@@ -24,7 +24,7 @@ app.use(express.static(path.join(__dirname,'..', 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/products', productRouter);
+app.use('/products', productsRouter);
 
 
 // catch 404 and forward to error handler
@@ -47,4 +47,3 @@ module.exports = app;
 
 const port=3000
 console.log(`server running http://localhost:${port}`);
-
