@@ -21,8 +21,15 @@ li{
 }
 
 body {
+    /*max-width: 1400px;*/
+    
     font-family: 'inter';  
     background-image: url(/img/fondo-accesorios-cafe.PNG);
+}
+
+#contenedor { 
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 
