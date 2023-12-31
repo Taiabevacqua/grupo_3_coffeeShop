@@ -33,10 +33,13 @@
     display: flex;
     flex-wrap: wrap;
     padding: 10px 0px 10px;
+    text-decoration: none;
 }
 
 .header__menu img {
-    width: 20%;
+    /*width: 20%;*/
+    width: 80px;
+    height: 80px;
 } /*logo*/
 
 .header__bars {
@@ -48,6 +51,7 @@
     padding-top: 20px;
     position: relative;
     top: 8px;
+
 }
 
 .header__nav a {
@@ -124,6 +128,7 @@
 
 /*mobile*/
 @media (max-width: 480px) {
+
    .header__nav {
     display: none;
    }
@@ -145,13 +150,13 @@
 
 /*tablet*/
 @media (min-width: 481px) {
+
     .header__bars {
         display: none;
     }
 
     .header__datos {
         width: 100%;
-        font-size: 1rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -168,6 +173,7 @@
 
     .header__datos h4 {
         color: var(--colorblanco);
+        font-size: 1rem;
     }
 
     .header__datos__tel i {
@@ -208,7 +214,9 @@
     }
 
     .header__menu img {
-        width: 15%;
+        /*width: 13%;*/
+        width: 100px;
+        height: 100px;
     }
 
     .header__nav {
@@ -224,12 +232,14 @@
         flex-wrap: wrap;
         justify-content: space-around;
         gap: 10px;
+        
     }
 
     .header__nav a {
         font-size: 1rem;
         display: flex;
         margin: 5px;
+        text-decoration: none;
     }
 
     .search-bar {
@@ -304,24 +314,26 @@
     
     .header__menu img {
         padding: 15px;
+        width: 140px;
+        height: 140px;
         }
 
     .header__datos__tel i{
         display: flex;
         position: relative;
-        left: 55px;
+        left: 150px;
     }
 
     .header__datos__email i {
         display: flex;
         position: relative;
-        left: 40px;
+        left: 130px;
     }
 
     .header__datos__sucursales i {
         display: flex;
         position: relative;
-        left: 80px;
+        left: 165px;
     }
 
     .header__nav a{
