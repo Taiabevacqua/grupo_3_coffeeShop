@@ -109,7 +109,7 @@
 .header__env-mediosPago {
     background-color: var(--colorblanco);
     color: var(--colorGrisOscuro);
-    font-size: 0.6875rem;
+    font-size: 0.625rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -118,11 +118,17 @@
 }
 
 .header__env-mediosPago i {
-    font-size: 1.25rem;
+    font-size: 0.9375rem;
     position: relative;
     left: 10px;
 }
 
+.header__env-mediosPago h4 {
+    font-size: 11px;
+    margin: 0;
+    position: relative;
+    right: 10px;
+}
 
 
 
