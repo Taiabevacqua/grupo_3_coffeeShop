@@ -163,7 +163,7 @@
         align-items: center;
         text-align: center;
         padding: 10px;
-        height: 70px;
+        height: 50px;
     }
 
     .header__datos__tel {
@@ -173,7 +173,8 @@
 
     .header__datos h4 {
         color: var(--colorblanco);
-        font-size: 1rem;
+        font-size: 0.9375rem;
+        margin: 0;
     }
 
     .header__datos__tel i {
@@ -183,6 +184,12 @@
         position: relative;
         top: 18px;
         left: 20px;
+    }
+
+    .header__datos__tel h4 {
+        display: flex;
+        position: relative;
+        left: 60px;
     }
 
     .header__datos__email {
@@ -196,7 +203,13 @@
         width: 20px;
         position: relative;
         top: 18px;
-        left: 2px;
+        left: 15px;
+    }
+
+    .header__datos__email h4 {
+        display: flex;
+        position: relative;
+        left: 50px;
     }
 
     .header__datos__sucursales {
@@ -210,11 +223,23 @@
         width: 20px;
         position: relative;
         top: 18px;
-        left: 42px;
+        left: 80px;
+    }
+
+    .header__datos__sucursales h4 {
+        display: flex;
+        position: relative;
+        left: 120px;
+    }
+
+    .header__menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 
     .header__menu img {
-        /*width: 13%;*/
+        width: 15%;
         width: 100px;
         height: 100px;
     }
@@ -232,39 +257,60 @@
         flex-wrap: wrap;
         justify-content: space-around;
         gap: 10px;
-        
+        margin: 0;
+        padding: 0;
+    }
+
+    .header__nav li {
+        margin: 0;
+        padding: 0;
     }
 
     .header__nav a {
-        font-size: 1rem;
+        font-size: 1.0625rem;
         display: flex;
         margin: 5px;
         text-decoration: none;
     }
 
     .search-bar {
-        width: 15%;
+        width: 18%;
         justify-content: space-evenly;
     }
 
     #input {
         border-radius: 5%;
+        height: 25px;
+        /*width: 80px;*/
     }
 
     .search-bar button {
         cursor: pointer;
         position: absolute;
-        right: 110px;
-        top: 13.5%;
-        transform: translateY(-50%);
+        right: 100px;
+        top: 11.5%;
+        transform: translateY(-110%);
         border: none;
-
+        padding: 0;
+        width: 15px;
+        height: 15px;
+        background-color: white;
     }
 
     .header__iconos {
         width: 10%;
         justify-content: space-around;
         font-size: 1.25rem;
+    }
+
+    .user {
+        position: relative;
+        left: -10px;
+    }
+
+    .cart {
+        position: relative;
+        left: -10px;
     }
 
     #lupa-mobile {
@@ -274,6 +320,7 @@
     .header__env-mediosPago {
         font-size: 0.9375rem;
         width: 100%;
+        height: 35px;
         justify-content: space-between;
         align-items: center;
         padding: 10px 80px;
@@ -281,7 +328,7 @@
 
     #truck {
         display: flex;
-        font-size: 1.375rem;
+        font-size: 17px;
         position: relative;
         left: 35px;
     }
@@ -289,11 +336,13 @@
     .truck-h4 {
         position: relative;
         right: 10px;
+        font-size: 1rem;
+        margin: 0;
     }
 
     #credit-card {
         display: flex;
-        font-size: 1.375rem;
+        font-size: 17px;
         position: relative;
         left: 25px;
     }
@@ -301,6 +350,8 @@
     .credit-card-h4 {
         position: relative;
         right: 20px;
+        font-size: 1rem;
+        margin: 0;
     }
 }
 
@@ -321,19 +372,37 @@
     .header__datos__tel i{
         display: flex;
         position: relative;
-        left: 150px;
+        left: 175px;
+    }
+
+    .header__datos__tel h4 {
+        display: flex;
+        position: relative;
+        left: 220px;
     }
 
     .header__datos__email i {
         display: flex;
         position: relative;
-        left: 130px;
+        left: 155px;
+    }
+
+    .header__datos__email h4 {
+        display: flex;
+        position: relative;
+        left: 200px;
     }
 
     .header__datos__sucursales i {
         display: flex;
         position: relative;
-        left: 165px;
+        left: 210px;
+    }
+
+    .header__datos__sucursales h4 {
+        display: flex;
+        position: relative;
+        left: 250px;
     }
 
     .header__nav a{
