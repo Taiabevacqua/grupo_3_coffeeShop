@@ -7,6 +7,7 @@
         "price": "110000",
         "category": "Nuevo",
         "mainImage":"cafeteras-cafeinatopia.png",
+        "stock": "15",
         "images": []
     },
     {
@@ -16,6 +17,7 @@
         "price": "5600",
         "category": "Nuevo",
         "mainImage": "chocolate-con-almendras.png",
+        "stock": "50",
         "images": []
     },
     { 
@@ -25,6 +27,7 @@
         "price": "4200",
         "category": "Nuevo",
         "mainImage": "caja-seleccion-cafeinatopia.png",
+        "stock": "40",
         "images": []
     },
     {
@@ -34,6 +37,7 @@
         "price": "8500",
         "category": "Nuevo",
         "mainImage": "cafe molido producto.png",
+        "stock": "45",
         "images": []
     },
     {
@@ -44,6 +48,7 @@
         "price": "3200",
         "category": "Nuevo",
         "mainImage":"capsulavioleta.png",
+        "stock": "30",
         "images": []
     },
     {
@@ -54,6 +59,7 @@
         "price": "3350",
         "category": "Nuevo",
         "mainImage":"pack cafe molido.png",
+        "stock": "20",
         "images": []
     },
     {
@@ -64,6 +70,7 @@
         "price": "3500",
         "category": "Nuevo",
         "mainImage":"capsulacrema.png",
+        "stock": "30",
         "images": []
     },
     {
@@ -74,6 +81,7 @@
         "price": "3200",
         "category": "Nuevo",
         "mainImage":"capsularoja.png",
+        "stock": "30",
         "images": []
     },
     {
@@ -84,6 +92,7 @@
         "price": "3200",
         "category": "Nuevo",
         "mainImage":"capsulamarron.png",
+        "stock": "30",
         "images": []
     }
 ]

@@ -1,0 +1,29 @@
+[
+    {
+        "Id": 1,
+         "Nombre": "Nathalia",
+         "Apellido": "Bevacqua",
+         "Email": "marixd@gmail.com",
+         "Contraseña": "*******",
+         "Categoria": "admin",
+         "Imagen": "perfil"
+    },
+    {
+        "Id": 2,
+         "Nombre": "Lautaro",
+         "Apellido": "Garcia",
+         "Email": "email@gmail.com",
+         "Contraseña": "******",
+         "Categoria": "admin",
+         "Imagen": "perfil"
+    },
+    {
+        "Id": 3,
+         "Nombre": "Jairo",
+         "Apellido": "Abarca",
+         "Email": "email@gmail.com",
+         "Contraseña": "****",
+         "Categoria": "admin",
+         "Imagen": "perfil"
+    }
+]
