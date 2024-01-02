@@ -9,3 +9,7 @@
 -Acordamos próxima dailys
 
 ### **Sábado 30-dic**
+-Continuamos avanzando, surgieron varias dudas.
+
+### **Martes 2-ene**
+-Arrancamos marcando qué pensábamos que nos está faltando que nos genera dudas. Acodarmos poder resolverlo consultando y volver a reunirnos.
