@@ -3,11 +3,13 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
+const methodOverride = require('method-override');
 
 const indexRouter = require('./routes/index.routes');
 const usersRouter = require('./routes/users.routes');
 const productsRouter = require('./routes/products.routes');
-const { log } = require('console');
+const adminRouter = require('./routes/admin.routes');
+//const { log } = require('console');/
 
 
 const app = express();
@@ -18,10 +20,19 @@ app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
 app.use(express.json());
+
+/* formularios */
+
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+
+/* recursos estaticos */
+
 app.use(express.static(path.join(__dirname,'..', 'public')));
 
+app.use(methodOverride('_method'))
+
+/* rutas*/ 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/products', productsRouter);
