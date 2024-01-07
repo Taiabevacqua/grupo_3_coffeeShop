@@ -7,6 +7,7 @@ function creador(name, images, category, price, stock, description){
     this.categoria = category.trim() ,
     this.precio = +price.trim(),
     this.stock = +stock.trim() ,
-    this.descripcion = description.trim() 
+    this.descripcion = description.trim(),
+    this.descuento = descuento ? +descuento.trim() : 0;
 }
 module.exports = creador;

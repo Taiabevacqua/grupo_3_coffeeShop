@@ -1,10 +1,9 @@
-
 const {leerJSON} = require('../data')
+const products = leerJSON('products')
 
 module.exports={
     index: (req,res) =>{
         
-        const products = leerJSON('products');
         return res.render('index',{
             products
         })
@@ -21,6 +20,6 @@ module.exports={
         })
 
 
-    },
+    }
 }
     
