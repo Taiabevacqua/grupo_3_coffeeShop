@@ -1,8 +1,17 @@
 /*sección slide*/
-.index__main__banner {
-    width: 100%;
+
+.btn-primary {
+    background-color: var(--colorocre);
+    height: 50px;
+    width: 160px;
+    position: relative;
+    margin-bottom: 50px;
 }
 
+
+.prevnex {
+    margin-top: 60px;
+}
 
 /*contenedores*/
 
@@ -35,6 +44,7 @@ font-size: 26px;
 color: var(--colorrojo);
 font-weight: 800;
 padding: 5px 0;
+text-decoration: none;
 }
 
 .cafe-molido {
@@ -47,6 +57,7 @@ font-size: 26px;
 color: var(--colorrojo);
 font-weight: 800;
 padding: 5px 0;
+text-decoration: none;
 }
 
 .cafeteras {
@@ -59,7 +70,11 @@ font-size: 26px;
 color: var(--colorrojo);
 font-weight: 800;
 padding: 5px 0;
+text-decoration: none;
 }
+
+/*carrusel elegi tu sabor*/
+
 
 .index__section__slide__sabor {
     display: flex;
@@ -231,6 +246,10 @@ left: 170px;
 /*mobile*/
 @media (max-width:480px) { 
 
+.btn-primary {
+    display: none;
+}    
+
 .index__section__complementos img {
     order: 1;
 }
@@ -239,14 +258,21 @@ left: 170px;
     display: none;
 }
 
-}
 
+}
 
 
 
 
 /*tablet*/
 @media (min-width:481px){ 
+
+.btn-primary {
+    height: 30px;
+    width: 130px;
+    position: relative;
+    margin-bottom: -10px;
+}
 
 .index__contenedores {
     display: flex;
@@ -383,6 +409,11 @@ left: 170px;
 
 /*desktop*/
 @media (min-width:1024px) {
-
+    .btn-primary {
+        height: 35px;
+        width: 130px;
+        position: relative;
+        margin-bottom: 10px;
+    }
 }
 
