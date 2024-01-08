@@ -89,6 +89,7 @@ text-decoration: none;
     font-weight: 700;
     text-align: center;
     margin: 30px 0;
+    width: 100%;
 }
 
 .index__section__slide__sabor__capsula-crema {
@@ -99,6 +100,8 @@ text-decoration: none;
 .index__section__slide__sabor__capsula-violeta {
     width: 45%;
 }
+
+/*coffee capsule box*/
 
 .index__section__box {
     display: flex;
@@ -132,8 +135,8 @@ text-decoration: none;
     font-size: 24px;
     color: var(--colorrojo);
     font-weight: 700px;
-    padding-bottom: 15px;
-    margin-top: 15px;
+    /*padding-bottom: 15px;*/
+    /*margin-top: 5px;*/
     
 }
 
@@ -142,6 +145,7 @@ text-decoration: none;
     color: var(--colorrojo);
     font-weight: 400px;
     padding: 10px;
+    margin: 0;
 }
 
 .index__section__box__coffee-capsule-button {
@@ -150,34 +154,42 @@ text-decoration: none;
     color: var(--colorblanco);
     width: 200px;
     height: 45px;
-    margin: 15px 15px 30px 15px;
+    margin: 15px 15px 15px 15px;
     border-radius: 5px;
     position: relative;
     left: 45px;
+    font-size: 15px;
+    
 }
-
-.index__section__carrousel__destacados {
+/*Carusel destacados*/
+/*.index__section__carrousel__destacados {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
-}
+}*/
 
 .index__section__carrousel__destacados h2 {
+    display: flex;
+    justify-content: center;
     color: var(--colorrojo);
     font-size: 30px;
     font-weight: 700;
     margin: 15px 0;
     position: relative;
-    bottom: 150px;
+    bottom: 130px;
 }
 
-.index__section__carrousel__destacados__producto-cafetera {
-    width: 85%;
-    justify-content: center;
-    position: relative;
-    bottom: 120px;
+.carousel-inner .destacados {
+    width: 25em;  
+    padding: 1em;
 }
+
+.card {
+    /*margin: 0 .5em;*/
+    width: 25%;
+}
+
 
 .index__section__complementos {
     color: var(--colorrojo);
@@ -254,9 +266,9 @@ left: 170px;
     order: 1;
 }
 
-.index__section__carrousel__destacados__producto {
+/*.index__section__carrousel__destacados__producto {
     display: none;
-}
+}*/
 
 
 }
@@ -298,7 +310,7 @@ left: 170px;
 .index__section__slide__sabor h2 {
     font-size: 40px;
     font-weight: 700;
-    text-align: center;
+    /*text-align: center;*/
     margin: 30px 0;
 }
 
@@ -352,12 +364,22 @@ left: 170px;
     bottom: 150px;
    }
 
-.index__section__carrousel__destacados__producto-cafetera {
+.carousel-inner {
+    display: flex;
+}
+
+.carousel-item {
+    display: block;
+    margin-right: 0;
+    flex: 0 0 calc(100%/2); 
+}
+
+/*.index__section__carrousel__destacados__producto-cafetera {
  width: 35%;
  position: relative;
  right: 65px;
  bottom: 150px;
-}
+}*/
 
 .complementos {
  width: 100%;  
