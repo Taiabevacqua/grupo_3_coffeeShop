@@ -9,8 +9,9 @@
         "category": "Nuevo",
         "imagen":"cafeteras-cafeinatopia.png",
         "imagen2":"cafeteras-cafeinatopia.png",
-        "stock": "15"
-        
+        "stock": "15",
+        "sabor": "a"
+
     },
     {
         "id": 2,
@@ -21,7 +22,8 @@
         "category": "Nuevo",
         "imagen": "chocolate-con-almendras.png",
         "imagen2": "chocolate-con-almendras.png",
-        "stock": "50"
+        "stock": "50",
+        "sabor": "b"
         
     },
     { 
@@ -33,7 +35,8 @@
         "category": "Nuevo",
         "imagen": "caja-seleccion-cafeinatopia.png",
         "imagen2": "caja-seleccion-cafeinatopia.png",
-        "stock": "40"
+        "stock": "40",
+        "sabor": "c"
     },
     {
         "id": 4,
@@ -44,7 +47,8 @@
         "descuento": 20,
         "imagen": "cafe molido producto.png",
         "imagen2": "cafe molido producto.png",
-        "stock": "45"
+        "stock": "45",
+        "sabor": "d"
     },
     {
 
@@ -56,7 +60,8 @@
         "category": "Nuevo",
         "imagen":"capsulavioleta.png",
         "imagen2":"capsulavioleta.png",
-        "stock": "30"
+        "stock": "30",
+        "sabor": "e"
        
     },
     {
@@ -69,7 +74,8 @@
         "category": "Nuevo",
         "imagen":"pack cafe molido.png",
         "imagen2":"pack cafe molido.png",
-        "stock": "20"
+        "stock": "20",
+        "sabor": "f"
         
     },
     {
@@ -82,7 +88,8 @@
         "category": "Nuevo",
         "imagen":"capsulacrema.png",
         "imagen2":"capsulacrema.png",
-        "stock": "30"
+        "stock": "30",
+        "sabor": "g"
     },
     {
 
@@ -94,7 +101,8 @@
         "category": "Nuevo",
         "imagen":"capsularoja.png",
         "imagen2":"capsularoja.png",
-        "stock": "30"
+        "stock": "30",
+        "sabor": "h"
     },
     {
 
@@ -106,6 +114,7 @@
         "category": "Nuevo",
         "imagen":"capsulamarron.png",
         "imagen2":"capsulamarron.png",
-        "stock": "30"
+        "stock": "30",
+        "sabor": "i"
     }
 ]

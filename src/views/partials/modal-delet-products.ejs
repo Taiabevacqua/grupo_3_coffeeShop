@@ -3,11 +3,11 @@
       <div class="modal-content">
         <div class="modal-header">
         <div class="modal-body position-relative border border-primary rounded">
-          <img class="w-100 p-0" src="/img/AdvertenciaCafe.jpg" alt="">
-          <h5 class="position-absolute top-50 texto-delete">Deseas eliminar el producto: <%= nombre %>?</h5>
+          <img class="w-100 p-0" src="/img/image_processing20210304-21895-uchm8k.gif" alt="">
+          <h5 class=" top-50 texto-delete">Deseas eliminar el producto: <%= products.name %>?</h5>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cancelar</button>
-          <form action="/productos/eliminar/<%= id %>?_method=DELETE" method="POST">
+          <form action="/products/eliminar/<%= id %>?_method=DELETE" method="POST">
           <button type="submit" class="btn btn-danger">Eliminar</button>
         </form>
         </div>

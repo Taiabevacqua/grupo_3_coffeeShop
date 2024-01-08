@@ -1,6 +1,7 @@
-const {leerJSON} = require("../data")
-const productos = leerJSON('products');
+const { leerJSON, escribirJSON } = require("../data");
+const { existsSync, unlinkSync } = require('fs');
 const fs = require('fs');
+const Product = require("../data/Product");
 
 function pushProducts (parametro){
 	fs.writeFileSync("./src/data/products.json", JSON.stringify(parametro, null, 3), "utf-8");}
@@ -33,10 +34,12 @@ module.exports={
 
     edit : (req, res) => {
         const {id} = req.params;
-        const product = productos.find(products => products.id == id);
+        const products = leerJSON('products');
         
+        const product = products.find(product => product.id == id);
         return res.render('products/products-edit', {
-            ...product
+            ...product,
+            
         }) 
     },
 
@@ -48,20 +51,34 @@ module.exports={
 
 
     create : (req,res) => {
-        return res.render('products/product-create')
+    
+        const{name, description, price, descuento, category, imagen, stock, sabor}= req.body
         
+        const newProduct= new Product( name, description, price, descuento, category, imagen, stock, sabor)
+        const products=leerJSON('products')
+
+        products.push(newProduct)
+
+        escribirJSON(products, 'products')
+
+        return res.redirect('/dashboard')
+
     },
     store : (req, res) => {
-        const creador = require('../data/creador');
+
+    const creador = require('../data/creador');
 	const imagen = req.file;
 	const {nombre, categoria, precio, stock, sabores,descuento, descripcion} = req.body;
 	const nuevoCreador = new creador(nombre, imagen,categoria, precio, stock, sabores,descuento, descripcion);
 	productos.push(nuevoCreador);
 	pushProducts(productos);
 	return res.redirect("/")
+    
     },
     todos : (req,res) => {
-        res.render('products/todos', {productos})
+        const products=leerJSON('products')
+
+        res.render('products/todos', {products})
     },
     search: (req, res) => {        
 		const {keywords} = req.query;
