@@ -162,12 +162,12 @@ text-decoration: none;
     
 }
 /*Carusel destacados*/
-/*.index__section__carrousel__destacados {
+.index__section__carrousel__destacados {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
-}*/
+}
 
 .index__section__carrousel__destacados h2 {
     display: flex;
@@ -180,15 +180,16 @@ text-decoration: none;
     bottom: 130px;
 }
 
+/*
 .carousel-inner .destacados {
     width: 25em;  
     padding: 1em;
-}
+}*/
 
-.card {
-    /*margin: 0 .5em;*/
+/*.card {
+    margin: 0 .5em;
     width: 25%;
-}
+}*/
 
 
 .index__section__complementos {
