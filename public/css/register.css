@@ -195,10 +195,10 @@ body {
     .TextCaptcha {
       font-size: 10px;
     }
-    button {
+    /*button {
       width: 150px;
       height: 40px;
-    }
+    }*/
     input {
       width: 250px;
       height: 20px;
