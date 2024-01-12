@@ -1,10 +1,13 @@
 const express = require('express');
 const { detail, add, cafeteras, capsulas, cafeengrano, edit, create, store, update, todos, search } = require('../controllers/productsController');
-const {remove} = require('../controllers/productsController');
+//const {remove} = require('../controllers/productsController');
 const router = express.Router();
 const upload = require('../middlewares/upload');
 const { leerJSON, escribirJSON } = require("../data");
 const { existsSync, unlinkSync } = require('fs')
+
+const productsController = require('../controllers/productsController');
+
 
 const productos = leerJSON('products');
 const fs = require('fs');
@@ -15,7 +18,7 @@ router
     .get('/cafeteras', cafeteras )
     .get('/capsulas', capsulas )
     .get('/café en grano', cafeengrano )
-    .get('/editar-articulo/:id', edit)
+    .get('/editar-articulo/:id',productsController.edit)
     .put('/update/:id',update)
     .get('/agregar-articulos', create)
     .get('/todos', todos)

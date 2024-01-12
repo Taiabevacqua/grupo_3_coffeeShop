@@ -1,6 +1,15 @@
 const { leerJSON, escribirJSON } = require("../data");
 const { existsSync, unlinkSync } = require('fs');
 const fs = require('fs');
+const path = require('path');
+
+const productsFilePath = path.join(__dirname, '../data/products.json');
+const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+
+const writeJson=(database) => {
+	fs.writeFileSync(path.join(__dirname,'../data/products.json'), JSON.stringify(database),"utf-8")
+}
+
 const Product = require("../data/Product");
 
 function pushProducts (parametro){
@@ -8,9 +17,33 @@ function pushProducts (parametro){
 
 module.exports={
     add : (req,res) => {
-        return res.render('products/product-add')
-    },
-    detail: (req,res) =>{
+        let lastId = 1;
+		products.forEach(product => {
+			if(product.id > lastId){
+				lastId=product.id
+			}
+		})
+		
+		let{name, price, descuento, category, description,} =req.body
+
+		let newProduct = {
+			id: lastId+1,
+			name,
+			price,
+			descuento,
+			category,
+			description,
+			imagen: req.file ? req.file.filename : "default-image.png"
+		}
+
+		products.push(newProduct)
+
+		writeJson(products)
+
+		res.redirect('/dashboard')    },
+    
+    
+        detail: (req,res) =>{
         return res.render('products/productDetail')
     },
     cafeteras : (req, res) => {
@@ -25,7 +58,7 @@ module.exports={
     },
     cafeengrano : (req, res) => {
         return res.render('products/cafeengrano',{
-            productos , 
+            products , 
         })
     },
     
@@ -33,12 +66,11 @@ module.exports={
 
 
     edit : (req, res) => {
-        const {id} = req.params;
-        const products = leerJSON('products');
         
-        const product = products.find(product => product.id == id);
-        return res.render('products/products-edit', {
-            ...product,
+        
+        const product = products.find(product => product.id === +req.params.id)
+         res.render('products/products-edit', {
+           product
             
         }) 
     },
