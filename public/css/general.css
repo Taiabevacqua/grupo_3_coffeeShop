@@ -16,7 +16,7 @@ a {
     text-decoration: none;
 }
 
-li{
+li {
     list-style: none;
 }
 
@@ -30,3 +30,6 @@ body {
     margin: 0 auto;
 }
 
+textarea {
+    resize: none;
+}

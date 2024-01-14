@@ -106,13 +106,5 @@
       "imagen2": "capsulamarron.png",
       "stock": "30",
       "sabor": "i"
-   },
-   {
-      "id": 10,
-      "imagen": "cafe-molido-cafeinatopia.png"
-   },
-   {
-      "id": 11,
-      "imagen": "cafe-molido-cafeinatopia.png"
    }
 ]

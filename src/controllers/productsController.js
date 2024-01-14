@@ -17,6 +17,7 @@ function pushProducts (parametro){
 
 module.exports={
     add : (req,res) => {
+        return res.render('products/product-add')
         let lastId = 1;
 		products.forEach(product => {
 			if(product.id > lastId){
@@ -40,10 +41,9 @@ module.exports={
 
 		writeJson(products)
 
-		res.redirect('/dashboard')    },
-    
-    
-        detail: (req,res) =>{
+		res.redirect('/dashboard')
+     },
+    detail: (req,res) =>{
         return res.render('products/productDetail')
     },
     cafeteras : (req, res) => {
