@@ -3,8 +3,8 @@
         "Id": 1,
          "Nombre": "Nathalia",
          "Apellido": "Bevacqua",
-         "Email": "marixd@gmail.com",
-         "Contraseña": "*******",
+         "Email": "email@gmail.com",
+         "Contraseña": "admin",
          "Categoria": "admin",
          "Imagen": "perfil"
     },
@@ -13,8 +13,8 @@
          "Nombre": "Lautaro",
          "Apellido": "Garcia",
          "Email": "email@gmail.com",
-         "Contraseña": "******",
-         "Categoria": "admin",
+         "Contraseña": "admin",
+         "Categoria": "Admin",
          "Imagen": "perfil"
     },
     {
@@ -22,7 +22,7 @@
          "Nombre": "Jairo",
          "Apellido": "Abarca",
          "Email": "email@gmail.com",
-         "Contraseña": "****",
+         "Contraseña": "admin",
          "Categoria": "admin",
          "Imagen": "perfil"
     }
