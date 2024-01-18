@@ -8,6 +8,8 @@ const { existsSync, unlinkSync } = require('fs')
 
 const productsController = require('../controllers/productsController');
 
+const productAddValidator = require("../../validations/product-add-validator");
+const productEditValidator = require("../../validations/product-edit-validator");
 
 const productos = leerJSON('products');
 const fs = require('fs');
@@ -19,11 +21,11 @@ router
     .get('/capsulas', capsulas )
     .get('/café en grano', cafeengrano )
     .get('/editar-articulo/:id',productsController.edit)
-    .put('/update/:id',update)
+    .put('/update/:id',productEditValidator,update)
     .get('/agregar-articulos', create)
     .get('/todos', todos)
     .get('/search', search)
-    .post('/store', upload.single('imagen'), store)
+    .post('/store', upload.single('imagen'),productAddValidator, store)
     .delete("/eliminar/:id", (req,res) =>{
 
             const {id} = req.params;
