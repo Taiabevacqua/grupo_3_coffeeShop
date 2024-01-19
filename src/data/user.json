@@ -4,26 +4,29 @@
          "Nombre": "Nathalia",
          "Apellido": "Bevacqua",
          "Email": "email@gmail.com",
-         "Contraseña": "admin",
+         "password": "admin",
          "Categoria": "admin",
-         "Imagen": "perfil"
+         "Imagen": "perfil",
+         "userImage":""
     },
     {
         "Id": 2,
          "Nombre": "Lautaro",
          "Apellido": "Garcia",
          "Email": "email@gmail.com",
-         "Contraseña": "admin",
+         "password": "admin",
          "Categoria": "Admin",
-         "Imagen": "perfil"
+         "Imagen": "perfil",
+         "userImage": ""
     },
     {
         "Id": 3,
          "Nombre": "Jairo",
          "Apellido": "Abarca",
          "Email": "email@gmail.com",
-         "Contraseña": "admin",
+         "password": "admin",
          "Categoria": "admin",
-         "Imagen": "perfil"
+         "Imagen": "perfil",
+         "userImage": ""
     }
 ]

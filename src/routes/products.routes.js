@@ -7,6 +7,7 @@ const { leerJSON, escribirJSON } = require("../data");
 const { existsSync, unlinkSync } = require('fs')
 
 const productsController = require('../controllers/productsController');
+const productAddValidatior = require('../../validations/product-add-validatior');
 
 
 const productos = leerJSON('products');
@@ -24,6 +25,7 @@ router
     .get('/todos', todos)
     .get('/search', search)
     .post('/store', upload.single('imagen'), store)
+    .post('/crear', upload.fields([{name:"imagen"},{name:"imagen"}]), productAddValidatior, create)
     .delete("/eliminar/:id", (req,res) =>{
 
             const {id} = req.params;
