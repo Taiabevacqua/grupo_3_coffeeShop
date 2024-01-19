@@ -4,6 +4,7 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const methodOverride = require('method-override');
+const session = require('express-session');
 
 const indexRouter = require('./routes/index.routes');
 const usersRouter = require('./routes/users.routes');
@@ -30,7 +31,15 @@ app.use(cookieParser());
 
 app.use(express.static(path.join(__dirname,'..', 'public')));
 
+  /* Soporte para métodos PUT, PATCH & DELETE */
 app.use(methodOverride('_method'))
+
+//* Configuracion de session */
+.use(session({
+  secret : 'Grano De Oro!!!'
+}))
+
+.use(transferLocals)
 
 /* rutas*/ 
 app.use('/', indexRouter);
