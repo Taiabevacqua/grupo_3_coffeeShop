@@ -1,32 +1,35 @@
 [
     {
         "Id": 1,
-         "Nombre": "Nathalia",
-         "Apellido": "Bevacqua",
-         "Email": "email@gmail.com",
+         "name": "Nathalia",
+         "surname": "Bevacqua",
+         "email": "email@gmail.com",
          "password": "admin",
-         "Categoria": "admin",
+         "userCategory": "administrador",
          "Imagen": "perfil",
+         "role": "admin",
          "userImage":""
     },
     {
         "Id": 2,
-         "Nombre": "Lautaro",
-         "Apellido": "Garcia",
-         "Email": "email@gmail.com",
+         "Name": "Lautaro",
+         "surname": "Garcia",
+         "email": "email@gmail.com",
          "password": "admin",
-         "Categoria": "Admin",
+         "userCategory": "comprar y vender",
          "Imagen": "perfil",
+         "role": "admin",
          "userImage": ""
     },
     {
         "Id": 3,
-         "Nombre": "Jairo",
-         "Apellido": "Abarca",
-         "Email": "email@gmail.com",
+         "name": "Jairo",
+         "surname": "Abarca",
+         "email": "email@gmail.com",
          "password": "admin",
-         "Categoria": "admin",
+         "userCategory": "solo comprar",
          "Imagen": "perfil",
+         "role": "admin",
          "userImage": ""
     }
 ]
