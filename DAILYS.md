@@ -25,3 +25,27 @@
 
 ### **Lunes 8-ene**
 -Pusimos en común avances y continuamos con algún error que estamos tratando e resolver
+
+**.................................................**
+
+# Dailys - Sprint 5 - Proyecto CAFEINATOPIA
+
+### **Viernes 12-ene**
+-Se bajaron incidencias al jira
+-Coordinamos trabajo y se acordaron incidencias
+
+### **Domingo 14-ene**
+-Si bien no nos reunimos, nos conectamos para poner en común avances y ver en qué estábamos trabados.
+Se acordó dar prioridad al sprint en curso para poder llegar con los tiempos.
+
+### **Martes 16-ene**
+-Pusimos en común avances
+
+### **Miércoles 17-ene**
+-Parte del equipo se reunió en sala pequeña en clase para poner en cmún y avanzar.
+
+### **Jueves 18-ene**
+-Se hace merge y se suben cambios
+
+### **Viernes 19-ene**
+-Se suben los últimos cambios
