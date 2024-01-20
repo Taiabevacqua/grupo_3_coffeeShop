@@ -10,6 +10,8 @@ const indexRouter = require('./routes/index.routes');
 const usersRouter = require('./routes/users.routes');
 const productsRouter = require('./routes/products.routes');
 const adminRouter = require('./routes/admin.routes');
+const transferLocals = require('./middlewares/transferLocals');
+const cookiesCheck = require('./middlewares/cookiesCheck');
 //const { log } = require('console');/
 
 
@@ -31,14 +33,17 @@ app.use(cookieParser());
 
 app.use(express.static(path.join(__dirname,'..', 'public')));
 
-  /* Soporte para métodos PUT, PATCH & DELETE */
+ /* Soporte para métodos PUT, PATCH & DELETE */
 app.use(methodOverride('_method'))
 
 //* Configuracion de session */
 .use(session({
-  secret : 'Grano De Oro!!!'
+  secret : 'GranoDeOro!',
+  resave: true,
+  saveUninitialized: true 
 }))
 
+.use(cookiesCheck)
 .use(transferLocals)
 
 /* rutas*/ 

@@ -6,6 +6,9 @@
          "email": "email@gmail.com",
          "password": "admin",
          "userCategory": "administrador",
+         "city": "",
+         "province" : "",
+         "address" :"",
          "Imagen": "perfil",
          "role": "admin",
          "userImage":""
@@ -16,7 +19,10 @@
          "surname": "Garcia",
          "email": "email@gmail.com",
          "password": "admin",
-         "userCategory": "comprar y vender",
+         "userCategory": true,
+         "city": "",
+         "province" : "",
+         "address" :"",
          "Imagen": "perfil",
          "role": "admin",
          "userImage": ""
@@ -27,7 +33,10 @@
          "surname": "Abarca",
          "email": "email@gmail.com",
          "password": "admin",
-         "userCategory": "solo comprar",
+         "userCategory": "0",
+         "city": "",
+         "province" : "",
+         "address" :"",
          "Imagen": "perfil",
          "role": "admin",
          "userImage": ""
