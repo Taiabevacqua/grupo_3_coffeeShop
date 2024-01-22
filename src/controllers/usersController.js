@@ -8,27 +8,40 @@ module.exports={
     },
     register: (req,res) =>{
         return res.render('users/register')
-    },processRegister : (req,res) => {
+    },
+    processRegister : (req,res) => {
+        
+
         const errors = validationResult(req);
-        const {name, surname, email, password} = req.body;
 
         if(errors.isEmpty()){
-
-            const users = leerJSON('users');
-            const newUser = new User(name, surname, email, password);
-            users.push(newUser);
-
-            escribirJSON(users, 'users')
-
-            return res.redirect('/usuarios/ingreso')
             
-
+            const {name, surname, email, password, userCategory} = req.body;
+        
+            const {userImage} = req.files;
+        
+            const newUser = new User(name, surname, email, password, userCategory, userImage);
+            const users = leerJSON('users');
+        
+            users.push(newUser);
+        
+            escribirJSON(users, 'users')
+    
+            return res.redirect('/')
+        
         }else{
-            return res.render('users/register',{
-                old : req.body,
-                errors : errors.mapped()
-            })
+
+        if(req.files.userImage){
+            fs.existsSync(`./public/img/users/${req.files.userImage[0].filename}`) &&
+            fs.unlinkSync(`./public/img/users/${req.files.userImage[0].filename}`)
         }
+
+
+        return res.render('users/register', {
+            old : req.body,
+            errors : errors.mapped()
+        })
+    }
 
     },
     logout : (req,res) => {
@@ -50,6 +63,9 @@ module.exports={
                 name,
                 role
             }
+            remember && res.cookie('GranoDeOro_user', req.session.userLogin, {
+                maxAge : 1000 * 60 * 2
+            })
 
             return res.redirect('/')
 
@@ -60,7 +76,14 @@ module.exports={
         }
     },
     profile : (req,res) => {
-        return res.render('users/profile')
-    },
+        const {id} = req.session.userLogin;
+
+    const users = leerJSON('users');
+
+    const user = users.find(user => user.id == id)
+
+    return res.render('users/profile', {
+        ...user
+    })},
    
 }
