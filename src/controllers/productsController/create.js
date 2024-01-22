@@ -13,7 +13,7 @@ module.exports = (req,res) => {
         
         const {name, price, category, description, offer, discount} = req.body;
         
-        const {mainImage, images}= req.files;
+        const {imagen, imagen2}= req.files;
         
         const newProduct = new Product(name, price, imagen, imagen2, category, description, offer, discount);
         const products = leerJSON('products');
