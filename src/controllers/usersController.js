@@ -1,9 +1,66 @@
+const { validationResult } = require("express-validator");
+const User = require("../data/User");
+const { leerJSON, escribirJSON } = require("../data");
+
 module.exports={
     login: (req,res) =>{
         return res.render('users/login')
     },
     register: (req,res) =>{
         return res.render('users/register')
+    },processRegister : (req,res) => {
+        const errors = validationResult(req);
+        const {name, surname, email, password} = req.body;
+
+        if(errors.isEmpty()){
+
+            const users = leerJSON('users');
+            const newUser = new User(name, surname, email, password);
+            users.push(newUser);
+
+            escribirJSON(users, 'users')
+
+            return res.redirect('/usuarios/ingreso')
+            
+
+        }else{
+            return res.render('users/register',{
+                old : req.body,
+                errors : errors.mapped()
+            })
+        }
+
+    },
+    logout : (req,res) => {
+        
+        req.session.destroy();
+
+        return res.redirect('/')
+    },
+    processLogin : (req,res) => {
+        const errors = validationResult(req);
+        const {email} = req.body;
+
+        if(errors.isEmpty()){
+
+        const {id, name, role} = leerJSON('users').find(user => user.email === email)
+
+            req.session.userLogin = {
+                id,
+                name,
+                role
+            }
+
+            return res.redirect('/')
+
+        }else {
+            return res.render('users/login',{
+                errors : errors.mapped()
+            })
+        }
+    },
+    profile : (req,res) => {
+        return res.render('users/profile')
     },
    
 }
