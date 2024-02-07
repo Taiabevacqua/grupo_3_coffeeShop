@@ -1,113 +1,115 @@
 <!DOCTYPE html>
 <html lang="es">
 
-  <head>
-    <%- include('../partials/scritps') %>
-        <%- include('../partials/head',{
-          title : "agregar-articulos" 
-        }) %>
-        <link rel="icon" type="image/x-icon" href="img/fondo-accesorios-cafe.PNG" />
-        <title>Cafeinatopia - Agregar Productos</title>
-  </head>
-  <body class="dashboard-body">
-    <header>
-        <%- include('../partials/header-admin') %>
-    </header>
-    <main class="create-form">
-      <section class="row my-2">
-          <div class="col-10 col-md-9 mx-auto">
-              <div class="card">
-                  <div class="card-header d-flex justify-content-between">
-                      <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                          <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="/admin/dashboard" class="text-primary">Home Dashboard</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Agregar Productos</li>
-                          </ol>
-                        </nav>
-                  </div>
-                  <div class="card-body">
-                      <form action="/products/store" method="post" class="row d-flex justify-content-center align-items-center" enctype="multipart/form-data">
-                            <h3>Agregar Articulos</h3>
-                            <hr>
-                            <div class="col-12 col-md-4 mb-3">
-                                <div class="form-floating ">
-                                    <input name="name" type="text" class="form-control" id="name" >
-                                    <label for="name">Nombre del articulo</label>
-                                  </div>
-                            </div>
-                            <div class="col-8 col-md-3 mb-3">
-                              <input name="imagen" type="file" class="form-control" id="imagen" hidden>
-                              <label class="btn btn-lg btn-outline-dark w-80" for="imagen">Imagen nº 1</label>
-                          </div>
-                          <div class="col-10 col-md-3 mb-3">
-                            <input  name="imagen" type="file" class="form-control" id="imagen" hidden multiple>
-                            <label class="btn btn-lg btn-outline-dark w-80" for="imagen">Imagen nº2</label>
-                          </div>
-                            <div class="col-12 col-md-4 mb-3">
-                              <div class="form-floating">
-                                  <select name="categoria" class="form-select" id="categoria" aria-label="Floating label select example">
-                                    <option value="" selected hidden></option>
-                                    <option value="cafeteras">Cafeteras</option>
-                                    <option value="Capsulas">Capsulas</option>
-                                    <option value="Cafeengrano">Café en Grano</option>
-                                    <option value = "Los mas buscados"> Los mas Buscados</option>
-                                    <option value = "Ofertas"> Ofertas</option>
-                                  </select>
-                                  <label for="categoria">Categoría</label>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-4 mb-3">
-                              <div class="form-floating">
-                                  <input name="precio" type="number" class="form-control" id="precio">
-                                  <label for="precio">Precio del producto</label>
-                              </div>
-                            </div>
-                          <div class="col-12 col-md-4 mb-3">
-                            <div class="form-floating">
-                                <input name="stock" type="number" class="form-control" id="stock">
-                                <label for="stock">Cantidad en stock</label>
-                            </div>
-                          </div>
-                              <div class="col-12 col-md-4 mb-3">
-                                <div class="form-floating">
-                                    <select name="sabores" class="form-select" id="sabores" aria-label="Floating label select example">
-                                        <option value="" selected hidden></option>
-                                        <option value="Crema">Crema</option>
-                                        <option value="Chocolate">Chocolate</option>
-                                        <option value="Espreso">espreso</option>
-                                        <option value="Molido">Molido</option>
-                                        <option value="Leche">Leche</option>
-                                        <option value="Grano">Grano</option>
-                                        <option value="Americano">Americano</option>
-                                        <!-- Agrega más opciones si es necesario -->
-                                    </select>
-                                    <label for="sabores">Sabores</label>
-                                </div>
-                              </div>
-                            <div class="col-12 col-md-4 mb-3">
-                              <div class="form-floating ">
-                                  <input name="descuento" type="number" class="form-control" id="descuento" >
-                                  <label  for="descuento">Descuento -%</label>
-                              </div>
-                            </div>
-                      
-                          
-                          <div class="col-10 mb-3">
-                              <div class="form-floating">
-                                  <textarea name="descripcion" class="form-control" id="descripcion" style="height: 100px;"></textarea>
-                                  <label for="descripcion">Descripción del producto...</label>
-                                </div>
-                          </div>
-                        
-                          <div class="col-7 d-flex justify-content-center">
-                              <button class="btn btn-lg btn-dark">Agregar Producto</button>
-                          </div>
-                      </form>
+<head>
+  <%- include('../partials/scritps') %>
+    <%- include('../partials/head',{ title : "agregar-articulos" }) %>
+      <link rel="icon" type="image/x-icon" href="img/fondo-accesorios-cafe.PNG" />
+      <title>Cafeinatopia - Agregar Productos</title>
+</head>
 
-                  </div>
-              </div>
+<body class="dashboard-body">
+  <header>
+    <%- include('../partials/header-admin') %>
+  </header>
+  <main class="create-form">
+    <section class="row my-2">
+      <div class="col-10 col-md-9 mx-auto">
+        <div class="card">
+          <div class="card-header d-flex justify-content-between">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/admin/dashboard" class="text-primary">Home Dashboard</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Agregar Productos</li>
+              </ol>
+            </nav>
           </div>
-      </section>
-    </main>
-  </body>
+          <div class="card-body">
+            <form action="/products/store" method="POST" class="row d-flex justify-content-center align-items-center"
+              enctype="multipart/form-data">
+              <h3>Agregar Articulos</h3>
+              <hr>
+              <div class="col-12 col-md-4 mb-3">
+                <div class="form-floating ">
+                  <input name="name" type="text" class="form-control" id="name">
+                  <label for="name">Nombre del articulo</label>
+                </div>
+              </div>
+              <div class="col-8 col-md-3 mb-3">
+                <input name="imagen" type="file" class="form-control" id="imagen" hidden>
+                <label class="btn btn-lg btn-outline-dark w-80" for="imagen">Imagen nº 1</label>
+              </div>
+              <div class="col-10 col-md-3 mb-3">
+                <input name="imagen" type="file" class="form-control" id="imagen" hidden multiple>
+                <label class="btn btn-lg btn-outline-dark w-80" for="imagen">Imagen nº2</label>
+              </div>
+              <div class="col-12 col-md-4 mb-3">
+                <div class="form-floating">
+                  <select name="categoria" class="form-select" id="categoria"
+                    aria-label="Floating label select example">
+                    <option value="" selected hidden></option>
+                    <option value="cafeteras">Cafeteras</option>
+                    <option value="Capsulas">Capsulas</option>
+                    <option value="Cafeengrano">Café en Grano</option>
+                    <option value="Los mas buscados"> Los mas Buscados</option>
+                    <option value="Ofertas"> Ofertas</option>
+                  </select>
+                  <label for="categoria">Categoría</label>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 mb-3">
+                <div class="form-floating">
+                  <input name="precio" type="number" class="form-control" id="precio">
+                  <label for="precio">Precio del producto</label>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 mb-3">
+                <div class="form-floating">
+                  <input name="stock" type="number" class="form-control" id="stock">
+                  <label for="stock">Cantidad en stock</label>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 mb-3">
+                <div class="form-floating">
+                  <select name="sabores" class="form-select" id="sabores" aria-label="Floating label select example">
+                    <option value="" selected hidden></option>
+                    <option value="Crema">Crema</option>
+                    <option value="Chocolate">Chocolate</option>
+                    <option value="Espreso">espreso</option>
+                    <option value="Molido">Molido</option>
+                    <option value="Leche">Leche</option>
+                    <option value="Grano">Grano</option>
+                    <option value="Americano">Americano</option>
+                    <!-- Agrega más opciones si es necesario -->
+                  </select>
+                  <label for="sabores">Sabores</label>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 mb-3">
+                <div class="form-floating ">
+                  <input name="descuento" type="number" class="form-control" id="descuento">
+                  <label for="descuento">Descuento -%</label>
+                </div>
+              </div>
+
+
+              <div class="col-10 mb-3">
+                <div class="form-floating">
+                  <textarea name="descripcion" class="form-control" id="descripcion" style="height: 100px;"></textarea>
+                  <label for="descripcion">Descripción del producto...</label>
+                </div>
+              </div>
+
+              <div class="col-7 d-flex justify-content-center">
+                <button class="btn btn-lg btn-dark">Agregar Producto</button>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>

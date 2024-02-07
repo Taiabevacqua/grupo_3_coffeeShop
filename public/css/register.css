@@ -1,4 +1,4 @@
-body {
+/*body {
     font-family: "Inter", sans-serif;
     margin: 0px;
     font-size: 24px;
@@ -29,19 +29,7 @@ body {
   a {
     text-decoration: none;
   }
-  /*button {
-    margin-top: 10px;
-    padding: 10px;
-    width: 268px;
-    height: 57px;
-    border-radius: 5px;
-    border: 1px solid #e99203;
-    background: #e99203;
-    cursor: pointer;
-    font-size: 18px;
-    color: #991d1f;
-    font-weight: 700;
-  }*/
+  
   .container {
     display: flex;
     flex-direction: row;
@@ -183,9 +171,11 @@ body {
   .containerFrase {
     width: 590px;
     height: 88px;
-  }
+  }*/
+
+
   /* CELULAR */
-  @media screen and (max-width: 480px) {
+  /*@media screen and (max-width: 480px) {
     body,
     p,
     label,
@@ -195,10 +185,7 @@ body {
     .TextCaptcha {
       font-size: 10px;
     }
-    /*button {
-      width: 150px;
-      height: 40px;
-    }*/
+   
     input {
       width: 250px;
       height: 20px;
@@ -282,10 +269,12 @@ body {
     .input-Email {
       margin-left: 18px;
     }
-  }
+  }*/
+
+
   /* Tablet */
   
-  @media screen and (min-width: 481px) and (max-width: 1023px) {
+  /*@media screen and (min-width: 481px) and (max-width: 1023px) {
     .container {
       flex-direction: column;
       align-items: center;
@@ -338,7 +327,5 @@ body {
       align-items: center;
       justify-content: center;
     }
-  }
-  /* desktop */
-  /*@media screen and (min-width: 1024px) {
-  } 
+  }*/
+ 

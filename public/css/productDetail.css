@@ -39,7 +39,7 @@ img {
     margin-left: 2%;
 }
 
-.product_conteiner-arti{
+.product_container-arti{
     color: var(--colorrojo);
     margin-top: 10px;
     font-family: 'Inter';
@@ -93,9 +93,9 @@ img {
     font-family: Inter;
     color: var(--colorrojo);
   }
-  h4{
+  /*h4{
     color: var(--colorrojo);
-  }
+  }*/
   .product__container-mas{
     margin-top: 5%;
     margin-left: 60%;
