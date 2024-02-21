@@ -28,10 +28,20 @@ module.exports = {
         type: Sequelize.DATE
       },
       rolesId: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references : {
+          model : {
+            tableName: "roles"
+          }
+        }
       },
       addressId: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references : {
+          model : {
+            tableName: "addresses"
+          }
+        }
       },
       createdAt: {
         allowNull: false,

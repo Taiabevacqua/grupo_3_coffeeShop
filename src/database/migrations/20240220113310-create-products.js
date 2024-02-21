@@ -25,13 +25,28 @@ module.exports = {
         type: Sequelize.STRING
       },
       categoryId: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references : {
+          model : {
+            tableName: "Categories"
+          }
+        }
       },
       originId: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references : {
+          model : {
+            tableName: "origins"
+          }
+        }
       },
       flavorId: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references : {
+          model : {
+            tableName: "Flavors"
+          }
+        }
       },
       createdAt: {
         allowNull: false,
