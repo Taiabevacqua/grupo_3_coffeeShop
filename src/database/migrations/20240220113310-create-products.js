@@ -10,7 +10,8 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       name: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        allowNull : false
       },
       price: {
         type: Sequelize.INTEGER
@@ -19,7 +20,8 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       description: {
-        type: Sequelize.TEXT
+        type: Sequelize.TEXT,
+        allowNull : false
       },
       image: {
         type: Sequelize.STRING
