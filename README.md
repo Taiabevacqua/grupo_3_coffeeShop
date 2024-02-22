@@ -21,7 +21,7 @@
 
 **Lautaro Garcia**, tengo 27 años, vivo en Ituzaingo, Provincia de Buenos Aires. Actualmente me encuentro trabajando en la industria textil y cursando la carrera de desarrollo full stack. Me apasiona aprender nuevas herramientas de la tecnologia y como esta puede ser usada para impactar en la vida de las personas.
 
-**Marcelo Santander**, tengo 53 años y vivo en Remedios de Escalada. Prov. de Buenos Aires. Soy cocinero y desde hace ya un tiempo sentí la necesidad de realizar un cambio en mi vida. La tecnología siempre me llamó la atención y creo que la transformación digital nos terminó de atravezar a todos en los últimos tiempos, por lo que decidí apostar en el rubro. Inicié la carrera de de Desarrollo Full Stack atraido para generar mi independencia laboral, la posibilidad de trabajar de manera remota y sobre todo por la posibilidad de diseñar. 
+**Marcelo Santander**, tengo 53 años y vivo en Remedios de Escalada. Prov. de Buenos Aires. Soy cocinero y desde hace ya un tiempo sentí la necesidad de realizar un cambio en mi vida. La tecnología siempre me llamó la atención y creo que la transformación digital nos terminó de atravesar a todos en los últimos tiempos, por lo que decidí apostar en el rubro. Inicié la carrera de Desarrollo Full Stack atraido por la posibilidad de generar mi independencia laboral, la opción de trabajar de manera remota y sobre todo por la posibilidad de dar soluciones a través del desarrollo web. 
 
 ---
 
