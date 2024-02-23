@@ -2,7 +2,7 @@
 
 >En el Sprint 4 de Cafeinatopia, afrontamos variados desafíos que requirieron poner a prueba nuestra habilidad para adaptarnos y colaborar en equipo.. A pesar de empezar con una estructura organizada, nos vimos afectados por una baja en el equipo, lo que nos llevó a ejecutar con un equipo  y reacomodarnos. A lo largo del sprint, mantuvimos nuestra fortaleza en la comunicación, pero nos enfrentamos a contratiempos externos, como la pérdida de energía eléctrica e internet debido a una tormenta. Además, surgieron problemas durante el proceso de merge, causados por la utilización de clases genéricas que afectaron la cohesión del código.
 
-### **1. Comenzar a hacer:**
+### **1. Continuar haciendo:**
 1. **Mantener Comunicación Constante:** Continuar con la sólida comunicación que ha sido la fortaleza del equipo, asegurándonos de compartir actualizaciones y desafíos de manera proactiva.
 
 2. **Planificación Inicial:** Seguir empezando cada sprint con una planificación organizada para mantener la estructura y el enfoque desde el principio.

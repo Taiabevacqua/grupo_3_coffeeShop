@@ -49,3 +49,29 @@ Se acordó dar prioridad al sprint en curso para poder llegar con los tiempos.
 
 ### **Viernes 19-ene**
 -Se suben los últimos cambios
+
+**.................................................**
+
+# Dailys - Sprint 6 - Proyecto CAFEINATOPIA
+
+### **Viernes 9-feb**
+-Hablamos de los pendientes de anteriores sprints y de la organización de cara al inicio del sprint 6. 
+Se acordó la distribución de las incidencias. Y se comenzó a hablar de las distintas tablas para la base de datos.
+
+### **Lunes 12-feb**
+-Se compartió una planilla con las distintas tablas y columnas de cada una. Una vez obtenido el resultado de la puesta en común, los miembros encargados de las primeras incidencias comenzaron a trabajar en ellas.
+
+### **Miércoles 14-feb**
+-Nos encontramos con la novedad de la incorporación de un nuevo integrante, por lo que tuvimos que volver a repartir incidencias, ahora entre 4 integrantes.
+Se entrega DER a docente para su aprobación.
+
+### Como por motivos laborales no pudimos reunirnos, se mantuvo una frecuente interacción por el grupo de WhatsApp para estar al tanto del avance del equipo.
+
+### **Lunes 19-feb**
+-Expusimos brevemente avances del equipo. Tuvimos que recurrir al docente para resolver algunas dudas.
+
+### **Miércoles 21-feb**
+-Breve reunión, expusimos el avance de la migración de las base de datos y las dificultades que estábamos teniendo. Recurrimos al docente para resolver algunas dudas.
+
+### **Jueves 22-feb**
+-Se cierran incidencias de migración de base de datos y el resto del equipo actualiza sus proyectos. Iniciamos con la refactorización 
