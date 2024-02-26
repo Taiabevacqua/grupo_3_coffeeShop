@@ -7,7 +7,7 @@ const { leerJSON, escribirJSON } = require("../data");
 const { existsSync, unlinkSync } = require('fs')
 
 const productsController = require('../controllers/productsController');
-const productAddValidatior = require('../../validations/product-add-validatior');
+const productAddValidatior = require('../validations/product-add-validator');
 
 
 const productos = leerJSON('products');

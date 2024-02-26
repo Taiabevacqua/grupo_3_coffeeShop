@@ -1,7 +1,7 @@
 const express = require('express');
 const { login, register,processRegister,processLogin, logout, profile } = require('../controllers/usersController');
-const userRegisterValidator = require('../../validations/user-register-validatior');
-const userLoginValidator = require('../../validations/user-login-validatior');
+const userRegisterValidator = require('../validations/user-register-validator');
+const userLoginValidator = require('../validations/user-login-validator');
 const checkUserLogin = require('../middlewares/checkUserLogin');
 const userUpload = require('../middlewares/userUpload');
 const router = express.Router();

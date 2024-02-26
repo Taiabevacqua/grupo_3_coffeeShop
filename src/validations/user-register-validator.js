@@ -1,5 +1,5 @@
 const { check, body } = require("express-validator");
-const { leerJSON } = require("../src/data/user.json");
+const { leerJSON } = require("../data/user.json");
 
 module.exports = [
     check('name')
