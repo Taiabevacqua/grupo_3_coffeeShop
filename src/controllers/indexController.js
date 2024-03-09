@@ -1,14 +1,13 @@
-const {leerJSON} = require('../data')
-
 const db = require('../database/models')
 
 
 module.exports = {
+
     index: (req,res) =>{
+
         db.Products.findAll({
             include : [
                 'category',
-                
                 ]
         })
     
@@ -21,26 +20,12 @@ module.exports = {
        },
 
 
-      
-        
-    index: (req,res) =>{
-                db.Users.findAll({})
-              
-                  .then(users =>{
-                   return res.render('index',{
-                        users
-                   })
-                })
-                .catch(error => console.log(error))
-        },
-    
-         cart : (req,res) => {
+     cart : (req,res) => {
         return res.render('productCart')
     },
 
 
 
-    
     admin : (req,res) => {
         db.Products.findAll()
           
@@ -48,12 +33,14 @@ module.exports = {
             
             return res.render('dashboard',{
                 products
-
-        })
+            })
         
-      })
-        .catch(error => console.log(error))
+        })
+           .catch(error => console.log(error))
     },
+
+
+
     searchAdmin : (req,res) => {
         const {keyword} = req.query
         const products = leerJSON('products');
@@ -64,6 +51,8 @@ module.exports = {
             products : result,
             keyword
         })
-    }
+
+        .catch(error => console.log(error))
+    },
 }
-    
+  
