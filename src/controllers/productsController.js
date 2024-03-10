@@ -18,31 +18,16 @@ function pushProducts(parametro) {
 
 module.exports = {
     add: (req, res) => {
-        return res.render('products/product-add')
-        let lastId = 1;
-        products.forEach(product => {
-            if (product.id > lastId) {
-                lastId = product.id
-            }
-        })
-
-        let { name, price, descuento, category, description, } = req.body
-
-        let newProduct = {
-            id: lastId + 1,
-            name,
-            price,
-            descuento,
-            category,
-            description,
-            imagen: req.file ? req.file.filename : "default-image.png"
-        }
-
-        products.push(newProduct)
-
-        writeJson(products)
-
-        res.redirect('/dashboard')
+        db.Category.findAll({
+            order: ['name']
+    })
+    .then(categories => {
+            return res.render("products/product-add",{
+            categories
+            });
+    })
+    .catch(error => console.log(error))
+    
     },
     detail: (req, res) => {
         return res.render('products/productDetail')

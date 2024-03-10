@@ -1,5 +1,5 @@
-const {leerJSON} = require('../data')
-const products = leerJSON('products')
+const { Op } = require("sequelize")
+const db = require('../database/models')
 
 module.exports={
     index: (req,res) =>{
@@ -12,25 +12,41 @@ module.exports={
     cart : (req,res) => {
         return res.render('productCart')
     },
-    admin : (req,res) => {
-        const products = leerJSON('products');
-        
-        return res.render('dashboard',{
-            products
-        })
-
+    admin : async(req,res) => {
+        try {
+            const products = await db.Product.findAll({
+                include: ['category']
+            });
+            return res.render('dashboard', {
+                products,
+                
+            });
+        } catch (error) {
+            console.error(error);
+        }
+    
 
     },
-    searchAdmin : (req,res) => {
-        const {keyword} = req.query
-        const products = leerJSON('products');
-        const result = products.filter((product) => {
-            return product.name.toLowerCase().includes(keyword.toLowerCase()) || product.category.toLowerCase().includes(keyword.toLowerCase())
+    searchAdmin :  (req,res) => {
+
+        const {keyword} = req.query;
+        db.Product.findAll({
+            where: {
+                [Op.or]: [
+                    { name: { [Op.substring]: `%${keyword}%` } },
+                    {
+                        '$category.name$': { [Op.substring]: `%${keyword}%` }
+                    }
+                ]
+            },
+            include: ['category']
         })
-        return res.render('dashboard', {
-            products : result,
-            keyword
-        })
+            .then(result => {
+                return res.render('dashboard', {
+                    products : result,
+                    keyword
+                })
+            })
+            .catch(error => console.log(error))
     }
 }
-    
