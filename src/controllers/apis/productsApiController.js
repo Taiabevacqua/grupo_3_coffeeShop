@@ -28,7 +28,7 @@ const getAllProducts = async(req,res) => {
     } catch (error) {
         return res.status(error.status|| 500).json({
             ok: false,
-            msg: error.message || 'Upss, rompiste todito, ;('
+            msg: error.message || 'Upss, hiciste desastre, :('
         })
     }
 }
@@ -78,5 +78,5 @@ const getOneProduct = async (req,res) => {
 
 module.exports= {
     getAllProducts,
-    getOneProduct
+    getOneProduct,
 }
