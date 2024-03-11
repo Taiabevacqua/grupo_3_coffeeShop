@@ -5,10 +5,14 @@ const path = require('path');
 
 const productsFilePath = path.join(__dirname, '../data/products.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+const { validationResult } = require("express-validator");
 
 const writeJson = (database) => {
     fs.writeFileSync(path.join(__dirname, '../data/products.json'), JSON.stringify(database), "utf-8")
 }
+
+const db = require("../database/models")
+
 
 const Product = require("../data/Product");
 
@@ -18,31 +22,17 @@ function pushProducts(parametro) {
 
 module.exports = {
     add: (req, res) => {
-        return res.render('products/product-add')
-        let lastId = 1;
-        products.forEach(product => {
-            if (product.id > lastId) {
-                lastId = product.id
-            }
+        
+        db.Category.findAll({
+            order: ['name']
         })
-
-        let { name, price, descuento, category, description, } = req.body
-
-        let newProduct = {
-            id: lastId + 1,
-            name,
-            price,
-            descuento,
-            category,
-            description,
-            imagen: req.file ? req.file.filename : "default-image.png"
-        }
-
-        products.push(newProduct)
-
-        writeJson(products)
-
-        res.redirect('/dashboard')
+        Promise.all([category])    
+            .then(([category]) =>{
+                return res.render('products/product-add',{
+                    category
+                })
+            .catch(error=> console.log(error))
+            })
     },
     detail: (req, res) => {
         return res.render('products/productDetail')
@@ -63,33 +53,90 @@ module.exports = {
         })
     },
 
-    edit: (req, res) => {
+ edit: (req, res) => {
+
+        const {id} = req.params;
 
 
-        const product = products.find(product => product.id === +req.params.id)
-        res.render('products/products-edit', {
-            product
-
+        const product = db.Products.findByPk(id, {
+            include: []
         })
+    
+   
+
+    const categories = db.Category.findAll({
+        order: [['name']]
+    })
+        Promise.all([product, categories, ])
+        .then(([product, categories]) => {
+            return res.render('products/products-edit',{
+                ...product.dataValues,
+                categories,
+                
+            })
+        })
+        .catch(error => console.log(error))
     },
 
     update: (req, res) => {
 
-        return console.log(req.body);
-    },
+        const {nombre,precio,description,categoryId, flavorId} = req.body;
+
+     const { id } = req.params;
+        const errors = validationResult(req);
+            
+        if (errors.isEmpty()) {
+            db.Products.findByPk(id,{
+            }).then(() => {
+              db.Products.update(
+                {
+                  name: nombre.trim(),
+                  price: precio,
+                  description,
+                  categoryId,
+                  flavorId,
+                  
+                },
+                {
+                  where: {
+                    id,
+                  },
+                }
+            )
+            }).then(() => {
+                        return res.redirect("/dashboard");
+                      }     
+              
+               )
+                    .catch(error => console.log(error));
+      
+        }
+        
+
+          const product = db.Products.findByPk(id, {
+              
+          })
+          const categories = db.Category.findAll({
+              order: [['name']]
+          })
+              Promise.all([product, categories])
+              .then(([product, categories]) => {
+      
+                  return res.render('products/products-edit',{
+                      ...product.dataValues,
+                      categories,
+                      errors : errors.mapped()
+                  })
+              })
+              .catch(error => console.log(error))
+      
+        },
+    
 
 
+create: (req, res) => {
 
-    create: (req, res) => {
-
-        const { name, description, price, descuento, category, imagen, stock, sabor } = req.body
-
-        const newProduct = new Product(name, description, price, descuento, category, imagen, stock, sabor)
-        const products = leerJSON('products')
-
-        products.push(newProduct)
-
-        escribirJSON(products, 'products')
+       
 
         return res.redirect('/dashboard')
 
