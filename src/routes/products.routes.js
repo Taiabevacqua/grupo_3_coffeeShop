@@ -1,6 +1,6 @@
 const express = require('express');
 const { detail, add, cafeteras, capsulas, cafeengrano, edit, create, store, update, todos, search } = require('../controllers/productsController');
-//const {remove} = require('../controllers/productsController');
+
 const router = express.Router();
 const upload = require('../middlewares/upload');
 const { leerJSON, escribirJSON } = require("../data");
@@ -19,8 +19,15 @@ router
     .get('/cafeteras', cafeteras )
     .get('/capsulas', capsulas )
     .get('/café en grano', cafeengrano )
-    .get('/editar-articulo/:id', productsController.edit)
-    .put('/update/:id',update)
+    .get('/editar-articulo/:id', edit)
+    .put('/update/:id',upload.fields([
+        {
+          name : 'image1'
+        },
+        {
+          name : 'image2'
+        }
+        ]),update)
     .get('/agregar', productsController.create)
     .get('/todos', todos)
     .get('/search', search)
