@@ -1,6 +1,6 @@
 const { validationResult } = require("express-validator");
 const User = require("../data/User");
-const { leerJSON, escribirJSON } = require("../data");
+//const { leerJSON, escribirJSON } = require("../data");
 const { hashSync } = require("bcryptjs");
 
 module.exports={
