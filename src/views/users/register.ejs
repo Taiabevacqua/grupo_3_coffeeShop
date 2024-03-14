@@ -6,13 +6,14 @@
     <title>Cafeinatopia | Register</title>
     <link rel="stylesheet" href="/css/styles.css">
  <script src="https://kit.fontawesome.com/c65f2f1cc8.js" crossorigin="anonymous"></script>
- <a target="_blank" href="https://icons8.com/icon/62765/logotipo-mastercard">Logotipo Mastercard</a> icono de <a target="_blank" href="https://icons8.com">Icons8</a>
+<!--<a target="_blank" href="https://icons8.com/icon/62765/logotipo-mastercard">Logotipo Mastercard</a> icono de <a target="_blank" href="https://icons8.com">Icons8</a>-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
       
 </head>
 <body>
+  <div>
     <header class="header">
         <section class="header__datos">
            
@@ -40,7 +41,7 @@
            
            <nav class="header__nav">
   
-              <ul>
+                  <ul>
                       <li><a href="/cafe-molido">Café Molido</a></li>
                       <li><a href="/capsulas">Cápsulas</a></li>
                       <li><a href="/cafeteras">Cafeteras</a></li>
@@ -73,21 +74,25 @@
         <section class="header__env-mediosPago">
      
              <i id="truck" class="fa-solid fa-truck-fast"></i>
-             <h4 class="truck-h4">Envío seguro a todo el país</h4>
+             <h4 >Envío seguro a todo el país</h4>
            
              <i id="credit-card" class="fa-solid fa-credit-card"></i>
              <h4 class="credit-card-h4" >Todos los medios de pago</h4>       
                  
         </section>
   
-      </header>  
+      </header> 
+      
+      
+
         <div class="container">
           <div class="login-section">
-            <h2 class="ClientesRegistrados">CLIENTES REGISTRADOS</h2>
-            <p class="CorreoElectronico">
+          <h2 class="register_div_clientes_registrados">CLIENTES REGISTRADOS</h2>
+            <p class="register_div_correo_electronico">
               Si tenés una cuenta, inicia sesión con tu dirección de correo
               electrónico
             </p>
+          
             <form id="loginForm" class="formulario">
               <div class="input-group input-Email">
                 <label for="email">Nombre*</label>
@@ -99,19 +104,24 @@
                   placeholder="Ejemplo: juanperez@gmail.com"
                 />
               </div>
+
               <div class="contenedorCampoObligatorio">
                 <p class="CampoObligatorio">Este campo es obligatorio</p>
               </div>
+
               <div class="input-group">
                 <label for="password">Contraseña*</label>
                 <input class="inputBig" type="password" id="password" required />
               </div>
+
               <div class="contenedorCampoObligatorio">
                 <p class="CampoObligatorio">Este campo es obligatorio</p>
               </div>
+
               <div class="Campo2">
                 <a href="#" class="TextPassword">¿Olvidaste tu contraseña?</a>
               </div>
+
               <div class="CheckboxCaptchaContainer">
                 <div class="CheckboxContainer">
                   <input class="checkbox" type="checkbox" id="rememberMe" />
@@ -120,15 +130,9 @@
                 <div class="CaptchaContainer">
                   <input class="checkboxBig" type="checkbox" id="rememberMe" />
                   <div class="TextCaptchaContainer">
-                    <p class="TextCaptcha">i´am not a robot</p>
+                    <p class="TextCaptcha">No soy robot</p>
                   </div>
-                  <div class="CaptchaImageContainer">
-                    <img
-                      class="captcha"
-                      src="img/LogoRecaptcha.png"
-                      alt="30%"
-                    />
-                  </div>
+                  
                 </div>
               </div>
               <div class="botonesContainer">
@@ -156,10 +160,14 @@
               </div>
             </form>
           </div>
+
+
+
+
           <div class="register-section">
-            <h2>NUEVOS CLIENTES</h2>
+            <h2 class="register_div_nuevos_clientes">NUEVOS CLIENTES</h2>
             <div class="containerFrase">
-              <p class="ParrafoResponsive">
+              <p class="register_div_parrafo_responsive">
                 Crear una cuenta tiene muchos beneficios. Paga más rápido, puede
                 guardar más de una dirección, seguimiento de pedido y mucho más.
               </p>
@@ -168,6 +176,6 @@
           </div>
         </div> 
         
-        
+      </div>   
 </body>
 </html>
