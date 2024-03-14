@@ -15,15 +15,13 @@
 
 ## INTEGRANTES
 
-**Johana Uva Albarracin**, edad 29 años vivo en la ciudad de trenque lauquen y actualmente estoy estudiando programacion web full stak
-
-**René Chumacero**, tengo 37 años y vivo en la cuida de salta y actualmente estoy cursando la carrera de desarrollo full stack.
-
 **Jairo Abarca Caravaca**, tengo 34 años mi ocupación actual es de Personal de Salud, vivo en Hurlingham y actualmente estoy cursando la carrera de desarrollo full stack.
 
-**Natalia Bevacqua**, tengo 48 años y vivo en Remedios de Escalada, Prov, de Buenos Aires. Soy especialista en marketing digital y fundadora de April Comunicaciones,  agencia de Marketing Digital y ecommerce. Mi enfoque principal se centra en el ecommerce y la transformación digital. Además, tengo la responsabilidad de coordinar el área de tutores en el eCommerce Institute, donde contribuyo a que otros profesionales aprendan y crezcan en este campo. Me apasiona la innovación y siempre me mantengo al tanto de las últimas tendencias en marketing digital.
+**Natalia Bevacqua**, tengo 48 años y vivo en Remedios de Escalada, Prov. de Buenos Aires. Soy especialista en marketing digital y fundadora de April Comunicaciones,  agencia de Marketing Digital y ecommerce. Mi enfoque principal se centra en el ecommerce y la transformación digital. Además, tengo la responsabilidad de coordinar el área de tutores en el eCommerce Institute, donde contribuyo a que otros profesionales aprendan y crezcan en este campo. Me apasiona la innovación y siempre me mantengo al tanto de las últimas tendencias en marketing digital.
 
 **Lautaro Garcia**, tengo 27 años, vivo en Ituzaingo, Provincia de Buenos Aires. Actualmente me encuentro trabajando en la industria textil y cursando la carrera de desarrollo full stack. Me apasiona aprender nuevas herramientas de la tecnologia y como esta puede ser usada para impactar en la vida de las personas.
+
+**Marcelo Santander**, tengo 53 años y vivo en Remedios de Escalada. Prov. de Buenos Aires. Soy cocinero y desde hace ya un tiempo sentí la necesidad de realizar un cambio en mi vida. La tecnología siempre me llamó la atención y creo que la transformación digital nos terminó de atravesar a todos en los últimos tiempos, por lo que decidí apostar en el rubro. Inicié la carrera de Desarrollo Full Stack atraido por la posibilidad de generar mi independencia laboral, la opción de trabajar de manera remota y sobre todo por la posibilidad de dar soluciones a través del desarrollo web. 
 
 ---
 
