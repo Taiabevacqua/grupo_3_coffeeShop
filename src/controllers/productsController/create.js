@@ -1,13 +1,17 @@
+
 const db = require('../../database/models')
+
 const fs = require('fs')
 const {validationResult} = require('express-validator');
 
+
+const Product = require("../../data/Product");
 
 
 module.exports = (req,res) => {
     const errors = validationResult(req);
 
-    const {name, description, price, discount, offer, categoryId } = req.body;
+    const {name, description, price, discount, offer, category, flavors } = req.body;
     const mainImage = req.files.mainImage;
     const images = req.files.images;
 
@@ -17,10 +21,13 @@ module.exports = (req,res) => {
             name: name.trim(),
             price,
             description : description.trim(),
-            offer : +offer,
-            discount,
-            mainImage : mainImage ? mainImage[0].filename : null,
-            categoryId
+           // offer : +offer,
+            //discount,
+            category,
+            flavors,
+            mainImage : req.file ? req.file.filename : null,
+            
+
         })
         .then(newProduct => {
             
@@ -37,7 +44,7 @@ module.exports = (req,res) => {
                     validate : true
                 }).then(result => {
                     console.log(result);
-                    return res.redirect("/admin")
+                
                 })
             }else{
                 return res.redirect("/admin")

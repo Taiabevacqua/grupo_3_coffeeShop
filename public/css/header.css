@@ -98,11 +98,12 @@
     font-size: 1.375rem;
 }
 
-.user {
+.user a {
     color: var(--colorrojo);
+
 }
 
-.cart {
+.cart a {
     color: var(--colorrojo);
 }
 

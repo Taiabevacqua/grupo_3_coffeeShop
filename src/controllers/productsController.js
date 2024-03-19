@@ -134,10 +134,30 @@ module.exports = {
 
 
 create: (req, res) => {
-
+    create: (req, res) => {
+        const { name, price, description, categoryId, flavors } = req.body;
+    
+        db.Product.create({
+            name,
+            price,
+            description,
+            categoryId,
+            flavors,
+            mainImage: req.file ? req.file.filename : null,
+        })
+        .then(newProduct => {
+            console.log(newProduct);
+            return res.redirect("/dashboard");
+        })
+        .catch(error => {
+            console.log(error);
+            return res.status(500).send("Error al crear el producto");
+        });
+    }
+    
        
 
-        return res.redirect('/dashboard')
+     
 
     },
     store: (req, res) => {
