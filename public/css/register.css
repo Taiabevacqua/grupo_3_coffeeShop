@@ -5,17 +5,21 @@
     color: #991d1f;
     font-weight: 400;
   }
-  
+.register-div-login-section {
+  color: #991d1f;
+
+} 
   
 .register_div_clientes_registrados {
-    font-weight: 400;
+    font-weight: 500;
     line-height: normal;
-    margin-left: 20px;
+    margin-left: 60px;
+    margin-top: 20px;
   }
 .register_div_correo_electronico {
-    font-size: 18px;
+    font-size: 20px;
    margin-bottom: 20px;
-   margin-left: 20px;
+   margin-left: 30px;
   }
 .label {
     margin-right: 5px;
@@ -58,15 +62,16 @@
     align-items: center;
     margin-top: 15px;
     flex-basis: 50%;
+   
   }
-.ClientesRegistrados {
+/*.ClientesRegistrados {
     margin-left: 10px;
   }
 .CorreoElectronico {
     margin-left: 10px;
     margin-bottom:10px ;
     font-size: 20px;
-  }
+  }*/
   
 .loginForm {
     display: flex;
@@ -80,7 +85,7 @@
     flex-wrap: wrap;
     margin-bottom: 10px;
     align-items: center;
-    margin-left: 20px;
+    margin-left: 30px;
   }
 .input-Email {
     margin-left: 29px;
@@ -115,7 +120,7 @@
     height: 50px;
     width: 180px;
     margin-top: 20px;
-    
+    margin-left: 40px;
   }
 .checkbox {
     width: 15px;
@@ -137,52 +142,60 @@
     background: #dfdfdf;
     margin-left: 100px;
   }
-.TextCaptcha {
+/*.TextCaptcha {
     justify-content: center;
     text-align: center;
     font-size: 16px;
     width: 100px;
     color: #000;
-  }
+  }*/
 
 .boton-personalizado1 {
     margin-top: 36px;
-    margin-left: 40px;
+    margin-left: 120px;
     margin-bottom: 30px;
   }
-.boton-personalizado2 {
+/*.boton-personalizado2 {
     margin-top: 36px;
     margin-bottom:30px;
     align-self: flex-start;
     margin-left: 20px;
-  }
+  }*/
 .social-btn {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 310px;
-    margin-left: 130px;
+    margin-left: 40px;
     background-color: #4385f5;
     color: #fff;
   }
 .social-btn-fb {
     background-color: #4268b4;
+    margin-bottom: 15px;
   }
-/*.socialImageContainer {
-    width: 40px;
+.socialImageContainer {
+   
     height: 40px;
-  }*/
-.socialImage {
-    width: 100%;
+  }
+.social-Image-Facebook {
+    width: 200%;
+    height: 100%;
+    object-fit: cover;
+  }
+.social-Image-Google {
+    width: 200%;
     height: 100%;
     object-fit: cover;
   }
 .register_div_nuevos_clientes {
-    font-weight: 400;
+    font-weight: 500;
     line-height: normal;
+    color: #991d1f;
   }
 .register_div_parrafo_responsive {
     font-size: 20px;
+    color: #991d1f;
   }
 
 .containerFrase {
@@ -236,7 +249,7 @@
   .TextPassword {
       text-align: center;
     }
-  .social-btn .loginForm .CheckboxContainer .CaptchaContainer {
+    .social-btn .loginForm .CheckboxContainer .CaptchaContainer {
       justify-content: center;
     }
   .CaptchaImageContainer {
@@ -254,8 +267,8 @@
       align-items: center;
     }
   .CheckboxContainer {
-      justify-content: center;
-      align-items: center;
+    align-items: center;
+      margin-left: 30px;
     }
   .botonesContainer {
       display: flex;
@@ -321,7 +334,7 @@
   .TextPassword {
       text-align: center;
     }
-  .social-btn .loginForm .CheckboxContainer .CaptchaContainer {
+    .social-btn .loginForm .CheckboxContainer .CaptchaContainer {
       justify-content: center;
     }
   .CaptchaImageContainer {
@@ -339,7 +352,7 @@
       justify-content: center;
       align-items: center;
     }
-  .botonesContainer {
+    .botonesContainer {
       display: flex;
       flex-direction: column;
       align-items: center;

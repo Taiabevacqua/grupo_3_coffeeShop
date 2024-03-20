@@ -13,9 +13,10 @@
       
 </head>
 <body>
-  <div>
+  <%- include('../partials/header-admin') %>
+  <!--<div>
     <header class="header">
-        <section class="header__datos">
+<section class="header__datos">
            
         <div class="header__datos__tel">
           <i class="fa-solid fa-phone"></i>
@@ -81,19 +82,19 @@
                  
         </section>
   
-      </header> 
+      </header>-->
       
       
 
         <div class="container">
-          <div class="login-section">
+          <div class="register-div-login-section">
           <h2 class="register_div_clientes_registrados">CLIENTES REGISTRADOS</h2>
             <p class="register_div_correo_electronico">
-              Si tenés una cuenta, inicia sesión con tu dirección de correo
+              Si tenés una cuenta,<br>inicia sesión con tu dirección de correo
               electrónico
             </p>
           
-            <form id="loginForm" class="formulario">
+            <form  class="formulario">
               <div class="input-group input-Email">
                 <label for="email">Nombre*</label>
                 <input
@@ -137,11 +138,13 @@
               </div>
               <div class="botonesContainer">
                 <button class="boton-personalizado1">INICIAR SESIÓN</button>
+
+                
                 <button class="social-btn social-btn-fb">
                   <div class="socialImageContainer">
                     <img
-                      class="socialImage"
-                      src="img/LogoFacebookLite.png"
+                      class="social-Image-Facebook"
+                      src="/img/LogoFacebookLite.png"
                       alt="Facebook logo"
                     />
                   </div>
@@ -150,8 +153,8 @@
                 <button class="social-btn">
                   <div class="socialImageContainer">
                     <img
-                      class="socialImage"
-                      src="img/GooglePhoto.jpg"
+                      class="social-Image-Google"
+                      src="/img/GooglePhoto.jpg"
                       alt="Google logo"
                     />
                   </div>
