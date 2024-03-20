@@ -19,7 +19,7 @@
                     
                 </div>
                 <div class="card-body">
-                    <form action="/products/agregar" class="row">
+                    <form action="/products/crear" method="POST" enctype="multipart/form-data">
                         <div class="col-12 col-md-6 mb-3">
                             <div class="form-floating">
  
@@ -42,7 +42,7 @@
                       <label for="floatingTextarea2">Descripción</label>
                     </div>
                   </div>
-                  <div class="col-6 col-md-3 mt-3">
+                  <div class="col-12 col-md-6 mt-3">
                     <div class="form-floating ">
                       <select name="category" class="form-select" id="category"
                         aria-label="Floating label select example">
@@ -54,21 +54,6 @@
                         <option value="5">Cafeteras</option>
                       </select>
                       <label for="category">Categoría</label>
-                    </div>
-                  </div>
-
-                  <div class="col-6 col-md-3 mt-3">
-                    <div class="form-floating ">
-                      <select name="flavors" class="form-select" id="flavors"
-                        aria-label="Floating label select example">
-                        <option value="" selected hidden></option>
-                        <option value="1">Crema-Crema</option>
-                        <option value="2">Marrón-Descafeinado</option>
-                        <option value="3">Rojo-Espresso</option>
-                        <option value="4">Negro-Intenso</option>
-                        <option value="5">Azul-Latte</option>
-                      </select>
-                      <label for="flavors">Sabores</label>
                     </div>
                   </div>
 

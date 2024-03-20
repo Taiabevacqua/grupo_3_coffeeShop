@@ -1,20 +1,17 @@
 const express = require('express');
 const { detail, add, cafeteras, capsulas, cafeengrano, edit, create, store, update, todos, search } = require('../controllers/productsController');
 
-
+const router = express.Router();
 const upload = require('../middlewares/upload');
-//const { leerJSON, escribirJSON } = require("../data");
+const { leerJSON, escribirJSON } = require("../data");
 const { existsSync, unlinkSync } = require('fs')
 
 const productsController = require('../controllers/productsController');
 const productAddValidatior = require('../validations/product-add-validator');
 
 
-//const productos = leerJSON('products');
+const productos = leerJSON('products');
 const fs = require('fs');
-
-const router = express.Router();
-
 
 router
     .get('/productDetail:id?', detail)
@@ -31,7 +28,7 @@ router
           name : 'image2'
         }
         ]),update)
-    .get('/agregar', productsController.create)
+    .get('/agregar', create)
     .get('/todos', todos)
     .get('/search', search)
     .post('/store', upload.single('imagen'), store)
@@ -40,7 +37,7 @@ router
 
             const {id} = req.params;
         
-            //const productos = leerJSON("products")
+            const productos = leerJSON("products")
         
             const {imagen} = productos.find(product => product.id == id);
         
@@ -48,7 +45,7 @@ router
         
             const productoFiltrado = productos.filter(producto => producto.id != id )
         
-            //escribirJSON(productoFiltrado, "products")
+            escribirJSON(productoFiltrado, "products")
         
             return res.redirect('/dashboard')
     })

@@ -23,16 +23,19 @@ function pushProducts(parametro) {
 module.exports = {
     add: (req, res) => {
         db.Category.findAll({
-            order: ['name']
-    })
-    .then(categories => {
-            return res.render("products/product-add",{
-            categories
-            });
-    })
-    .catch(error => console.log(error))
-    
+            order : ['name']
+        })
+            .then(categories => {
+                return res.render('products/product-add',{
+                    categories
+                })
+            })
+            .catch(error => console.log(error))
+      
+
     },
+
+
     detail: (req, res) => {
         return res.render('products/productDetail')
     },
@@ -134,30 +137,36 @@ module.exports = {
 
 
 create: (req, res) => {
-    create: (req, res) => {
-        const { name, price, description, categoryId, flavors } = req.body;
-    
-        db.Product.create({
+
+       
+
+    const errors = validationResult(req);   
+        
+    if(errors){
+        
+        const {name, description, price, categoryId,flavorId } = req.body;
+        
+        db.Products.create({
             name,
             price,
             description,
             categoryId,
-            flavors,
-            mainImage: req.file ? req.file.filename : null,
+            flavorId,
         })
-        .then(newProduct => {
-            console.log(newProduct);
-            return res.redirect("/dashboard");
-        })
-        .catch(error => {
-            console.log(error);
-            return res.status(500).send("Error al crear el producto");
-        });
-    }
-    
+        
+        db.Category.findAll({
+            order: [['name']]
+          })
+            .then(categories => {
+              return res.render("products/product-add", {
+                errors: errors.mapped(),
+                old: req.body,
+                categories,
+              });
+            })
+            .catch(error => console.log(error))
        
-
-     
+      }
 
     },
     store: (req, res) => {

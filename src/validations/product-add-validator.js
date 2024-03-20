@@ -2,9 +2,9 @@ const {check, body} = require('express-validator');
 
 module.exports= [ 
     check('name')
-        .notEmpty().withMessage('El nombre es obligatorio').bail(),
+        .notEmpty().withMessage('El nombre es obligatorio'),
     check('price')
-        .notEmpty().withMessage('El precio es obligatorio').bail(),
+        .notEmpty().withMessage('El precio es obligatorio'),
     check('category')
         .notEmpty().withMessage('Se require especificar una categoría').bail(),
     body('imagen')
