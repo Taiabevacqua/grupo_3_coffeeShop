@@ -36,7 +36,7 @@
     text-decoration: none;
 }
 
-.header__menu img {
+.header__menu a img {
     /*width: 20%;*/
     width: 80px;
     height: 80px;
@@ -262,7 +262,7 @@
         justify-content: space-around;
     }
 
-    .header__menu img {
+    .header__menu a img {
         width: 15%;
         width: 100px;
         height: 100px;
@@ -395,10 +395,8 @@
         height: auto;
     }
     
-    .header__menu img {
-        padding: 15px;
+    .header__menu a img {
         width: 140px;
-        height: 140px;
         }
 
     .header__datos__tel i{
