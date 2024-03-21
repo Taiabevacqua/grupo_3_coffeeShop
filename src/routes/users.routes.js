@@ -11,7 +11,7 @@ router
     .get('/login', login)
     .post('/crearUsuario', userUpload.fields([{name : 'userImagen'}]), userRegisterValidator, processRegister)
     .get('/register', register)
-    .post('/ingreso',userLoginValidator,processLogin)
+    .post('/login',userLoginValidator,processLogin)
     .get('/salir',logout)
     .get('/perfil/:id ',checkUserLogin,profile)
 

@@ -56,7 +56,7 @@ module.exports={
     processLogin : (req,res) => {
         const errors = validationResult(req);
         const {email} = req.body;
-
+        
         if(errors.isEmpty()){
 
         const {id, name, role} = leerJSON('users').find(user => user.email === email)
