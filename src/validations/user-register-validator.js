@@ -2,13 +2,13 @@ const { check, body } = require("express-validator");
 
 const db = require('../database/models')
 module.exports = [
-    check('name')
+    check('firstName')
         .notEmpty().withMessage('El nombre es obligatorio').bail()
         .isLength({
             min : 2
         }).withMessage('Mínimo dos caracteres').bail()
         .isAlpha('es-ES', {ignore:' '}).withMessage('Sólo caracteres alfabéticos').bail(),
-    check('surname')
+    check('lastName')
         .notEmpty().withMessage('El apellido es obligatorio').bail()
         .isLength({
             min : 2
@@ -19,7 +19,7 @@ module.exports = [
         .isEmail().withMessage('El email tiene un formato inválido')
         .custom((value, {req}) => {
            
-            return db.User.findOne({
+            return db.Users.findOne({
               where : {
                 email : value
               } 
@@ -48,6 +48,6 @@ module.exports = [
             }
             return true
         }).withMessage('Las contraseñas no coinciden'),
-    check('remember')
+    check('terms')
         .notEmpty().withMessage('Debe aceptar los terminos y condiciones')
 ]

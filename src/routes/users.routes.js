@@ -9,11 +9,11 @@ const router = express.Router();
 /* usuarios */
 router
     .get('/login', login)
-    .post('/crearUsuario', userUpload.fields([{name : 'userImagen'}]), userRegisterValidator, processRegister)
+    .post('/register', userUpload.fields([{name : 'userImagen'}]), userRegisterValidator, processRegister)
     .get('/register', register)
     .post('/login',userLoginValidator,processLogin)
     .get('/salir',logout)
-    .get('/perfil/:id ',checkUserLogin,profile)
+    .get('/perfil',checkUserLogin,profile)
 
 module.exports = router;
 

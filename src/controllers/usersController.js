@@ -1,7 +1,6 @@
 const { validationResult } = require("express-validator");
-const User = require("../data/User");
-//const { leerJSON, escribirJSON } = require("../data");
 const { hashSync } = require("bcryptjs");
+const db = require('../database/models')
 
 module.exports={
     login: (req,res) =>{
@@ -12,17 +11,17 @@ module.exports={
     },
     processRegister : (req,res) => {
         const errors = validationResult(req);
-        const {firstname, surname = lastname, email, password} = req.body;
+        const {firstName, lastName, email, password} = req.body;
         if(errors.isEmpty()){
 
             db.Address.create()
                 .then(address =>{
-                    db.User.create({
-                        firstname,
-                        lastname,
+                    db.Users.create({
+                        firstName,
+                        lastName,
                         email,
-                        password : bcryptjs.hashSync(password.trim(),10),
-                        roleId : 2,
+                        password : hashSync(password.trim(),10),
+                        rolesId : 2,
                         addressId : address.id
                     })
                     .then(user => {
@@ -30,15 +29,9 @@ module.exports={
                         return res.redirect('/')
                     })
                 })
-                .catch(error => console.log(MediaError))
+                .catch(error => console.log(error))
             
             }else{
-
-        if(req.files.userImage){
-            fs.existsSync(`./public/img/users/${req.files.userImage[0].filename}`) &&
-            fs.unlinkSync(`./public/img/users/${req.files.userImage[0].filename}`)
-        }
-
 
         return res.render('users/register', {
             old : req.body,
@@ -55,22 +48,28 @@ module.exports={
     },
     processLogin : (req,res) => {
         const errors = validationResult(req);
-        const {email} = req.body;
-        
+        const {email, remember} = req.body;
+        console.log(errors)
         if(errors.isEmpty()){
-
-        const {id, name, role} = leerJSON('users').find(user => user.email === email)
-
-            req.session.userLogin = {
-                id,
-                name,
-                role
-            }
-            remember && res.cookie('GranoDeOro_user', req.session.userLogin, {
-                maxAge : 1000 * 60 * 2
+    
+            db.Users.findOne({
+                where : {
+                    email
+                }
+            }).then(({id, firstName, rolesId}) => {
+                req.session.userLogin = {
+                    id,
+                    name : firstName,
+                    role : rolesId
+                }
+                remember && res.cookie('GranoDeOro_user', req.session.userLogin, {
+                    maxAge : 1000 * 60 * 2
+                })
+    
+                return res.redirect('/')
             })
-
-            return res.redirect('/')
+            .catch(error => console.log(error))
+          
 
         }else {
             return res.render('users/login',{
@@ -81,12 +80,14 @@ module.exports={
     profile : (req,res) => {
         const {id} = req.session.userLogin;
 
-    const users = leerJSON('users');
+        db.Users.findByPk(id)
+            .then(user => {
+                return res.render('users/profile', {
+                    ...user.dataValues
+                })
+            })   
+            .catch(error => console.log(error))
 
-    const user = users.find(user => user.id == id)
-
-    return res.render('users/profile', {
-        ...user
-    })},
+  },
    
 }
