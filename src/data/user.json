@@ -1,0 +1,58 @@
+[
+    {
+        "Id": 1,
+         "firstName": "Natalia",
+         "lastName": "Bevacqua",
+         "email": "email@gmail.com",
+         "password": "admin",
+         "birthday": "10/03/1975",
+         "userCategory": "administrador",
+         "street" :"xxxx",
+         "city": "Lanús",
+         "postalCode": "1111",
+         "province" : "Buenos Aires",
+         "role": "admin"
+    },
+    {
+        "Id": 2,
+         "firstName": "Lautaro",
+         "lastName": "Garcia",
+         "email": "email@gmail.com",
+         "password": "admin",
+         "birthday": "11/11/1111",
+         "userCategory": true,
+         "street" :"xxxxxxxxxxx",
+         "city": "Ituzaingo",
+         "postalCode": "1111",
+         "province" : "Buenos Aires",
+         "role": "admin"
+    },
+    {
+        "Id": 3,
+         "firstName": "Jairo",
+         "lastName": "Abarca",
+         "email": "email@gmail.com",
+         "password": "admin",
+         "birthday": "11/11/1111",
+         "userCategory": "0",
+         "street" :"xxxxxxxxxxx",
+         "city": "Hurlingham",
+         "postalCode": "1111",
+         "province" : "",
+         "role": "admin"
+    },
+    {
+        "Id": 4,
+         "firstName": "Marcelo",
+         "lastName": "Santander",
+         "email": "email@gmail.com",
+         "password": "admin",
+         "birthday": "07/04/1970",
+         "userCategory": "0",
+         "street" :"xxxxxxxxxxx",
+         "city": "Lanús",
+         "postalCode": "1111",
+         "province" : "Buenos Aires",
+         "role": "admin"
+    }
+]
