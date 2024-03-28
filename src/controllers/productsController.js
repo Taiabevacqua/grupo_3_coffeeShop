@@ -90,7 +90,7 @@ module.exports = {
               name: name.trim(),
               price,
               discount,
-              image : req.file ? req.file.filenam : product.image,
+              image : req.file ? req.file.filename : product.image,
               description,
               categoryId : category,
               flavorId: flavor,
