@@ -144,14 +144,14 @@ create: (req, res) => {
         
     if(errors){
         
-        const {name, description, price, categoryId,flavorId } = req.body;
+        const {name, description, price,flavorId,categoryId } = req.body;
         
         db.Products.create({
             name,
             price,
-            description,
-            categoryId,
+            description,      
             flavorId,
+            categoryId
         })
         
         db.Category.findAll({
@@ -162,6 +162,7 @@ create: (req, res) => {
                 errors: errors.mapped(),
                 old: req.body,
                 categories,
+                price
               });
             })
             .catch(error => console.log(error))
