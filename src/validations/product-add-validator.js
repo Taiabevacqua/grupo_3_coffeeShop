@@ -7,9 +7,10 @@ module.exports= [
         .notEmpty().withMessage('El precio es obligatorio'),
     check('category')
         .notEmpty().withMessage('Se require especificar una categoría').bail(),
-    body('imagen')
+    body('image')
         .custom((value, {req}) => {
-            if(!req.files.imagen){
+            console.log(req.file);
+            if(!req.file){
                 return false
             }
             return true
