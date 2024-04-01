@@ -9,6 +9,7 @@
     height: 100%;
 }
 
+
 .btn-primary {
     background-color: var(--colorocre);
     height: 50px;
@@ -262,6 +263,20 @@ left: 170px;
 
 .d-item {
     height: 300px;
+}
+
+.slide img {
+    height: 135px;
+    width: 150%;
+    object-fit: cover;
+}
+
+.carousel-control-prev {
+    top: -10em;
+ }
+
+.carousel-control-next {
+    top: -10em;
 }
 
 #imgs1 {
