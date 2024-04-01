@@ -409,34 +409,26 @@
         left: -30px;
     }
   
-/*.header__env-mediosPago {
+   .header__env-mediosPago {
     display: flex;
-    justify-content: space-around;
-}*/
+    justify-content: space-evenly;
+}
 
-    /*.truck-h4 {
-        font-size:2,50 ems;
+    .truck-h4 {
+     position: relative;
+     left: 40px;    
        
-    }*/
+    }
 
-    /*#truck {
-        display: flex;
-        font-size:20px;
+    #truck {
         position: relative;
-        left: 95px;
-    }*/
+        left: 200px;
+    }
 
-    /*.credit-card-h4 {
-        font-size:2,50 ems;
+    .credit-card-h4 {
         position: relative;
-        right: 90px;
-    }*/
-
-    /*#credit-card {
-        font-size: 20px;
-        position: relative;
-        left: 20px;
-    }*/
+        right: 160px;
+    }
 }
 
 /*@media (min-width: 1440px) {
