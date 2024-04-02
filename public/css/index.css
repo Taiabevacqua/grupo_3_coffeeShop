@@ -19,11 +19,15 @@
 }
 
 
-.prevnex {
+/*.prevnex {
     margin-top: 60px;
-}
+}*/
 
 /*contenedores*/
+
+.index__contenedores {
+    height: 1000px;
+}
 
 .index__div__container {
     width:100%;
@@ -32,12 +36,43 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    bottom: 130px;
 }
 
 .index__photo{
     width: 100%;
     padding: 10px;
 }
+
+.index__photo__capsulas{
+    width: 100%;
+    padding: 10px;
+    position: relative;
+    bottom: 50px;
+}
+
+.index__photo__cafeteras{
+    width: 100%;
+    padding: 10px;
+    position: relative;
+    bottom: 100px;
+}
+
+
+.contenedor-cafe-molido {
+    /*position: absolute;
+    /*top: 0.2;*/
+    text-align: center;
+    background-color: rgba(189, 183, 186, 0.7);
+    width: 85%;
+    font-size: 26px;
+    color: var(--colorrojo);
+    font-weight: 800;
+    padding: 5px 0;
+    text-decoration: none;
+    position: relative;
+    bottom: 90px;
+    }
 
 .contenedor-capsulas {
 position: absolute;
@@ -50,27 +85,12 @@ font-weight: 800;
 padding: 5px 0;
 text-decoration: none;
 position: relative;
-bottom: 110px;
-}
-
-.contenedor-cafe-molido {
-position: absolute;
-top: 0.2;
-text-align: center;
-background-color: rgba(189, 183, 186, 0.7);
-width: 85%;
-font-size: 26px;
-color: var(--colorrojo);
-font-weight: 800;
-padding: 5px 0;
-text-decoration: none;
-position: relative;
-bottom: 110px;
+bottom: 140px;
 }
 
 .contenedor-cafeteras {
 position: absolute;
-top: 0.2;
+/*top: 0.2;*/
 text-align: center;
 background-color: rgba(189, 183, 186, 0.7);
 width: 85%;
@@ -80,7 +100,7 @@ font-weight: 800;
 padding: 5px 0;
 text-decoration: none;
 position: relative;
-bottom: 110px;
+bottom: 190px;
 }
 
 /*carrusel elegi tu sabor*/
@@ -257,6 +277,70 @@ position: relative;
 left: 170px;
 }
 
+.index__suscribite {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    background-color: var(--colorocre);
+    height: 110px;
+}
+
+.suscribite__form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.index__suscribite h3 {
+    font-size: 1rem;
+    color: var(--colorrojo);
+    font-weight: 600;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.index__suscribite__form__icono {
+    background-color: var(--colorrojo);
+    color: var(--colorblanco);
+    height: 30px;
+    width: 30px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.index__suscribite__form__input {
+    height: 30px;
+    width: 280px;
+}
+
+.index__suscribite__form__button {
+    height: 30px;
+    width: 60px;
+    background-color: var(--colorrojo);
+    color: var(--colorblanco);
+}
+
+.index__suscribite__form__rrss {
+    font-size: 18px;
+    color: var(--colorrojo);
+    text-align: center;
+}
+
+.fa-facebook-f {
+    padding: 10px;
+}
+
+.fa-instagram {
+    padding: 10px;
+}
+
+.fa-youtube {
+    padding: 10px;
+}
+
+.fa-linkedin-in {
+    padding: 10px;
+}
 
 /*mobile*/
 @media (max-width:480px) { 
@@ -279,6 +363,14 @@ left: 170px;
     top: -10em;
 }
 
+.carousel-indicators {
+    display: none;
+}
+
+.carousel-caption {
+    display: none;
+}
+
 #imgs1 {
     display: none;
 }
@@ -287,13 +379,12 @@ left: 170px;
     display: none;
 }    
 
+
+
 .index__section__complementos img {
     order: 1;
 }
 
-/*.index__section__carrousel__destacados__producto {
-    display: none;
-}*/
 
 
 }
