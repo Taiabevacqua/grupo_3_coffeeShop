@@ -25,9 +25,9 @@
 
 /*contenedores*/
 
-.index__contenedores {
-    height: 1000px;
-}
+/*.index__contenedores {
+    height: 500px;
+}*/
 
 .index__div__container {
     width:100%;
@@ -390,7 +390,7 @@ left: 170px;
 }
 
 
-
+/*///////////////////////////////////////*/
 
 /*tablet*/
 @media (min-width:481px){ 
@@ -407,6 +407,7 @@ left: 170px;
     flex-wrap: wrap;
     width: 100%;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 
@@ -415,8 +416,42 @@ left: 170px;
     
 }
 
+.index__photo {
+    position: relative;
+    top: 150px;
+    padding: 0;
+}
+
+.contenedor-cafe-molido{
+    position: relative;
+    top: 50px;
+    width: 90%;
+}
+
+
 .index__photo__capsulas {
-    padding: 5px 0 0 0;
+    /*adding: 5px 0 0 0;*/
+    position: relative;
+    top: 150px;
+    padding: 0;
+}
+
+.contenedor-capsulas {
+    position: relative;
+    top: 50px;
+    width: 90%;
+}
+
+.index__photo__cafeteras {
+    position: relative;
+    top: 150px;
+    padding: 0;
+}
+
+.contenedor-cafeteras {
+    position: relative;
+    top: 50px;
+    width: 90%;
 }
 
 /*.index__section__slide__sabor {
@@ -557,6 +592,7 @@ left: 170px;
 
 }
 
+/*//////////////////////////////////////////*/
 
 /*desktop*/
 @media (min-width:1024px) {
@@ -566,9 +602,18 @@ left: 170px;
         position: relative;
         margin-bottom: 10px;
     }
-    #imgs1-b {
-        display: none;
+
+    
+
+    .index__div__container {
+        width: 33%;
     }
+
+    .index__photo {
+        width: 100%;
+    }
+
+
 
 .index__suscribite__form {
     justify-content: center;
