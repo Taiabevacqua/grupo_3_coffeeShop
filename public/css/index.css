@@ -105,15 +105,7 @@ bottom: 190px;
 
 /*carrusel elegi tu sabor*/
 
-
-/*.index__section__slide__sabor {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
-}*/
-
-.index__section__slide__sabor h2 {
+.index__section__carousel__sabor h2 {
     color: var(--colorrojo);
     font-size: 30px;
     font-weight: 700;
@@ -122,14 +114,8 @@ bottom: 190px;
     width: 100%;
 }
 
-/*.index__section__slide__sabor__capsula-crema {
-    width: 45%;
 
-}
 
-.index__section__slide__sabor__capsula-violeta {
-    width: 45%;
-}*/
 
 /*coffee capsule box*/
 
@@ -613,11 +599,21 @@ left: 170px;
         width: 100%;
     }
 
+    .carrusel {
+        width: 275px;
+    }
+
+    .carrusel a img {
+        width: 250px;
+
+    }
 
 
-.index__suscribite__form {
+
+
+   .index__suscribite__form {
     justify-content: center;
-}
+    }
 
     .index__suscribite__form__input {
         width: 43.75rem;
