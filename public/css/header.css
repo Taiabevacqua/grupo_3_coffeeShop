@@ -1,25 +1,21 @@
 .header{
-    width: 100% ;
+width: 100% ;
 }
-
 .header__datos {
-    background-color: var(--colorrojo);
-    color: var(--colorblanco);
-    font-size: 0.5625rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    height: 35px;
-    text-align: center;
+background-color: var(--colorrojo);
+color: var(--colorblanco);
+font-size: 0.5625rem;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: center;
+height: 35px;text-align: center;
 }
-
 .header__datos__tel {
-    width: 30%;
-    justify-content: center;
-    align-items: center;
+width: 30%;
+justify-content: center;
+align-items: center;
 }
-
 .header__datos__email {
     width: 30%;
 }
