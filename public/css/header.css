@@ -322,7 +322,7 @@ align-items: center;
     }
 }
 
-
+/*/////////////////////////////////////////////////////////*/
 
 /*desktop*/
 @media (min-width: 1024px) {
@@ -412,26 +412,23 @@ align-items: center;
 
     .truck-h4 {
      position: relative;
-     left: 40px;    
+     left: 70px;    
        
     }
 
     #truck {
         position: relative;
-        left: 200px;
+        left: 11.25rem;
     }
 
     .credit-card-h4 {
         position: relative;
-        right: 160px;
+        right: 6.875rem;
     }
 }
 
-/*@media (min-width: 1440px) {
+@media (min-width: 1440px) {
 
-    /*.header__menu {
-
-    }
 
     .header__nav {
         width: 50%;
@@ -448,7 +445,33 @@ align-items: center;
 
     .header__env-mediosPago .credit-card-h4 {
         position: relative;
-        right: 300px;
+        right: 14.375rem;
+    }
+
+    #credit-card {
+        position: relative;
+        right: 50px;
+    }
+   
+    #truck {
+        position: relative;
+        left: 250px;
+    }
+    
+    .credit-card-h4 {
+
+    }
+    
+}
+
+@media (min-width: 1920px) {
+    #truck {
+        position: relative;
+        left: 400px;
+    }
+
+    .credit-card-h4 {
+        position: relative;
        
     }
-}*/
+}

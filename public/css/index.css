@@ -19,10 +19,6 @@
 }
 
 
-/*.prevnex {
-    margin-top: 60px;
-}*/
-
 /*contenedores*/
 
 /*.index__contenedores {
@@ -60,8 +56,6 @@
 
 
 .contenedor-cafe-molido {
-    /*position: absolute;
-    /*top: 0.2;*/
     text-align: center;
     background-color: rgba(189, 183, 186, 0.7);
     width: 85%;
@@ -605,12 +599,16 @@ left: 170px;
         width: 250px;
     }
 
-   .index__suscribite__form {
-    justify-content: center;
+    .index__suscribite__form__rrss {
+        font-size: 30px;
     }
 
+   .suscribite__form {
+    padding-top: 12px;
+   }
+
     .index__suscribite h3 {
-        font-size: 2rem;
+        font-size: 24px;
     }
 
     .index__suscribite__form__input {
@@ -618,3 +616,4 @@ left: 170px;
     }
     
 }
+
