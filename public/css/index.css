@@ -589,8 +589,6 @@ left: 170px;
         margin-bottom: 10px;
     }
 
-    
-
     .index__div__container {
         width: 33%;
     }
@@ -605,14 +603,14 @@ left: 170px;
 
     .carrusel a img {
         width: 250px;
-
     }
-
-
-
 
    .index__suscribite__form {
     justify-content: center;
+    }
+
+    .index__suscribite h3 {
+        font-size: 32px;
     }
 
     .index__suscribite__form__input {
