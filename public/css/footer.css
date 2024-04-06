@@ -230,7 +230,7 @@ justify-content:flex-start;
 margin-left: 40px;
 }
 .footer_item h4{
-font-size: 24px;
+font-size: 18px;
 display: flex;
 justify-content: center;
 font-weight: 700;
@@ -240,7 +240,7 @@ text-decoration: none;
 color: var(--colorrojo);
 font-weight: 400;
 display: flex;
-font-size: 18px;
+font-size: 15px;
 justify-content: center;
 }.footer_item li {
 list-style: none;
