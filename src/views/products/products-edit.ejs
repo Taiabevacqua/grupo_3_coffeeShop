@@ -17,7 +17,7 @@
   </header>
 
   <main class="create-form">
-    <section class="row my-2">
+    <section class="row my-5">
         <div class="col-12 col-md-10 mx-auto">
             <div class="card">
                 <div class="card-header d-flex justify-content-between">
@@ -27,22 +27,22 @@
                           <li class="breadcrumb-item active" aria-current="page">Editar articulo</li>
                         </ol>
                       </nav>
+                      <h3>Editando:"<%= name %>"</h3>
+                      <hr>
                 </div>
                 <div class="card-body">
                     <form action="/products/update/<%= id %>?_method=PUT" class="row" method="POST" enctype="multipart/form-data">
-                          <h3>Editando:"<%= name %>"</h3>
-                          <hr>
                           
                           <div class="col-12 col-md-6 mb-3">
                               <div class="form-floating ">
                                   <input name="nombre" type="text" class="form-control" id="nombre" value="<%= name %>" >
-                                  <label for="nombre">Nombre del articulo</label>
+                                  <label for="nombre">Nombre</label>
                                   <small class="text-danger ms-2"><%= (locals.errors && errors.name) && errors.name.msg %></small>
                                 </div>
 
                           </div>
 
-                          <div class="col-12 col-md-6 mb-3">
+                          <div class="col-12 col-md-3 mb-3">
                             <div class="form-floating">
                                 <input name="precio" type="number" class="form-control" id="precio" value="<%= price %>" >
                                 <label for="precio">Precio actual: </label>
@@ -50,6 +50,100 @@
                             </div>
                            </div>
                            
+                           <div class="col-12 col-md-3 mb-3">
+                             <div class="form-floating">
+                               <input name="discount" type="text" class="form-control" id="discount" value="<%= discount %>">
+                               <label for="discount">Descuento</label>
+                               <small class="text-danger ms-2"><%= (locals.errors && errors.discount) && errors.discount.msg %></small>
+                              </div>
+                             </div>
+
+
+
+
+                             <div class="col-12 col-md-4 mb-3">
+                              <div class="form-floating ">
+                                <select name="category" class="form-select" id="category"
+                                  aria-label="Floating label select example">
+                                  <option value="" selected hidden>Seleccione...</option>
+                                  <% categories.forEach(category => { %>
+                                    <option value="<%= category.id %>" <%= categoryId == category.id && 'selected'  %>><%= category.name %></option>
+          
+                                  <% }) %>
+                                </select>
+                                <label for="category">Categoría</label>
+                                <small class="text-danger ms-2"><%= (locals.errors && errors.category) && errors.category.msg %></small>
+
+                              </div>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                              <div class="form-floating ">
+                                <select name="origins" class="form-select" id="origins"
+                                  aria-label="Floating label select example">
+                                  <option value="" selected hidden>Seleccione...</option>
+                                  <% origins.forEach(o => { %>
+                                    <option value="<%= o.id %>" <%= originId == o.id && 'selected'%>><%= o.country %></option>
+          
+                                  <% }) %>
+                                </select>
+                                <label for="origin">Origen</label>
+                                <small class="text-danger ms-2"><%= (locals.errors && errors.origins) && errors.origins.msg %></small>
+
+                              </div>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                              <div class="form-floating ">
+                                <select name="flavors" class="form-select" id="flavors"
+                                  aria-label="Floating label select example">
+                                  <option value="" selected hidden>Seleccione...</option>
+                                  <% flavors.forEach(f => { %>
+                                    <option value="<%= f.id %>" <%= flavorId == f.id && 'selected'%>><%= f.name %></option>
+
+                                  <% }) %>
+                                </select>
+                                <label for="flavor">Sabores</label>
+                                <small class="text-danger ms-2"><%= (locals.errors && errors.flavors) && errors.flavors.msg %></small>
+
+                              </div>
+                            </div>
+                            <div class="col-12 mb-3">
+                              <div class="form-floating">
+                                <textarea name="description" class="form-control" id="description"
+                                 style="resize: none; height: 200px"><%= description %></textarea>
+                                <label for="floatingTextarea2">Descripción</label>
+                                <small class="text-danger ms-2"><%= (locals.errors && errors.description) && errors.description.msg %></small>
+
+                              </div>
+                            </div>
+                         
+                            <div class="col-12 mb-3  d-flex justify-content-between">
+                              <div class="">
+                                <input name="image" type="file" class="form-control" id="image" hidden>
+                                <label class="btn btn-lg btn-outline-secondary w-100" for="image">Cargar imagen</label>
+                                <small class="text-danger ms-2"><%= (locals.errors && errors.image) && errors.image.msg %></small>
+
+                              </div>
+                              <button type="submit" class="btn btn-lg btn-dark">Guardar cambios</button>
+                            </div>
+                          
+                        </div>
+          
+                        </form>
+          
+                      </div>
+          
+                    </div>
+          
+                    </div>
+                  </section>
+                </main>
+                <%- include('../partials/scripts') %>
+            </body>
+          
+          </html>
+
+
+<!-- 
                         <div class="col-12">
                           <div class="form-floating">
                               <textarea name="description" class="form-control <%= (locals.errors && errors.description) && 'is-invalid' %>" id="description" style="height: 100px;"><%= description %></textarea>
@@ -105,4 +199,4 @@
     </section>
   </main>
 </body>
-</html>
+</html> -->

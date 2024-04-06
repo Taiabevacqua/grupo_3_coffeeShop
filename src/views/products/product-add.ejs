@@ -26,6 +26,8 @@
 
                       <input name="name" type="text" class="form-control" id="name">
                       <label for="name">Nombre</label>
+                      <small class="text-danger ms-2"><%= (locals.errors && errors.name) && errors.name.msg %></small>
+
                     </div>
 
                   </div>
@@ -34,12 +36,16 @@
                     <div class="form-floating">
                       <input name="price" type="text" class="form-control" id="price">
                       <label for="price">Precio</label>
+                      <small class="text-danger ms-2"><%= (locals.errors && errors.price) && errors.price.msg %></small>
+
                     </div>
                   </div>
                   <div class="col-12 col-md-3 mb-3">
                     <div class="form-floating">
                       <input name="discount" type="text" class="form-control" id="discount">
                       <label for="discount">Descuento</label>
+                      <small class="text-danger ms-2"><%= (locals.errors && errors.discount) && errors.discount.msg %></small>
+
                     </div>
                   </div>
                   <div class="col-12 col-md-4 mb-3">
@@ -53,6 +59,8 @@
                         <% }) %>
                       </select>
                       <label for="category">Categoría</label>
+                      <small class="text-danger ms-2"><%= (locals.errors && errors.category) && errors.category.msg %></small>
+
                     </div>
                   </div>
                   <div class="col-12 col-md-4 mb-3">
@@ -66,6 +74,8 @@
                         <% }) %>
                       </select>
                       <label for="origin">Origen</label>
+                      <small class="text-danger ms-2"><%= (locals.errors && errors.origins) && errors.origins.msg %></small>
+
                     </div>
                   </div>
                   <div class="col-12 col-md-4 mb-3">
@@ -79,6 +89,8 @@
                         <% }) %>
                       </select>
                       <label for="flavor">Sabores</label>
+                      <small class="text-danger ms-2"><%= (locals.errors && errors.flavor) && errors.flavor.msg %></small>
+
                     </div>
                   </div>
                   <div class="col-12 mb-3">
@@ -86,6 +98,8 @@
                       <textarea name="description" class="form-control" id="description"
                        style="resize: none; height: 200px"></textarea>
                       <label for="floatingTextarea2">Descripción</label>
+                      <small class="text-danger ms-2"><%= (locals.errors && errors.description) && errors.description.msg %></small>
+
                     </div>
                   </div>
                
@@ -93,6 +107,8 @@
                     <div class="">
                       <input name="image" type="file" class="form-control" id="image" hidden>
                       <label class="btn btn-lg btn-outline-secondary w-100" for="image">Cargar imagen</label>
+                      <small class="text-danger ms-2"><%= (locals.errors && errors.image) && errors.image.msg %></small>
+
                     </div>
                     <button type="submit" class="btn btn-lg btn-dark">Guardar cambios</button>
                   </div>

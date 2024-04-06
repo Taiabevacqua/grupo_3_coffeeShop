@@ -4,6 +4,8 @@ const { detail, add, cafeteras, capsulas, cafeengrano, edit, create,  update, se
 const router = express.Router();
 const upload = require('../middlewares/upload');
 const productAddValidatior = require('../validations/product-add-validator');
+const productEditValidatior = require('../validations/product-edit-validator');
+
 
 router
   .get('/agregar', add)
@@ -14,7 +16,7 @@ router
     .get('/capsulas', capsulas )
     .get('/café en grano', cafeengrano )
     .get('/editar-articulo/:id', edit)
-    .put('/update/:id',upload.single('imagen'),update)
+    .put('/update/:id',upload.single('imagen'),productEditValidatior,update)
     .get('/agregar', create)
     .get('/search', search)
     .delete("/eliminar/:id", remove)
