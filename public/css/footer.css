@@ -99,16 +99,26 @@ color: var(--colorrojo);
 font-family: 'inter';
 background-color: var(--colorGrisClaro);
 display: flex;
+flex-wrap: wrap;
 font-family: 'inter';
-height: 200px;
+height: 220px;
+}
+.footer_item {
+  width: 20%;
+}
+.footer_item_logo{
+  width: 15%;
+  padding-top: 35px;
 }
 
+
 .footer_imagen_logo{
-width: 75%;
-padding: 0 auto;
-margin-left: 30px;
-margin-top: 50px;
+width: 95px;
+
+margin: 0px 0px 0px 20px;
 display: flex;
+
+
 }
 .footer_item h4{
 font-size: 18px;
@@ -122,13 +132,14 @@ padding: 0;
 margin: 0;
 text-align: center;
 }
-.footer_item ul li a {
+.footer_item_quienes ul li a {
 text-decoration: none;
 color: var(--colorrojo);
 font-weight: 400;
 display: flex;
-font-size: 14px;
+font-size: 15px;
 justify-content: center;
+
 }
 .footer_item li {
 list-style: none;
@@ -142,26 +153,38 @@ margin-bottom: 5%;
 display: flex;
 justify-content: center;
 width: 60%;
-margin-left: 90px;  
-margin-bottom: 20px;
+margin: 25px 0px 15px 35px;
+
 }
 .footer_tarjetas img {
-width: 15%;
-height: 10%;
+width: 30%;
+height: 15%;
 display: flex;
 justify-content:center;
+padding: 5px;
 }
 .footer_item p {
 display: flex;
  justify-content:center;
  background-color: var(--colorblanco);
 }
+
+.footer_boton_de_arrepentimiento {
+  background-color: var(--colorGrisClaro);
+  height: 60px;
+  padding: 15px 30px 0 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .footer_boton_de_arrepentimiento button {
 border-radius: 5px;
 background-color:  var(--colorrojo);
 color:var(--colorblanco);
 display: flex;
-justify-content: flex-end;
+margin: 0px;
+height: 30px;
+align-items: center;
 }
 .footer_copy {
 width: 100%;
