@@ -50,7 +50,6 @@
 
 .contenedor-cafe-molido {
     text-align: center;
-    /*background-color: rgba(189, 183, 186, 0.7);*/
     background-color: var(--colorGrisClaro);
     opacity: 0.7;
     width: 85%;
@@ -66,7 +65,8 @@
 .contenedor-capsulas {
 position: absolute;
 text-align: center;
-background-color: rgba(189, 183, 186, 0.7);
+background-color: var(--colorGrisClaro);
+opacity: 0.7;
 width: 85%;
 font-size: 26px;
 color: var(--colorrojo);
@@ -81,7 +81,8 @@ bottom: 140px;
 position: absolute;
 /*top: 0.2;*/
 text-align: center;
-background-color: rgba(189, 183, 186, 0.7);
+background-color: var(--colorGrisClaro);
+opacity: 0.7;
 width: 85%;
 font-size: 26px;
 color: var(--colorrojo);
@@ -92,11 +93,11 @@ position: relative;
 bottom: 190px;
 }
 
-/*carrusel elegi tu sabor*/
+/*carrusel elegi tu sabor///////////////////////////*/
 
 .index__section__carousel__sabor h2 {
     color: var(--colorrojo);
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 700;
     text-align: center;
     margin: 30px 0;
@@ -105,6 +106,35 @@ bottom: 190px;
     bottom: 280px;
 }
 
+.swiper-elegidos {
+    position: relative;
+    bottom: 300px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-elegidos .swiper-slide {
+    width: 150px;
+}
+
+.swiper-slide img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover; 
+}
+
+.swiper-elegidos .swiper-button-prev {
+    --swiper-navigation-size:30px;
+    color: var(--colorrojo);
+    font-weight:700;
+}
+
+.swiper-elegidos .swiper-button-next {
+    --swiper-navigation-size:30px;
+    color: var(--colorrojo);
+    font-weight:700;
+}
 
 
 
@@ -386,7 +416,6 @@ left: 170px;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-  
     flex-direction: row;
     justify-content: space-around;
     position: relative;
@@ -404,8 +433,6 @@ left: 170px;
     width: 100%;
 }
 
-
-
 .contenedor-cafe-molido{
     position: relative;
     top: 50px;
@@ -413,12 +440,10 @@ left: 170px;
     
 }
 
-
 .index__photo__capsulas {
     position: relative;
     top: 150px;
     padding: 0;
-    
 }
 
 .contenedor-capsulas {
@@ -439,7 +464,27 @@ left: 170px;
     width: 90%;
 }
 
+/*carrusel elegi tu sabor///////////////////////////*/
 
+.index__section__carousel__sabor h2 {
+    font-size: 35px;
+    position: relative;
+    bottom: 10px;
+}
+
+.swiper-elegidos {
+    position: relative;
+    bottom: 60px;
+    width: 90%;
+}
+
+.swiper-slide img {
+    width: 200px;
+    height: 200px;
+}
+
+
+/*Box caffee capsule///////////////////////////*/
 
 .index__section__box__coffee-capsule {
     position: relative;
@@ -579,21 +624,34 @@ left: 170px;
         margin-bottom: 10px;
     }
 
-    .index__div__container {
-        width: 33%;
-    }
 
     .index__photo {
         width: 100%;
+    
     }
 
-    .carrusel {
+    .contenedor-cafe-molido {
+        position: relative;
+        top: 50px;
+        width: 90%;    
+    }
+
+    /*carrusel elegi tu sabor///////////////////////////*/
+
+    .swiper-slide img {
+        width: 200px;
+        height: 200px;
+    }
+
+
+
+    /*.carrusel {
         width: 275px;
     }
 
     .carrusel a img {
         width: 250px;
-    }
+    }*/
 
     .index__suscribite__form__rrss {
         font-size: 30px;
@@ -613,3 +671,11 @@ left: 170px;
     
 }
 
+/*desktop//////////////////////////*/
+
+@media (min-width:1280px) {
+    .swiper-slide img {
+        width: 300px;
+        height: 300px;
+    }
+}
