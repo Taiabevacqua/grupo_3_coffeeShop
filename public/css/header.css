@@ -228,7 +228,6 @@ align-items: center;
     }
 
     .header__menu__logo{
-        width: 15%;
         width: 100px;
         height: 100px;
     }
