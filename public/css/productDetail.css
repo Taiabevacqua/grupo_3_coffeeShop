@@ -113,7 +113,7 @@ img {
 .button_Amas{
    width: 100%;
     background-color: var(--colorrojo); 
-    color: white; 
+    color: var(--colorblanco); 
     padding: 10px 15px; 
     text-align: center;
     text-decoration: none;
