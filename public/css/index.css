@@ -1,11 +1,6 @@
 /*sección slide*/
 
 
-/*.d-img {
-    height: 100%;
-}*/
-
-
 .btn-primary {
     background-color: var(--colorocre);
     height: 50px;
@@ -63,37 +58,36 @@
     }
 
 .contenedor-capsulas {
-position: absolute;
-text-align: center;
-background-color: var(--colorGrisClaro);
-opacity: 0.7;
-width: 85%;
-font-size: 26px;
-color: var(--colorrojo);
-font-weight: 800;
-padding: 5px 0;
-text-decoration: none;
-position: relative;
-bottom: 140px;
+    position: absolute;
+    text-align: center;
+    background-color: var(--colorGrisClaro);
+    opacity: 0.7;
+    width: 85%;
+    font-size: 26px;
+    color: var(--colorrojo);
+    font-weight: 800;
+    padding: 5px 0;
+    text-decoration: none;
+    position: relative;
+    bottom: 140px;
 }
 
 .contenedor-cafeteras {
-position: absolute;
-/*top: 0.2;*/
-text-align: center;
-background-color: var(--colorGrisClaro);
-opacity: 0.7;
-width: 85%;
-font-size: 26px;
-color: var(--colorrojo);
-font-weight: 800;
-padding: 5px 0;
-text-decoration: none;
-position: relative;
-bottom: 190px;
+    position: absolute;
+    text-align: center;
+    background-color: var(--colorGrisClaro);
+    opacity: 0.7;
+    width: 85%;
+    font-size: 26px;
+    color: var(--colorrojo);
+    font-weight: 800;
+    padding: 5px 0;
+    text-decoration: none;
+    position: relative;
+    bottom: 190px;
 }
 
-/*carrusel elegi tu sabor///////////////////////////*/
+/*carrusel elegi tu sabor*/
 
 .index__section__carousel__sabor h2 {
     color: var(--colorrojo);
@@ -137,7 +131,6 @@ bottom: 190px;
 }
 
 
-
 /*coffee capsule box*/
 
 .index__section__box {
@@ -145,14 +138,13 @@ bottom: 190px;
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-around;
-    
 }
 
 .box {
-    width: 100%;
-    justify-content: center;
+    width: 400px;
+    height: 400px;
     position: relative;
-    bottom: 400px;
+    bottom: 770px;
 }
 
 .index__section__box__coffee-capsule {
@@ -161,20 +153,18 @@ bottom: 190px;
     height: 400px;
     text-align: center;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: end;
     position: relative;
     order: -1;
-    top: 230px;
+    top: -100px;
 }
 
 .index__section__box__coffee-capsule h3 {
-    font-size: 24px;
+    font-size: 30px;
     color: var(--colorrojo);
-    font-weight: 700px;
-    /*padding-bottom: 15px;*/
-    /*margin-top: 5px;*/
-    
+    font-weight: 900px;
 }
 
 .index__section__box__coffee-capsule p {
@@ -194,12 +184,15 @@ bottom: 190px;
     margin: 15px 15px 15px 15px;
     border-radius: 5px;
     position: relative;
-    left: 45px;
+    left: 60px;
     font-size: 15px;
-    
+   
 }
+
+
+
 /*Carusel destacados*/
-/*.index__section__carrousel__destacados {
+/index__section__carrousel__destacados {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -214,13 +207,13 @@ bottom: 190px;
     font-weight: 700;
     margin: 15px 0;
     position: relative;
-    bottom: 130px;
-}*/
+    bottom: 470px;
+}
 
 
 
-/*......................................*/
 
+/*Complements*/
 .index__section__complementos {
     color: var(--colorrojo);
     font-weight: 400px;
@@ -287,7 +280,6 @@ left: 170px;
 .index__suscribite {
     display: flex;
     flex-direction: column;
-    /*justify-content: center;*/
     background-color: var(--colorocre);
     height: 110px;
 }
@@ -400,9 +392,7 @@ left: 170px;
 }
 
 
-/*///////////////////////////////////////*/
-
-/*tablet*/
+/*tablet///////////////////////////////////////*/
 @media (min-width:481px){ 
 
 .btn-primary {
@@ -412,6 +402,7 @@ left: 170px;
     margin-bottom: -10px;
 }
 
+/*contenedores*/
 .index__contenedores {
     display: flex;
     flex-wrap: wrap;
@@ -419,7 +410,6 @@ left: 170px;
     flex-direction: row;
     justify-content: space-around;
     position: relative;
-
 }
 
 .index__div__container {
@@ -437,7 +427,6 @@ left: 170px;
     position: relative;
     top: 50px;
     width: 90%;
-    
 }
 
 .index__photo__capsulas {
@@ -464,7 +453,9 @@ left: 170px;
     width: 90%;
 }
 
-/*carrusel elegi tu sabor///////////////////////////*/
+
+
+/*carrusel elegi tu sabor*/
 
 .index__section__carousel__sabor h2 {
     font-size: 35px;
@@ -484,43 +475,45 @@ left: 170px;
 }
 
 
-/*Box caffee capsule///////////////////////////*/
+/*Box coffee capsule*/
+
+.index__section__box img {
+    position: relative;
+    left: -180px;
+    top: -450px;
+    width: 500px;
+    height: 500px;
+}
 
 .index__section__box__coffee-capsule {
+    height: 350px;
     position: relative;
     left: 60px;
-    
+    top: 50px;
 }
 
 .index__section__box__coffee-capsule h3 {
-    font-size: 32px;
+    font-size: 2rem;
     position: relative;
     left: 150px;
-    bottom: 50px;
+    bottom: 10px;
 }
 
 .index__section__box__coffee-capsule p {
-    font-size: 22px;
+    font-size: 1.375rem;
     width: 55%;
     position: relative;
     left: 300px;
-    bottom: 50px;
+    bottom: 10px;
 }
 
 .index__section__box__coffee-capsule-button {
     position: relative;
-    left: 380px;
-    bottom: 35px;
+    left: 365px;
+    bottom: 5px;
 }
 
-.box {
-    position: relative;
-    right: 180px;
-    bottom: 320px;
-    width: 570px;
-    height: 570px;
 
-}
 
 /*.index__section__carrousel__destacados h2 {
     font-size: 38px;
@@ -644,14 +637,23 @@ left: 170px;
     }
 
 
+    /*coffee capsule box*/
 
-    /*.carrusel {
-        width: 275px;
+    .index__section__box img {
+        position: relative;
+        left: -260px;
     }
 
-    .carrusel a img {
-        width: 250px;
-    }*/
+    .index__section__box__coffee-capsule p {
+        position: relative;
+        left: 350px;
+    }
+
+    .index__section__box__coffee-capsule-button {
+        position: relative;
+        left: 470px;
+    }
+   
 
     .index__suscribite__form__rrss {
         font-size: 30px;
@@ -677,5 +679,48 @@ left: 170px;
     .swiper-slide img {
         width: 300px;
         height: 300px;
+    }
+
+    /*Box coffee capsule*/
+
+    .index__section__box__coffee-capsule {
+       position: relative;
+       left: -15px;
+       height: 450px;
+    }
+
+    .index__section__box img {
+        width: 700px;
+        height: 700px;
+        position: relative;
+        left: -270px;
+        top: -600px;
+    }
+
+    .index__section__box__coffee-capsule h3 {
+        font-size: 45px;
+        position: relative;
+        left: 250px;
+    }
+
+    .index__section__box__coffee-capsule p {
+        position: relative;
+        left: 500px;
+    }
+
+    .index__section__box__coffee-capsule-button {
+        position: relative;
+        left: 680px;
+    }
+}
+
+
+/*desktop//////////////////////////*/
+
+@media (min-width:1920px) {
+    .index__section__box img {
+        position: relative;
+        left: -450px;
+        
     }
 }
