@@ -35,7 +35,7 @@
                           
                           <div class="col-12 col-md-6 mb-3">
                               <div class="form-floating ">
-                                  <input name="nombre" type="text" class="form-control" id="nombre" value="<%= name %>" >
+                                  <input name="name" type="text" class="form-control" id="name" value="<%= name %>" >
                                   <label for="nombre">Nombre</label>
                                   <small class="text-danger ms-2"><%= (locals.errors && errors.name) && errors.name.msg %></small>
                                 </div>
@@ -44,10 +44,10 @@
 
                           <div class="col-12 col-md-3 mb-3">
                             <div class="form-floating">
-                                <input name="precio" type="number" class="form-control" id="precio" value="<%= price %>" >
+                                <input name="price" type="number" class="form-control" id="price" value="<%= price %>" >
                                 <label for="precio">Precio actual: </label>
                                 <small class="text-danger ms-2"><%= (locals.errors && errors.price) && errors.price.msg %></small>
-                            </div>
+                              </div>
                            </div>
                            
                            <div class="col-12 col-md-3 mb-3">

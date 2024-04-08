@@ -4,9 +4,16 @@ module.exports = {
     
     dashboard: (req, res) => {
 
-        const productos = leerJSON('productos');
-
-        return res.render('./dashboard', {productos})
+        db.Products.findAll({
+            include : ['address','category','images']
+        })
+            .then(products => {
+                //return res.send(products)
+                return res.render('dashboard', {
+                    products
+                })
+            })
+            .catch(error => console.log(error))
     },
     search: (req, res) => {        
         const productos = leerJSON('productos');

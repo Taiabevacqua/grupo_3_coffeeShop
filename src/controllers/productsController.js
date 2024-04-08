@@ -111,6 +111,15 @@ module.exports = {
     if (errors.isEmpty()) {
       db.Products.findByPk(id, {include: []})
       .then((product) => {
+
+        if (product.image && req.file) {
+          fs.unlink(`public/img/${product.image}`, (error) => {
+            if (error) {
+              console.log(error);
+            }
+          });
+        }
+  
           db.Products.update(
             {
               name: name,
@@ -177,17 +186,25 @@ module.exports = {
   remove: (req, res) => {
     const { id } = req.params;
     db.Products.findByPk(id, {
-    }).then(() => {
-          db.Products.destroy({
-            where: {
-              id,
-            },
-          }).then(() => {
-            return res.redirect("/dashboard");
-          });
+    })
+   .then((product) => {
+      if (product.image) {
+        fs.unlink(`public/img/${product.image}`, (error) => {
+          if (error) {
+            console.log(error);
+          }
+        });
+      }
+      db.Products.destroy({
+        where: {
+          id,
+        },
+      })
+    .then(() => {
+          return res.redirect("/dashboard");
         })
-      
-      .catch((error) => console.log(error));
+    .catch((error) => console.log(error));
+    })
   },
   detail: (req, res) => {
     return res.render("products/productDetail");

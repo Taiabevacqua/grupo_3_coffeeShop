@@ -16,7 +16,7 @@ router
     .get('/capsulas', capsulas )
     .get('/café en grano', cafeengrano )
     .get('/editar-articulo/:id', edit)
-    .put('/update/:id',upload.single('imagen'),productEditValidatior,update)
+    .put('/update/:id',upload.single('image'),productEditValidatior,update)
     .get('/agregar', create)
     .get('/search', search)
     .delete("/eliminar/:id", remove)
