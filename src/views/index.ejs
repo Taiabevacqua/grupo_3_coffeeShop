@@ -5,59 +5,57 @@
   <body>
 
     <%- include('./partials/header') %>
-  <!--banner-->
-  <div class="index__main__banner">
 
-    <div id="carouselExampleIndicatorsAutoplaying" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicatorsAutoplaying" data-bs-slide-to="0"
-          class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicatorsAutoplaying" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicatorsAutoplaying" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
-      </div>
-
-      <div class="carousel-inner">
-
-        <div class="carousel-item active d-item" data-bs-interval="2000">
-          <img src="/img/img-el-aroma-de-la-vida-cafeinatopia.png" class="d-block w-100 d-img img-fluid"
-            alt="Slide 1">
-
-          <div class="carousel-caption col-md-4">
-            <button class="btn btn-primary px-1 py-0 fs-5 mt-5">Quiero café</button>
-          </div>
-        </div>
-
-        <div class="carousel-item d-item" data-bs-interval="2000">
-          <img src="/img/img-siempre-cerca-cafeinatopia.png" class="d-block w-100 d-img img-fluid" alt="Slide 2">
-        </div>
-
-        <div class="carousel-item d-item">
-          <img src="/img/img-cafe-molido-cafeinatopia.png" class="d-block w-100 d-img img-fluid" alt="Slide 3">
-        </div>
-
-      </div>
-
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicatorsAutoplaying"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon prevnex" aria-hidden="true"></span>
-        <span class="visually-hidden ">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicatorsAutoplaying"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon prevnex" aria-hidden="true"></span>
-        <span class="visually-hidden ">Next</span>
-      </button>
-
-    </div>
-
-  </div>
-  <!--/banner-->
       <main class="index__main">
+        <!--banner-->
+        <div class="index__main__banner">
 
-      
+          <div id="carouselExampleIndicatorsAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicatorsAutoplaying" data-bs-slide-to="0"
+                class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicatorsAutoplaying" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicatorsAutoplaying" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
 
+            <div class="carousel-inner">
+
+              <div class="carousel-item active d-item" data-bs-interval="2000">
+                <img src="/img/img-el-aroma-de-la-vida-cafeinatopia.png" class="d-block w-100 d-img img-fluid"
+                  alt="Slide 1">
+
+                <div class="carousel-caption col-md-4">
+                  <button class="btn btn-primary px-1 py-0 fs-5 mt-5">Quiero café</button>
+                </div>
+              </div>
+
+              <div class="carousel-item d-item" data-bs-interval="2000">
+                <img src="/img/img-siempre-cerca-cafeinatopia.png" class="d-block w-100 d-img img-fluid" alt="Slide 2">
+              </div>
+
+              <div class="carousel-item d-item">
+                <img src="/img/img-cafe-molido-cafeinatopia.png" class="d-block w-100 d-img img-fluid" alt="Slide 3">
+              </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicatorsAutoplaying"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon prevnex" aria-hidden="true"></span>
+              <span class="visually-hidden ">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicatorsAutoplaying"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon prevnex" aria-hidden="true"></span>
+              <span class="visually-hidden ">Next</span>
+            </button>
+
+          </div>
+
+        </div>
+        <!--/banner-->
 
         <!--contenedores-->
         <div class="index__contenedores">
@@ -137,9 +135,10 @@
 
           <div class="index__section__box__coffee-capsule">
             <h3>Coffee Capsule Box</h3>
-            <p>Armá tu box de cápsulas con la selección de<br>tu preferencia para crear una experiencia<br>de café
+            <p id="p-arma">Armá tu box de cápsulas con la selección de<br>tu preferencia para crear una
+              experiencia<br>de café
               única y a medida</p>
-            <p>¡Disfruta del café perfecto!</p>
+            <p id="p-disfruta">¡Disfruta del café perfecto!</p>
             <button class="index__section__box__coffee-capsule-button" type="button">Viví la experiencia</button>
           </div>
         </section>
@@ -150,16 +149,138 @@
         <section class="index__section__carrousel__destacados">
           <h2>Destacados</h2>
 
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
 
+            <div class="carousel-inner">
+
+              <div class="carousel-item active">
+                <div class="cards-wrapper">
+
+                  <div class="card" style="width: 18rem;">
+                    <img src="/img/maquinadecafe.png" class="card-img-top" alt="cafetera ocean">
+                    <div class="card-body">
+                      <h5 class="card-title">Cafetera Ocean</h5>
+                      <p class="card-text">$110.000</p>
+                      <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="/img/pack cafe molido.png" class="card-img-top" alt="café molido intenso">
+                    <div class="card-body">
+                      <h5 class="card-title">Café Molido Intenso</h5>
+                      <p class="card-text">$3350</p>
+                      <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="/img/capsulavioleta.png" class="card-img-top" alt="Café descaf">
+                    <div class="card-body">
+                      <h5 class="card-title">Cápsula Café Descaf</h5>
+                      <p class="card-text">$2250</p>
+                      <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="carousel-item">
+                <div class="cards-wrapper">
+
+                  <div class="card" style="width: 18rem;">
+                    <img src="/img/chocolate-con-almendras.png" class="card-img-top" alt="Chocolate con Almendras">
+                    <div class="card-body">
+                      <h5 class="card-title">Chocolate con Almendras</h5>
+                      <p class="card-text">$5600</p>
+                      <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
+                    <img src="/img/capsulanegro.png" class="card-img-top" alt="Cápsula café intenso">
+                    <div class="card-body">
+                      <h5 class="card-title">Cápsula Café Intenso</h5>
+                      <p class="card-text">$3200</p>
+                      <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
+                    <img src="/img/pack cafe en grano.png" class="card-img-top" alt="pack café en gano">
+                    <div class="card-body">
+                      <h5 class="card-title">Pack Café en Grano</h5>
+                      <p class="card-text">$8500</p>
+                      <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+
+              <div class="carousel-item">
+                <div class="cards-wrapper">
+
+                  <div class="card" style="width: 18rem;">
+                    <img src="/img/caja-seleccion-cafeinatopia.png" class="card-img-top" alt="Coffee Box">
+                    <div class="card-body">
+                      <h5 class="card-title">Coffee Box Selección</h5>
+                      <p class="card-text">$45000</p>
+                      <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
+                    <img src="/img/capsulacrema.png" class="card-img-top" alt="Cápsula de crema">
+                    <div class="card-body">
+                      <h5 class="card-title">Cápsula de Crema</h5>
+                      <p class="card-text">$3500</p>
+                      <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
+                    <img src="/img/capsulamarron.png" class="card-img-top" alt="Cápsula café torrado">
+                    <div class="card-body">
+                      <h5 class="card-title">Cápsula de Café Torrado</h5>
+                      <p class="card-text">$3500</p>
+                      <a href="#" class="btn btn-primary">Agregar a carrito</a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 
         </section>
         <!--/carrusel destacados-->
 
 
+
         <!--section complementos-->
         <section class="index__section__complementos">
 
-          <img class="blister-choco" src="/img/chocolate-con-almendras.png"
+          <img id=blister-choco src="/img/chocolate-con-almendras.png"
             alt="brik de chocolate con almendras-cafeinatopia" width="400" height="400">
 
           <div class="complementos">
@@ -212,6 +333,8 @@
 
 
       </main>
+
+
 
       <%- include('./partials/footer.ejs') %>
 
