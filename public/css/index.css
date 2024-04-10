@@ -210,13 +210,11 @@
     font-weight: 700;
     margin: 15px 0;
     position: relative;
-    bottom: 470px;
+    bottom: 500px;
 }
 
-.card {
-    margin-bottom: 15px;
-    
-}
+
+
 
 
 /*Complementos*/
@@ -374,6 +372,13 @@
     }
 
 
+    /*destacados*/
+    .card:not(:first-child) {
+        margin: 0 .5em;
+        display: none;
+        
+    }
+
 }
 
 
@@ -509,15 +514,7 @@
         font-size: 35px;
     }
 
-    .cards-wrapper {
-        display: flex;
     
-    }
-
-    .card {
-        margin: 15px;
-        
-    }
 
 
 
@@ -598,14 +595,8 @@
 
 @media (min-width:768px) {
 
-    #blister-choco {
-        width: 500px;
-        height: 500px;
-        position: absolute;
-        top: -170px;
-        left: -45px;
-    }
-
+    
+    /*coffee capsule box*/
     .index__section__box img {
         width: 450px;
         height: 450px;
@@ -636,6 +627,29 @@
 
     .index__section__box__coffee-capsule-button {
         margin-left: 700px;
+    }
+
+
+    /*destacados*/
+    .card {
+        width: calc(100%/3);
+    }
+
+    .index__section__carrousel__destacados h2 {
+        position: relative;
+        top: -350px;
+    }
+
+    .carousel carousel-dark slide
+
+
+    /*complementos*/
+    #blister-choco {
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top: -170px;
+        left: -45px;
     }
 }
 
@@ -695,6 +709,12 @@
 
     .index__section__box__coffee-capsule-button {
         margin-left: 830px;
+    }
+
+    /*destacados*/
+
+    .card {
+        width: calc(100%/4);
     }
 
     /*complementos*/
