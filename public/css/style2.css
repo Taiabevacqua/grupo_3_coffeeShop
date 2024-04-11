@@ -1,9 +1,11 @@
+/*Mobile*/
+
 .float{
 	position:fixed;
 	width:70px;
 	height:70px;
 	bottom:120px;
-	right:150px;
+	right:90px;
 	background-color:#25d366;
 	color:#FFF;
 	border-radius:50px;
@@ -42,4 +44,28 @@
   }
   
 
-@media query
+/*Mobile*/
+  @media (max-width:480px) {
+	.float {
+		display: none;
+	}
+  }
+
+
+/*tablet*/  
+@media (min-width:768px) {
+	.float{
+		position:fixed;
+		bottom:120px;
+		right:120px;
+    }
+  }
+
+ /*desktop 1440*/  
+@media (min-width:1440px) {
+	.float{
+		position:fixed;
+		bottom:120px;
+		right:420px;
+    }
+  } 
