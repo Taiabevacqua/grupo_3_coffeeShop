@@ -1,0 +1,43 @@
+.float{
+	position:fixed;
+	width:80px;
+	height:80px;
+	bottom:120px;
+	right:450px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:50px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+	color: #FFF;
+  background-color:#E38F0E;
+    
+    animation: shake 1s;
+
+ 
+  animation-iteration-count: infinite;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+.pulse {
+	animation: pulse-animation 2s infinite;
+	}
+
+
+@keyframes pulse-animation {
+	0% {
+	 box-shadow: 0 0 0 0px #25d36657 rgba(0, 0, 0, 0.2);
+	}
+	100% {
+	  box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+	}
+  }
+  
