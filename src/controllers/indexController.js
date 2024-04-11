@@ -54,5 +54,9 @@ module.exports = {
 
         .catch(error => console.log(error))
     },
+
+    sucursales: (req, res) => {
+        res.render("sucursales")   
+       },
 }
   

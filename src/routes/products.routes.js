@@ -21,6 +21,7 @@ router
     .get('/search', search)
     .delete("/eliminar/:id", remove)
     
+    
 
 module.exports = router;
 
