@@ -116,7 +116,7 @@ border: 3px solid var( --colorGrisClaro);
 background-color:var(--colorblanco);
 }
 .uno_productcart:hover, .dos_productcart:hover, .tres_productcart:hover,.main_container_section_card:hover{
-border: 2px solid #E99203;
+border: 2px solid var(--colorocre)
 } 
 .dos_productcart{
 display: flex;
