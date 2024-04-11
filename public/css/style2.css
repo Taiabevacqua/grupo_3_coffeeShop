@@ -1,14 +1,14 @@
 .float{
 	position:fixed;
-	width:80px;
-	height:80px;
+	width:70px;
+	height:70px;
 	bottom:120px;
-	right:450px;
+	right:150px;
 	background-color:#25d366;
 	color:#FFF;
 	border-radius:50px;
 	text-align:center;
-  font-size:50px;
+  font-size:40px;
 	box-shadow: 2px 2px 3px #999;
   z-index:100;
 }
@@ -41,3 +41,5 @@
 	}
   }
   
+
+@media query
