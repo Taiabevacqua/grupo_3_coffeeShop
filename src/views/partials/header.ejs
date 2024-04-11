@@ -13,7 +13,7 @@
 
       <div class="header__datos__sucursales">
          <i class="fa-solid fa-store"></i>
-         <a href="/sucursales"><h4>Sucursales</h4></a>
+         <h4>Sucursales</h4>
       </div>
 
    </section>
@@ -33,6 +33,15 @@
             <li><a href="/capsulas">Cápsulas</a></li>
             <li><a href="/cafeteras">Cafeteras</a></li>
             <li><a href="/complementos">Complementos</a></li>
+            <% if (locals.userLogin) { %>
+               <% if (userLogin.role === 1) { %>
+                   <li class="animate__animated animate__fadeInDown"><a href="/dashboard">dashboard</a></li>
+               <% }%>
+               
+   
+            
+           <% } %>
+       
          </ul>
 
       </nav>
