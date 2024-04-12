@@ -1,251 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cafeinatopia|productDetail</title>
-    <link rel="stylesheet" href="/css/styles.css">
-    <script src="https://kit.fontawesome.com/c65f2f1cc8.js" crossorigin="anonymous"></script>
-</head>
+<%- include('../partials/head',{title: "Detalle" }) %>
 
-<body class="produc-Detail-b">
-    <!--<header class="header">
-        <section class="header__datos">
-           
-        <div class="header__datos__tel">
-          <i class="fa-solid fa-phone"></i>
-          <h4>54 911 1234-5678</h4>
-        </div>
-  
-        <div class="header__datos__email">
-           <i class="fa-solid fa-envelope"></i>
-           <h4>info@cafeinatopia.com</h4>
-        </div>
-          
-        <div class="header__datos__sucursales">
-           <i class="fa-solid fa-store"></i>
-           <h4>Sucursales</h4>
-        </div>
-  
-        </section>
-  
-        <section class="header__menu">
-  
-           <a href="" class="header__bars"><i class="fa fa-bars"></i></a>
-           <img src="/img/Logo-Cafeinatopia-1.png" alt="logo-cafeinatopia">
-           
-           <nav class="header__nav">
-  
-              <ul>
-                      <li><a href="/cafe-molido">Café Molido</a></li>
-                      <li><a href="/capsulas">Cápsulas</a></li>
-                      <li><a href="/cafeteras">Cafeteras</a></li>
-                      <li><a href="/complementos">Complementos</a></li>
-              </ul>
-  
-           </nav>
-  
-           <div class="search-bar">
-              <input id="input" type="text">
-              <button type="submit"><i class="fas fa-search"></i></button> 
-           </div>
-  
-           <div class="header__iconos">
-             <div>
-              <i id="lupa-mobile" class="fa-solid fa-magnifying-glass"></i>
-             </div>
-  
-             <div class="user">
-              <i class="fa-solid fa-user"></i>
-             </div>
-  
-             <div class="cart">
-              <i class="fa-solid fa-cart-shopping"></i>
-             </div>
-           </div>
-  
-        </section>
-  
-        <section class="header__env-mediosPago">
-     
-             <i id="truck" class="fa-solid fa-truck-fast"></i>
-             <h4 class="truck-h4">Envío seguro a todo el país</h4>
-           
-             <i id="credit-card" class="fa-solid fa-credit-card"></i>
-             <h4 class="credit-card-h4" >Todos los medios de pago</h4>       
-                 
-        </section>
-  
-      </header> -->
 
-      <header>
+<body >
+
+
         <%- include('../partials/header') %>
-      </header>
 
-    <main class="produc-Detail"> 
-        <ul class="product_casita">
-            <li>
-                <a href="#"><i class="fa-solid fa-house" style="color:var(--colorrojo)"></i></a>
-                <p class="casita-p">Café Grano / Premium</p>
-            </li>
-        </ul>
+    <main> 
+      <div class="col-12 col-lg-10 mx-auto my-4">
+        <div class="card">
+          <div class="card-body">
+            <div class="d-flex flex-column flex-md-row justify-content-between">
+              <p class="casita-p"><%= name %></p>
+              <h3 class="fs-2 casita-p">$<%= price %></h3>
+            </div>
+            <hr>
+            
+            <div class="row">
 
-        <div class="product__container-img">
-            <img src="/img/pack cafe en grano.png" alt="Nombre del Producto">
-        </div>
+              <div class="col-11 col-md-6 col-lg-4 mx-auto">
+                <img src="/img/<%= image %>" alt="Nombre del Producto">
+              </div>
+              <div class="col-12 col-md-6 col-lg-8">
+                <div class="product_container-arti">
+                  <p class="product_container-arti">
+                    <%= description %>
+                  </p>
+                  
+                </div>
+                <ul class="list-group list-group-flush product_container-arti text-secondary mt-5">
+                  <li class="list-group-item product_container-arti text-secondary">ORIGEN: <b><%= origin.country %></b></li>
+                  <li class="list-group-item product_container-arti text-secondary">SABOR: <b><%= flavor.name %></b></li>
 
-        <div class="product__container-h"> 
-            <h1>Cafeinatopia</h1>
-            <h2>Café Grano Premium</h2>
-            <h2>400g</h2><br>
-            <h3>Precio: $8500</h3>
+                </ul>
+                <div class="d-flex justify-content-end">
+                  <button class="button_A">Agregar al Carrito</button>
+                </div>
+              </div>
+            </div>
+          </div>
           
-            <h2>Cantidad</h2><br>
-            <div class="contador">
-                <button class="boton-menos">-</button>
-                <button class="boton-mas">+</button>
-            </div>
-
-            <button class="button_A">Agregar al Carrito</button>
-          </div>
-            <div>
-                <article class="product_container-arti">
-                    <h5>Nuestro café en grano premium <br>
-                         de las
-                        regiones cafeteras <br>más selectas del mundo.<br>
-                        Cosechado a mano y <br>tostado con esmero,<br>
-                         este café
-                        ofrece una experiencia<br> con notas 
-                        de sabor<br> suave y
-                        aterciopelada.<br>
-                        Perfecto para los amantes del <br>
-                        café más exigentes.
-                    </h5>
-                    <img class="intensidad-img" src="/img/intensidad.jpg" alt="intensidad">  
-                </article>
-              
-            </div>
-       
-          <div> 
-        <h2 class="product-visto">Productos más vistos</h2>
-       <!-- <section class="product__container-mas">
-          <img src="/img/capsulavioleta.png" alt="capsula">
-            <h4>Cápsulas Descf Pack x6 UN. $2250</h4>
-            <button class="button_Amas">Añadir al Carrito</button>
-        </section>
-        <section class="product__container-mas">
-            <img src="/img/pack cafe molido.png" alt="">
-            <h4>Café Molido Intenso 260 G. $3350</h4>
-            <button class="button_Amas">Añadir al Carrito</button>
-        </section>
-        <section class="product__container-mas">
-            <img src="/img/maquinadecafe.png" alt="">
-            <h4>Cafetera Ocean Negra. $110.000</h4>
-            <button class="button_Amas">Añadir al Carrito</button>
-        </section>-->
-       
-           <!--<div class="carousel-inner">
-              <div class="carousel-item active" style="width:15.625rem;background-color:var(--colorblanco);margin-left: 80px;">
-                <img src="/img/capsulavioleta.png" class="d-block w-100" alt="...">
-                <h5 class="card-title">Cápsulas Descf Pack x6 UN</h5>
-                <p class="card-text">$2250</p>
-                <button class="button_Amas">Agregar al carrito </button>
-              </div>
-            <div class="carousel-item" style="width:15.625rem;background-color:var(--colorblanco);margin-left: 80px;">
-                <img src="/img/pack cafe molido.png" class="d-block w-100" alt="...">
-                <h5>Cafetera Ocean Negra. $110.000</h5>
-                <p class="card-text">$2250</p>
-                <button class="button_Amas">Añadir al Carrito</button>
-              </div>
-              <div class="carousel-item" style="width:15.625rem;background-color:var(--colorblanco);margin-left: 80px;">
-                <img src="/img/maquinadecafe.png" class="d-block w-100" alt="...">
-                <h5>Cafetera Ocean Negra. $110.000</h5>
-                <p class="card-text">$2250</p>
-                <button class="button_Amas">Añadir al Carrito</button>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>-->
-          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="/img/capsulavioleta.png" class="d-block w-100" alt="...">
-                   <h5 class="card-title">Cápsulas Descf</h5>
-                   <p>Pack x6 UN</p>
-                   <p class="card-text">$2250</p>
-                   <button class="button_Amas">Agregar al carrito</button>
-              </div>
-              <div class="carousel-item">
-                <img src="/img/pack cafe molido.png" class="d-block w-100" alt="...">
-                <h5 class="card-title">Café Molido Intenso</h5>
-                <p>260 G.</p>
-                <p class="card-text">$3350</p>
-                <button class="button_Amas">Agregar al carrito</button>
-              </div>
-              <div class="carousel-item"></div>
-                <img src="/img/maquinadecafe.png" class="d-block w-100" alt="...">
-                <h5 class="card-title">Cafetera Ocean</h5>
-                <p>Negra.</p>
-                <p class="card-text">$110.000</p>
-                <button class="button_Amas">Agregar al carrito </button>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-
-    </div>
-    <section>
-      <div class="index__suscribite">
-        <h3 class="index__suscribite h3">Suscribite a nuestras promociones y novedades</h3>
-
-        <div class="index__suscribite__form">
-          <form class="suscribite__form">
-
-            <div class="index__suscribite__form__icono">
-              <i class="fa-solid fa-envelope"></i>
-            </div>
-
-            <div>
-              <input class="index__suscribite__form__input" type="email">
-            </div>
-
-            <div>
-              <button class="index__suscribite__form__button" type="submit">Enviar</button>
-            </div>
-
-          </form>
-
-          <div class="index__suscribite__form__rrss">
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-youtube"></i>
-            <i class="fa-brands fa-linkedin-in"></i>
-          </div>
-
         </div>
-
-
       </div>
-
-    </section>
-    </main>
-</body>
-
+      </main>
+      
 <%- include('../partials/footer.ejs') %>
 </body>
 

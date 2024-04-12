@@ -6,14 +6,14 @@ module.exports = {
     index: (req,res) =>{
 
         db.Products.findAll({
-            include : [
-                'category',
-                ]
+            where : {
+                categoryId : 3
+            }
         })
     
-          .then(products =>{
+          .then(capsulas =>{
            return res.render('index',{
-                products
+                capsulas
            })
         })
         .catch(error => console.log(error))

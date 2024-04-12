@@ -69,7 +69,7 @@
           <div class="index__div__container">
 
             <img class="index__photo" src="/img/cafe-molido.png" alt="cafe-molido-cafeinatopia">
-            <a class="contenedor-cafe-molido" href="#">CAFÉ MOLIDO</a>
+            <a class="contenedor-cafe-molido" href="/products?id=5&category=Café Molido">CAFÉ MOLIDO</a>
 
           </div>
 
@@ -77,14 +77,14 @@
 
             <img class="index__photo__capsulas" src="/img/capsulas-cafeinatopia.png"
               alt="capsulas-de-cafe-cafeinatopia">
-            <a class="contenedor-capsulas" href="#">CÁPSULAS</a>
+            <a class="contenedor-capsulas" href="/products?id=3&category=Cápsulas">CÁPSULAS</a>
 
           </div>
 
           <div class="index__div__container">
 
             <img class="index__photo__cafeteras" src="/img/cafeteras-cafeinatopia.png" alt="cafeteras-cafeinatopia">
-            <a class="contenedor-cafeteras" href="#">CAFETERAS</a>
+            <a class="contenedor-cafeteras" href="/products?id=1&category=Cafeteras">CAFETERAS</a>
 
           </div>
 
@@ -102,24 +102,13 @@
             <div class="swiper-wrapper">
 
               <!-- Slides -->
-              <div class="swiper-slide">
-                <a href=""><img src="/img/capsulaazul.png" alt="Cápsula azul"></a>
+              <% [...capsulas, ...capsulas].forEach(({id, name, image}) => { %>
+                 <div class="swiper-slide">
+                <a href="/products/productDetail/<%= id %>"><img src="/img/<%= image %>" alt="Cápsula azul"></a>
               </div>
-              <div class="swiper-slide">
-                <a href=""><img src="/img/capsulacrema.png" alt="Cápsula crema"></a>
-              </div>
-              <div class="swiper-slide">
-                <a href=""><img src="/img/capsulamarron.png" alt="Cápsula marrón"></a>
-              </div>
-              <div class="swiper-slide">
-                <a href=""><img src="/img/capsulanegro.png" alt="Cápsula negra"></a>
-              </div>
-              <div class="swiper-slide">
-                <a href=""><img src="/img/capsularoja.png" alt="Cápsula roja"></a>
-              </div>
-              <div class="swiper-slide">
-                <a href=""><img src="/img/capsulavioleta.png" alt="Cápsula violeta"></a>
-              </div>
+              <% }) %>
+            
+           
 
             </div>
 
@@ -152,10 +141,11 @@
 
 
         <!--carrusel destacados-->
+        <!-- 
         <section class="index__section__carrousel__destacados ">
           <h2>Destacados</h2>
 
-          <!--<div id="carouselExample" class="carousel slide">
+          <div id="carouselExample" class="carousel slide">
 
             <div class="carousel-inner" >
               <div class="carousel-item active" style="background-color: var(--colorblanco);">
@@ -188,9 +178,9 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
-          </div>-->
+          </div>
 
-        </section>
+        </section>-->
         <!--/carrusel destacados-->
 
 

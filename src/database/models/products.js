@@ -15,6 +15,14 @@ module.exports = (sequelize, DataTypes) => {
         as : 'category' ,
         foreingKey : 'categoryId'
       })
+      Products.belongsTo(models.origins,{
+        as : 'origin' ,
+        foreingKey : 'originId'
+      })
+      Products.belongsTo(models.Flavors,{
+        as : 'flavor' ,
+        foreingKey : 'flavorId'
+      })
     }
   }
   Products.init({

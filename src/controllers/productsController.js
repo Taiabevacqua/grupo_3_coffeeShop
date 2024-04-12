@@ -1,6 +1,4 @@
 const fs = require("fs");
-const path = require("path");
-const { existsSync, unlinkSync } = require('fs')
 
 const { validationResult } = require("express-validator");
 
@@ -207,7 +205,15 @@ module.exports = {
     })
   },
   detail: (req, res) => {
-    return res.render("products/productDetail");
+    db.Products.findByPk(req.params.id, {
+      include : ['category', 'origin','flavor']
+    })
+    .then(product => {
+      return res.render("products/productDetail", {
+        ...product.dataValues
+      });
+
+    }).catch(error => console.log(error))
   },
   cafeteras: (req, res) => {
     return res.render("products/cafeteras", {
@@ -224,5 +230,18 @@ module.exports = {
       products,
     });
   },
+  list : (req,res) => {
+    db.Products.findAll({
+      where : {
+        categoryId : req.query.id,
+      }
+    }).then(products => {
+      return res.render('products',{
+        products,
+        title : req.query.category
+      })
+      
+    }).catch(error => console.log(error))
+  }
  
 };

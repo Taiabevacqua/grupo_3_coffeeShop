@@ -143,6 +143,7 @@
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-around;
+    /* height: 80vh; */
 }
 
 .box {
@@ -632,7 +633,7 @@
 
     /*destacados*/
     .card {
-        width: calc(100%/3);
+        /* width: calc(100%/3); */
     }
 
     .index__section__carrousel__destacados h2 {
@@ -714,7 +715,7 @@
     /*destacados*/
 
     .card {
-        width: calc(100%/4);
+        /* width: calc(100%/4); */
     }
 
     /*complementos*/

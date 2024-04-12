@@ -56,16 +56,16 @@
 @media (min-width:768px) {
 	.float{
 		position:fixed;
-		bottom:120px;
-		right:120px;
-    }
+		bottom: 30px;
+		right: 60px;
+		}
   }
 
  /*desktop 1440*/  
 @media (min-width:1440px) {
 	.float{
 		position:fixed;
-		bottom:120px;
-		right:420px;
-    }
+		bottom: 60px;
+		right: 120px;
+		}
   } 

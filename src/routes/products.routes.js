@@ -1,5 +1,5 @@
 const express = require('express');
-const { detail, add, cafeteras, capsulas, cafeengrano, edit, create,  update, search, remove } = require('../controllers/productsController');
+const { detail, add, cafeteras, capsulas, cafeengrano, edit, create,  update, search, remove, list } = require('../controllers/productsController');
 
 const router = express.Router();
 const upload = require('../middlewares/upload');
@@ -7,11 +7,15 @@ const productAddValidatior = require('../validations/product-add-validator');
 const productEditValidatior = require('../validations/product-edit-validator');
 
 
+/* 
+/products
+*/
 router
+  .get('/', list)
   .get('/agregar', add)
   .post('/store', upload.single('image'),productAddValidatior, create)
 
-    .get('/productDetail:id?', detail)
+    .get('/productDetail/:id?', detail)
     .get('/cafeteras', cafeteras )
     .get('/capsulas', capsulas )
     .get('/café en grano', cafeengrano )

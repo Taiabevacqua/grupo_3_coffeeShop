@@ -177,9 +177,9 @@ height:90%;
       width: 50%;
     }
     .product_container-arti{
-   width: 30%;
+   /* width: 30%; */
    flex-direction: column;
-    }
+   }
     
   }
 /*/destokp 1024*/
