@@ -58,5 +58,20 @@ module.exports = {
     sucursales: (req, res) => {
         res.render("sucursales")   
        },
+       complementos: (req, res) => {
+        res.render("complementos")
+       }, 
+    
+       capsulas: (req, res) => {
+        res.render("capsulas")
+       },
+    
+       cafeteras: (req, res) => { 
+        res.render("cafeteras")
+       },
+    
+       cafeMolido: (req, res) =>{
+        res.render("cafeMolido")
+       },
 }
   

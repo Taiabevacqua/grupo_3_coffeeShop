@@ -15,7 +15,7 @@ const checkEmail = async (req,res) => {
     } catch (error) {
         return res.status(error.status|| 500).json({
             ok: false,
-            msg: error.message || 'Upss, rompiste todito, ;('
+            msg: error.message || 'Mayday mayday tenemos un PROBLEMA, ;('
         })
     }
 }
