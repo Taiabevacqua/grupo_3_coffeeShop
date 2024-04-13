@@ -12,6 +12,7 @@ const productsDB = productsJSON.map(product =>{
     discount : product.discount,
     originId : [ 1,2,3,4,5,6][(Math.random() * 4).toFixed(0)],
     flavorId : [ 1,2,3,4,5,6,7][(Math.random() * 6).toFixed(0)],
+    outstanding : product.outstanding,
     categoryId : product.category == "cafeteras" ? 1 : product.category == "chocolate" ? 2 : product.category == "capsulas" ? 3 : product.category == "cafeEnGrano" ? 4 : 5,
     createdAt: new Date(),
     updatedAt: new Date(),

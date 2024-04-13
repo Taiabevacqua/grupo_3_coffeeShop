@@ -5,15 +5,25 @@ module.exports = {
 
     index: (req,res) =>{
 
-        db.Products.findAll({
+        const capsulas= db.Products.findAll({
             where : {
                 categoryId : 3
             }
         })
+
+        const destacados = db.Products.findAll({
+            where : {
+                outstanding :  true,
+            },
+            limit : 4,
+            order: db.Sequelize.literal('rand()')
+        })
+        Promise.all([capsulas, destacados])
     
-          .then(capsulas =>{
+          .then(([capsulas, destacados]) =>{
            return res.render('index',{
-                capsulas
+                capsulas,
+                destacados
            })
         })
         .catch(error => console.log(error))

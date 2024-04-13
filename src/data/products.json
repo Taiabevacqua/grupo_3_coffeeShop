@@ -9,7 +9,8 @@
       "imagen": "maquinadecafe.png",
       "imagen2": "maquinadecafe.png",
       "stock": "15",
-      "sabor": "a"
+      "sabor": "a",
+      "outstanding" : false
    },
    {
       "id": 2,
@@ -21,7 +22,8 @@
       "imagen": "chocolate-con-almendras.png",
       "imagen2": "chocolate-con-almendras.png",
       "stock": "50",
-      "sabor": "b"
+      "sabor": "b",
+      "outstanding" : true
    },
    {
       "id": 3,
@@ -33,7 +35,8 @@
       "imagen": "caja-seleccion-cafeinatopia.png",
       "imagen2": "caja-seleccion-cafeinatopia.png",
       "stock": "40",
-      "sabor": "c"
+      "sabor": "c",
+      "outstanding" : true
    },
    {
       "id": 4,
@@ -45,7 +48,8 @@
       "imagen": "pack cafe en grano.png",
       "imagen2": "pack cafe en grano.png",
       "stock": "45",
-      "sabor": "d"
+      "sabor": "d",
+      "outstanding" : true
    },
    {
       "id": 5,
@@ -57,7 +61,8 @@
       "imagen": "capsulavioleta.png",
       "imagen2": "capsulavioleta.png",
       "stock": "30",
-      "sabor": "e"
+      "sabor": "e",
+      "outstanding" : true
    },
    {
       "id": 6,
@@ -69,7 +74,8 @@
       "imagen": "pack cafe molido.png",
       "imagen2": "pack cafe molido.png",
       "stock": "20",
-      "sabor": "f"
+      "sabor": "f",
+      "outstanding" : false
    },
    {
       "id": 7,
@@ -81,7 +87,8 @@
       "imagen": "capsulacrema.png",
       "imagen2": "capsulacrema.png",
       "stock": "30",
-      "sabor": "g"
+      "sabor": "g",
+      "outstanding" : false
    },
    {
       "id": 8,
@@ -93,7 +100,8 @@
       "imagen": "capsularoja.png",
       "imagen2": "capsularoja.png",
       "stock": "30",
-      "sabor": "h"
+      "sabor": "h",
+      "outstanding" : true
    },
    {
       "id": 9,
@@ -105,6 +113,7 @@
       "imagen": "capsulamarron.png",
       "imagen2": "capsulamarron.png",
       "stock": "30",
-      "sabor": "i"
+      "sabor": "i",
+      "outstanding" : true
    }
 ]

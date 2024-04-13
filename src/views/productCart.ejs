@@ -1,229 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
-<%- include('./partials/head', {title: 'productCart' }) %>
+<%- include('./partials/head', {title: 'Mi compra' }) %>
 
   <body>
     <%- include('./partials/header')%>
 
   <main class="container">
-      <section class="main_container_section_card ">
-
-        <div class="section_div_carrito">
-          <h2>Carrito</h2>
-        </div>
-             
-        <div class="section_div_img">
-          <img src="/img/capsulaazul.png" alt="">
-        </div>
-
-          <div class="section_div_cafeinatopia">
-            <div class="section_div_cafeinatopia h2"> 
-              <h2>Cafeinatopia</h2>
-            </div>
-           <div class="section_div_cafeinatopia h3">
-            <h3>Capsulas Expresso <br>Latte Vainilla</h3>
-           </div>
-            
-            <div>
-              <div class="section_div_cafeinatopia_label">
-                <label for="cantidad"></label>
-                <select name="cantidad" id="cantidad">
-                  <option value="1">1</option>
-                </select>
-              </div>
-              <div class="section_div_cafeinatopia h5">
-                <h5>$2.550,00</h5>
-              </div>
-            </div>
-
-          </div>
-      
-
-       
-        <div class="section_div_finalizar">
-          <div class="section_div_finalizar_subtotal">
-            <h4 class="section_div_finalizar_subtotal h4">Subtotal</h4>
-            <p class="section_div_finalizar_subtotal p">$2.550,00</p>
-          </div>
-
-          <div>
-            <div class="section_div_finalizar_total">
-              <h3 class="section_div_finalizar_total h3">Total</h3>
-              <p class="section_div_finalizar_total p">$2.550,00</p>
-            </div>
-            <div class="section_div_finalizar_total button">
-            <button type="submit">FINALIZAR COMPRA</button>
-          </div>
+    <div class="row my-4">
+      <div class="col-12 col-lg-8">
+        <div class="card mb-3">
+          <div class="card-body table-responsive">
+            <table class="table">
+              <thead>
+                <tr >
+                  <th style="font-weight: normal;" scope="col" colspan="2">Producto</th>
+                  <th style="font-weight: normal;" scope="col">Cantidad</th>
+                  <th style="font-weight: normal;" scope="col">Precio</th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody id="cart-box">
+              
+                
+              </tbody>
+            </table>
           </div>
         </div>
-      </section>
+      </div>
+      <div class="col-12 col-lg-4" id="form-cart" style="display: none;">
+        <div class="card h-100">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <small>¿Tenés un código de descuento?</small>
+            <form class="d-flex gap-2 mt-2">
+              <input type="text" class="form-control">
+              <button class="btn btn-sm btn-outline-dark">Aplicar</button>
+            </form>
+            <hr>
+            <h4 class="d-flex justify-content-between">
+              <small>Total</small>
+              <small id="cart-total"></small>
+            </h4>
+            <button  class="button_productcart" type="submit">FINALIZAR COMPRA</button>
+          </div>
+        </div>
+      </div>
+    </div>
    
 
-
-
-
-        <div class="div_imagen_logo_productcart">
-        
-     </div>
-
-       <div class="productCart_container">
-                <section class="uno_productcart">
-                  <img class="imagen_logo_productcart" src="/img/Logo-Cafeinatopia-1.png" alt="">
-                 <h1 class="titular_productcart">Identificacion</h1>
-        
-                <form id="Formulario" method="post">
-        
-                  <div class="form_box_productcart">
-                  <label for="Nombre"></label>
-                  <input type="text" id="Nombre" name="Nombre" placeholder="Nombre" >
-                  </div>
-        
-                  <div class="form_box_productcart">
-                  <label for="Apellido"></label>
-                  <input type="text" id="Apellido" name="Apellido" placeholder="Apellido" >
-                </div>
-        
-                  <div class="form_box_productcart">
-                  <label for="documento"></label>
-                  <input type="number" id="documento" name="documento" placeholder="DNI" >
-                  </div>
-        
-                  <div class="form_box_productcart">
-                    <label for="telefono"></label>
-                    <input type="number" id="telefono" name="telefono" placeholder="Telefono/Movil" >
-                    </div>
-        
-                  <div class="form_box_productcart">
-                  <label for="email"></label>
-                  <input type="email" id="email" name="email" placeholder="Email" >
-                </div>
-        
-                  <div class="form_box_productcart">
-                  <label for="FechaDeNacimiento"></label>
-                  <input type="date" id="FechaDeNacimiento" name="FechaDeNacimiento"  >
-                </div>
-        
-                <div class="form_box_checkbox">
-                    <label  id="productcart_checkbox"></label>
-                      <input class="productcart_checkbox" type="checkbox" name="productcart_checkbox" value="productcart_checkbox">Quiero recibir informacion sobre novedades y promociones
-                    </div>
-        
-                    <button class="button_productcart"  href="#entrega"  type="submit">IR A LA ENTREGA</button>
-        
-            </section>
-          </div>
-         
-         
-          <div class="productCart_container">
-          
-                <section id="entrega" class="dos_productcart">
-                  <img class="imagen_logo_productcart" src="/img/Logo-Cafeinatopia-1.png" alt="">
-                  <h1 class="titular_productcart">Entrega</h1>
-    
-                    
-                    <div class="form_box_productcart">
-                        <label for="codigopostal"></label>
-                        <input type="text" id="codigopostal" name="codigopostal" placeholder="Codigo postal" required>
-                      </div>
-            
-                      <div class="form_box_productcart">
-                        <label for="domicilio">Complete su direccion de entrega</label>
-                        <input type="text" id="domicilio" name="domicilio" placeholder="Ciudad" required>
-                      </div>
-
-                      <div class="form_box_productcart">
-                        <label for="domicilio"></label>
-                        <input type="text" id="domicilio" name="domicilio" placeholder="Calle" required>
-                      </div>
-
-                      <div class="form_box_productcart">
-                        <label for="domicilio"></label>
-                        <input type="text" id="domicilio" name="domicilio" placeholder="Numero" required>
-                      </div>
-
-                      <div class="form_box_productcart">
-                        <label for="domicilio"></label>
-                        <input type="text" id="domicilio" name="domicilio" placeholder="Informacion adicional (ejemplo Depto)" required>
-                      </div>
-
-                      <div class="form_box_productcart">
-                        <label for="domicilio"></label>
-                        <input type="text" id="domicilio" name="domicilio" placeholder="Destinatario" required>
-                      </div>
-
-                      <div class="form_box_checkbox">
-                        <label for="entrega">Andreani Estandar</label>
-                        <input type="checkbox" id="entrega" name="entrega" value="Andreani Estandar" checked>
-                      </div>
-
-                      <button href="" class="button_productcart" onclick="goToNextSlide()" type="submit">IR AL PAGO</button>
-
-
-                </section>
-
-                  </div>
-
-                  <div class="productCart_container">
-
-
-                <section id="pago" class="tres_productcart">
-                  <img class="imagen_logo_productcart" src="/img/Logo-Cafeinatopia-1.png" alt="">
-            <h1 class="titular_productcart">Pago</h1>
-                    
-                    <form action="#">
-                        <label for="tarjeta">Medio de pago</label>
-                        <select name="tarjeta" id="tarjeta">
-                          <option value="Mercadopago">Mercado Pago</option>
-                          <option value="visa">Visa debito</option>
-                          <option value="master">Mastercad debito</option>
-                          <option value="transferencia">transferencia</option>
-                        </select>
-                  </form>
-
-                  <div class="form_box_productcart">
-                    <label for="numero"></label>
-                    <input type="number" id="numero" name="numero" placeholder="Numero de tarjeta" >
-                  </div>
-
-                  <div class="form_box_productcart">
-                    <label for="cuota">Cuotas disponibles</label>
-                    <select name="cuota" id="cuota">
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                    </select>
-                  </div>
-
-                  <form action="" method="POST" class="fecha">
-                    <div class="col">
-                         <label for="fecha">Fecha de vencimiento</label>
-                         <input type="date" name="fecha" id="fecha" class="form-control" value="2019-08">
-                    </div>
-                </form>
-
-                <div class="form_box_productcart">
-                        <label for="codigodeseguridad"></label>
-                        <input type="codigodeseguridad" id="codigodeseguridad" name="codigodeseguridad" placeholder="Codigo de seguridad" required>
-                      </div>
-                
-                
-                      <button class="button_productcart" type="submit">IR AL PAGO</button>
-
-
-                </section>
-
-
-              </div>
-
-            
-
+      
 
   </main>
 
-    <!--<%- include('./partials/footer.ejs') %>-->
+    <%- include('./partials/footer.ejs') %>
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
