@@ -1,25 +1,24 @@
 .header{
-    width: 100% ;
-}
+width: 100% ;
+margin: 0 auto;
+max-width: 1440px;
 
+}
 .header__datos {
-    background-color: var(--colorrojo);
-    color: var(--colorblanco);
-    font-size: 0.5625rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    height: 35px;
-    text-align: center;
+background-color: var(--colorrojo);
+color: var(--colorblanco);
+font-size: 0.5625rem;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: center;
+height: 35px;text-align: center;
 }
-
 .header__datos__tel {
-    width: 30%;
-    justify-content: center;
-    align-items: center;
+width: 30%;
+justify-content: center;
+align-items: center;
 }
-
 .header__datos__email {
     width: 30%;
 }
@@ -36,11 +35,9 @@
     text-decoration: none;
 }
 
-.header__menu a img {
-    /*width: 20%;*/
-    width: 80px;
-    height: 80px;
-} /*logo*/
+.header__logo{
+    width: 5.3125rem;
+} 
 
 .header__bars {
     color: var(--colorrojo);
@@ -70,18 +67,10 @@
 
 .search-bar input {
     background-color: var(--colorblanco);
-    /*border: none;
-    outline: none;*/
     width: 90%;
 }
 
 .search-bar button {
-    /*border: 0;
-    background-color: var(--colorblanco);
-    cursor: pointer;
-    position: absolute;
-    right: 10%;
-    top: 8.5%;*/
     font-size: 0.8125rem;
 }
 
@@ -110,7 +99,6 @@
 .header__env-mediosPago {
     background-color: var(--colorblanco);
     color: var(--colorGrisOscuro);
-    font-size: 0.625rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -118,35 +106,10 @@
     gap: 10px;
 }
 
-.header__env-mediosPago i {
-    font-size: 0.9375rem;
-}
-
-#credit-card {
-    position: relative;
-    left: 140px;
-}
-
-.credit-card-h4 {
-    position: relative;
-   left:-260px;
-   
-}
-.truck-h4 {
-    position: relative;
-    left: 40px;
-   
-}
-
-
 .header__env-mediosPago h4 {
-    font-size: 18px;
+    font-size: 0.75rem;
     margin: 0;
-    
 }
-
-
-
 
 
 
@@ -171,7 +134,7 @@
 }
 
 
-
+/*/////////////////////////////////////////////////////////*/
 /*tablet*/
 @media (min-width: 481px) {
 
@@ -262,8 +225,7 @@
         justify-content: space-around;
     }
 
-    .header__menu a img {
-        width: 15%;
+    .header__menu__logo{
         width: 100px;
         height: 100px;
     }
@@ -298,27 +260,26 @@
     }
 
     .search-bar {
-        width: 18%;
+        width: 19%;
         justify-content: space-evenly;
     }
 
     #input {
         border-radius: 5%;
         height: 25px;
-        /*width: 80px;*/
     }
 
     .search-bar button {
         cursor: pointer;
         position: absolute;
         right: 100px;
-        top: 11.5%;
-        transform: translateY(-110%);
+        top: 11%;
+        transform: translateY(-139%);
         border: none;
         padding: 0;
         width: 15px;
         height: 15px;
-        background-color: white;
+        background-color: var(--colorblanco)
     }
 
     .header__iconos {
@@ -341,53 +302,23 @@
         display: none;
     }
 
-    .header__env-mediosPago {
-        /*font-size: 50px;*/
-        width: 100%;
-        height: 35px;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 80px;
+    .header__env-mediosPago h4 {
+        font-size: 0.9375rem;
     }
-
-    /*.header__env-mediosPago h4 {
-        font-size: 20px;
-  
-    }*/
 
     #truck {
         display: flex;
-        font-size: 20px;
         position: relative;
-        left: 135px;
-        justify-content:flex-start;
+        left: 70px;
     }
-
-    .truck-h4 {
-        position: relative;
-        right: 20px;
-        margin: 0;
-        font-size: 20px;
-        justify-content:flex-start;
-    }
-
-    #credit-card {
-        display: flex;
-        font-size: 20px;
-        position: relative;
-        left: 25px;
-        
-      }
 
     .credit-card-h4 {
         position: relative;
-        right: 20px;
-        font-size: 20px;
-        margin: 0;
+        right: 70px;
     }
 }
 
-
+/*/////////////////////////////////////////////////////////*/
 
 /*desktop*/
 @media (min-width: 1024px) {
@@ -395,8 +326,8 @@
         height: auto;
     }
     
-    .header__menu a img {
-        width: 140px;
+    .header__logo {
+        width: 100px;
         }
 
     .header__datos__tel i{
@@ -435,6 +366,11 @@
         left: 150px;
     }
 
+    .header__menu{
+        display: flex;
+        justify-content: center;
+    }
+
     .header__nav {
         display: flex;
         flex-wrap: wrap;
@@ -451,7 +387,7 @@
         cursor: pointer;
         position: relative;
         left: -30px;
-        top: 13%;
+        top: 27%;
         border: none;
     }
 
@@ -465,36 +401,30 @@
         left: -30px;
     }
   
-    .header__env-mediosPago .truck-h4 {
-        font-size:2,50 ems;
+   .header__env-mediosPago {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+    .truck-h4 {
+     position: relative;
+     left: 70px;    
        
     }
 
     #truck {
-        display: flex;
-        font-size:20px;
         position: relative;
-        left: 95px; 
+        left: 180px;
     }
 
-    .header__env-mediosPago .credit-card-h4 {
-        font-size:2,50 ems;
+    .credit-card-h4 {
         position: relative;
-        right: 90px;
-    }
-
-    #credit-card {
-        font-size: 20px;
-        position: relative;
-        left: 20px;
+        right: 6.875rem;
     }
 }
 
 @media (min-width: 1440px) {
 
-    /*.header__menu {
-
-    }*/
 
     .header__nav {
         width: 50%;
@@ -511,7 +441,33 @@
 
     .header__env-mediosPago .credit-card-h4 {
         position: relative;
-        right: 300px;
+        right: 14.375rem;
+    }
+
+    #credit-card {
+        position: relative;
+        right: 50px;
+    }
+   
+    #truck {
+        position: relative;
+        left: 250px;
+    }
+    
+    .credit-card-h4 {
+
+    }
+    
+}
+
+@media (min-width: 1440px) {
+    #truck {
+        position: relative;
+        left: 250px;
+    }
+
+    .credit-card-h4 {
+        position: relative;
        
     }
 }

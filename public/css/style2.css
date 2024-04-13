@@ -1,0 +1,71 @@
+/*Mobile*/
+
+.float{
+	position:fixed;
+	width:70px;
+	height:70px;
+	bottom:120px;
+	right:90px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:40px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+	color: #FFF;
+  background-color:#E38F0E;
+    
+    animation: shake 1s;
+
+ 
+  animation-iteration-count: infinite;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+.pulse {
+	animation: pulse-animation 2s infinite;
+	}
+
+
+@keyframes pulse-animation {
+	0% {
+	 box-shadow: 0 0 0 0px #25d36657 rgba(0, 0, 0, 0.2);
+	}
+	100% {
+	  box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+	}
+  }
+  
+
+/*Mobile*/
+  @media (max-width:480px) {
+	.float {
+		display: none;
+	}
+  }
+
+
+/*tablet*/  
+@media (min-width:768px) {
+	.float{
+		position:fixed;
+		bottom: 30px;
+		right: 60px;
+		}
+  }
+
+ /*desktop 1440*/  
+@media (min-width:1440px) {
+	.float{
+		position:fixed;
+		bottom: 60px;
+		right: 120px;
+		}
+  } 

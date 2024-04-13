@@ -1,13 +1,5 @@
 /*sección slide*/
 
-/*.d-item {
-    height: 300px;
-    
-}*/
-
-.d-img {
-    height: 100%;
-}
 
 .btn-primary {
     background-color: var(--colorocre);
@@ -18,97 +10,131 @@
 }
 
 
-.prevnex {
-    margin-top: 60px;
-}
-
 /*contenedores*/
 
+.index__main {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+
 .index__div__container {
-    width:100%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     position: relative;
+    bottom: 130px;
 }
 
-.index__photo{
+.index__photo {
     width: 100%;
     padding: 10px;
 }
 
-.contenedor-capsulas {
-position: absolute;
-text-align: center;
-background-color: rgba(189, 183, 186, 0.7);
-width: 85%;
-font-size: 26px;
-color: var(--colorrojo);
-font-weight: 800;
-padding: 5px 0;
-text-decoration: none;
-position: relative;
-bottom: 110px;
+.index__photo__capsulas {
+    width: 100%;
+    padding: 10px;
+    position: relative;
+    bottom: 50px;
 }
 
+.index__photo__cafeteras {
+    width: 100%;
+    padding: 10px;
+    position: relative;
+    bottom: 100px;
+}
+
+
 .contenedor-cafe-molido {
-position: absolute;
-top: 0.2;
-text-align: center;
-background-color: rgba(189, 183, 186, 0.7);
-width: 85%;
-font-size: 26px;
-color: var(--colorrojo);
-font-weight: 800;
-padding: 5px 0;
-text-decoration: none;
-position: relative;
-bottom: 110px;
+    text-align: center;
+    background-color: var(--colorGrisClaro);
+    opacity: 0.7;
+    width: 85%;
+    font-size: 26px;
+    color: var(--colorrojo);
+    font-weight: 800;
+    padding: 5px 0;
+    text-decoration: none;
+    position: relative;
+    bottom: 90px;
+}
+
+.contenedor-capsulas {
+    position: absolute;
+    text-align: center;
+    background-color: var(--colorGrisClaro);
+    opacity: 0.7;
+    width: 85%;
+    font-size: 26px;
+    color: var(--colorrojo);
+    font-weight: 800;
+    padding: 5px 0;
+    text-decoration: none;
+    position: relative;
+    bottom: 140px;
 }
 
 .contenedor-cafeteras {
-position: absolute;
-top: 0.2;
-text-align: center;
-background-color: rgba(189, 183, 186, 0.7);
-width: 85%;
-font-size: 26px;
-color: var(--colorrojo);
-font-weight: 800;
-padding: 5px 0;
-text-decoration: none;
-position: relative;
-bottom: 110px;
+    position: absolute;
+    text-align: center;
+    background-color: var(--colorGrisClaro);
+    opacity: 0.7;
+    width: 85%;
+    font-size: 26px;
+    color: var(--colorrojo);
+    font-weight: 800;
+    padding: 5px 0;
+    text-decoration: none;
+    position: relative;
+    bottom: 190px;
 }
 
 /*carrusel elegi tu sabor*/
 
-
-/*.index__section__slide__sabor {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
-}*/
-
-.index__section__slide__sabor h2 {
+.index__section__carousel__sabor h2 {
     color: var(--colorrojo);
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 700;
     text-align: center;
     margin: 30px 0;
     width: 100%;
+    position: relative;
+    bottom: 280px;
 }
 
-/*.index__section__slide__sabor__capsula-crema {
-    width: 45%;
-
+.swiper-elegidos {
+    position: relative;
+    bottom: 300px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
 }
 
-.index__section__slide__sabor__capsula-violeta {
-    width: 45%;
-}*/
+.swiper-elegidos .swiper-slide {
+    width: 150px;
+}
+
+.swiper-slide img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+}
+
+.swiper-elegidos .swiper-button-prev {
+    --swiper-navigation-size: 30px;
+    color: var(--colorrojo);
+    font-weight: 700;
+}
+
+.swiper-elegidos .swiper-button-next {
+    --swiper-navigation-size: 30px;
+    color: var(--colorrojo);
+    font-weight: 700;
+}
+
 
 /*coffee capsule box*/
 
@@ -117,14 +143,14 @@ bottom: 110px;
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-around;
-    
+    /* height: 80vh; */
 }
 
 .box {
-    width: 100%;
-    justify-content: center;
+    width: 400px;
+    height: 400px;
     position: relative;
-    bottom: 400px;
+    bottom: 770px;
 }
 
 .index__section__box__coffee-capsule {
@@ -133,20 +159,18 @@ bottom: 110px;
     height: 400px;
     text-align: center;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: end;
     position: relative;
     order: -1;
-    top: 230px;
+    top: -100px;
 }
 
 .index__section__box__coffee-capsule h3 {
-    font-size: 24px;
+    font-size: 30px;
     color: var(--colorrojo);
-    font-weight: 700px;
-    /*padding-bottom: 15px;*/
-    /*margin-top: 5px;*/
-    
+    font-weight: 900px;
 }
 
 .index__section__box__coffee-capsule p {
@@ -163,15 +187,16 @@ bottom: 110px;
     color: var(--colorblanco);
     width: 200px;
     height: 45px;
-    margin: 15px 15px 15px 15px;
+    margin: 15px 15px 15px 65px;
     border-radius: 5px;
-    position: relative;
-    left: 45px;
     font-size: 15px;
-    
+
 }
+
+
+
 /*Carusel destacados*/
-/*.index__section__carrousel__destacados {
+.index__section__carrousel__destacados {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -186,250 +211,453 @@ bottom: 110px;
     font-weight: 700;
     margin: 15px 0;
     position: relative;
-    bottom: 130px;
-}*/
+    bottom: 500px;
+}
 
 
 
-/*......................................*/
 
+
+/*Complementos*/
 .index__section__complementos {
     color: var(--colorrojo);
     font-weight: 400px;
     display: flex;
     flex-wrap: wrap;
+    background-color: var(--colorGrisClaro);
+    justify-content: end;
+    position: relative;
+    margin: 0 auto;
 }
 
 .index__section__complementos img {
+    width: 305px;
+    height: 305px;
     display: flex;
-    width: 60%;
-    height: 60%;
-    position: relative;
-    bottom: 80px;
-    position: relative;
-    bottom: 280px;
-    right: 40px;
-}  
-
-.complementos {
-    background-color: var(--colorGrisClaro);
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 25px;
-    position: relative;
-    bottom: 50px;
-
+    position: absolute;
+    top: -67px;
+    right: 140px;
 }
 
-
 .complementos h3 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-size: 18px;
-    position: relative;
-    left: 50px;
-    margin-top: 10px;
+    font-size: 20px;
+    margin: 20px 0 0 15px;
 }
 
 .complementos p {
-    display: flex;
     justify-content: center;
     align-items: center;
     font-size: 13px;
     text-align: center;
-    position: relative;
-    left: 50px;
+    margin: 25px 10px 0 0;
 }
 
-.complementos button { 
-border: none;
-background-color: var(--colorrojo);
-color: var(--colorblanco);
-width: 100px;
-height: 30px;
-margin: 15px 15px 30px 15px;
-border-radius: 5px;
-position: relative;
-left: 170px;
+.complementos button {
+    border: none;
+    background-color: var(--colorrojo);
+    color: var(--colorblanco);
+    width: 100px;
+    height: 30px;
+    margin: 25px 15px 20px 35px;
+    border-radius: 5px;
 }
+
+.index__suscribite {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--colorocre);
+    height: 110px;
+}
+
+.suscribite__form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.index__suscribite h3 {
+    font-size: 1rem;
+    color: var(--colorrojo);
+    font-weight: 600;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.index__suscribite__form__icono {
+    background-color: var(--colorrojo);
+    color: var(--colorblanco);
+    height: 30px;
+    width: 30px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.index__suscribite__form__input {
+    height: 30px;
+    width: 280px;
+}
+
+.index__suscribite__form__button {
+    height: 30px;
+    width: 60px;
+    background-color: var(--colorrojo);
+    color: var(--colorblanco);
+}
+
+.index__suscribite__form__rrss {
+    font-size: 18px;
+    color: var(--colorrojo);
+    text-align: center;
+}
+
+.fa-facebook-f {
+    padding: 10px;
+}
+
+.fa-instagram {
+    padding: 10px;
+}
+
+.fa-youtube {
+    padding: 10px;
+}
+
+.fa-linkedin-in {
+    padding: 10px;
+}
+
+
+
 
 
 /*mobile*/
-@media (max-width:480px) { 
+@media (max-width:480px) {
 
-.d-item {
-    height: 300px;
-}
+    .d-item {
+        height: 300px;
+    }
 
-#imgs1 {
-    display: none;
-}
+    .slide img {
+        height: 135px;
+        width: 150%;
+        object-fit: cover;
+    }
 
-.btn-primary {
-    display: none;
-}    
+    .carousel-control-prev {
+        top: -10em;
+    }
 
-.index__section__complementos img {
-    order: 1;
-}
+    .carousel-control-next {
+        top: -10em;
+    }
 
-/*.index__section__carrousel__destacados__producto {
-    display: none;
-}*/
+    .carousel-indicators {
+        display: none;
+    }
 
+    .carousel-caption {
+        display: none;
+    }
 
-}
+    #imgs1 {
+        display: none;
+    }
 
-
-
-
-/*tablet*/
-@media (min-width:481px){ 
-
-.btn-primary {
-    height: 30px;
-    width: 130px;
-    position: relative;
-    margin-bottom: -10px;
-}
-
-.index__contenedores {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    flex-direction: row;
-}
-
-
-.index__div__container {
-    width: 33%;
-    
-}
-
-.index__photo__capsulas {
-    padding: 5px 0 0 0;
-}
-
-/*.index__section__slide__sabor {
-    margin-top: 35px;
-}*/
-
-/*.index__section__slide__sabor h2 {
-    font-size: 40px;
-    font-weight: 700;
-    /*text-align: center;
-    margin: 30px 0;
-}*/
-
-.index__section__box__coffee-capsule {
-    position: relative;
-    left: 60px;
-    
-}
-
-.index__section__box__coffee-capsule h3 {
-    font-size: 32px;
-    position: relative;
-    left: 150px;
-    bottom: 50px;
-}
-
-.index__section__box__coffee-capsule p {
-    font-size: 22px;
-    width: 55%;
-    position: relative;
-    left: 300px;
-    bottom: 50px;
-}
-
-.index__section__box__coffee-capsule-button {
-    position: relative;
-    left: 380px;
-    bottom: 35px;
-}
-
-.box {
-    position: relative;
-    right: 180px;
-    bottom: 320px;
-    width: 570px;
-    height: 570px;
-
-}
-
-/*.index__section__carrousel__destacados h2 {
-    font-size: 38px;
-    position: relative;
-    left: 300px;
-    bottom: 280px;
-}
-
-.index__section__carrousel__destacados__producto {
-    width: 35%;
-    position: relative;
-    right: 100px;
-    bottom: 150px;
-   }
-
-.carousel-item {
-    display: block;
-    margin-right: 0;
-    flex: 0 0 calc(100%/2); 
-}*/
-
-
-.complementos {
- width: 100%;  
- height: 350px;
- position: relative;
- top: 70px;
-}
-
-.complementos h3 {
-    font-size: 33px;
-    position: relative;
-    left: 150px;
-    margin-top: 10px;
-}
-
-.complementos p {
-    align-items: center;
-    font-size: 24px;
-    font-weight: 500;
-    text-align: center;
-    position: relative;
-    left: 150px;
-    top: 20px;
-}
-
-.complementos button { 
-    font-size: 24px;
-    width: 180px;
-    height: 50px;
-    margin: 15px 15px 30px 15px;
-    border-radius: 5px;
-    position: relative;
-    left: 420px;
-    top: 40px;
+    .btn-primary {
+        display: none;
     }
 
 
-.index__section__complementos img {
-    width: 550px;
-    height: 550px;
-    position: relative;
-    right: 90px;
-    bottom: 450px;
-    order: 1;
-}
+    .index__section__complementos img {
+        order: 1;
+    }
+
+
+    /*destacados*/
+    .card:not(:first-child) {
+        margin: 0 .5em;
+        display: none;
+        
+    }
 
 }
 
 
-/*desktop*/
+/*tablet///////////////////////////////////////*/
+@media (min-width:481px) {
+
+    .btn-primary {
+        height: 30px;
+        width: 130px;
+        position: relative;
+        margin-bottom: -10px;
+    }
+
+    /*contenedores*/
+    .index__contenedores {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        position: relative;
+    }
+
+    .index__div__container {
+        width: 33%;
+    }
+
+    .index__photo {
+        position: relative;
+        top: 150px;
+        padding: 0;
+        width: 100%;
+    }
+
+    .contenedor-cafe-molido {
+        position: relative;
+        top: 50px;
+        width: 90%;
+    }
+
+    .index__photo__capsulas {
+        position: relative;
+        top: 150px;
+        padding: 0;
+    }
+
+    .contenedor-capsulas {
+        position: relative;
+        top: 50px;
+        width: 90%;
+    }
+
+    .index__photo__cafeteras {
+        position: relative;
+        top: 150px;
+        padding: 0;
+    }
+
+    .contenedor-cafeteras {
+        position: relative;
+        top: 50px;
+        width: 90%;
+    }
+
+
+
+    /*carrusel elegi tu sabor*/
+
+    .index__section__carousel__sabor h2 {
+        font-size: 35px;
+        position: relative;
+        bottom: 10px;
+    }
+
+    .swiper-elegidos {
+        position: relative;
+        bottom: 60px;
+        width: 90%;
+    }
+
+    .swiper-slide img {
+        width: 200px;
+        height: 200px;
+    }
+
+
+    /*Box coffee capsule*/
+
+    .index__section__box img {
+        position: relative;
+        left: -180px;
+        top: -450px;
+        width: 500px;
+        height: 500px;
+    }
+
+    .index__section__box__coffee-capsule {
+        height: 350px;
+        position: relative;
+        left: 60px;
+        top: 50px;
+    }
+
+    .index__section__box__coffee-capsule h3 {
+        font-size: 2.125rem;
+    }
+
+    .index__section__box__coffee-capsule p {
+        font-size: 22px;
+        width: 55%;
+        position: relative;
+        left: 260px;
+        bottom: 10px;
+        padding-bottom: 20px;
+    }
+
+    .index__section__box__coffee-capsule-button {
+        position: relative;
+        left: -365px;
+        bottom: 5px;
+        font-size: 1.5rem;
+        width: 250px;
+    }
+
+
+
+
+    /*Destacados*/
+
+    .index__section__carrousel__destacados h2 {
+        position: relative;
+        top: -360px;
+        font-size: 35px;
+    }
+
+    
+
+
+
+    /*Complementos*/
+
+    .complementos {
+        width: 424px;
+        height: 363px;
+        top: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-self: left;
+    }
+
+    .complementos h3 {
+        font-size: 2.25rem;
+        margin: 22px 10px;
+
+    }
+
+    .complementos p {
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-right: 20px;
+    }
+
+    .complementos button {
+        font-size: 1.5rem;
+        width: 180px;
+        height: 50px;
+        border-radius: 5px;
+        margin-right: 45px;
+    }
+
+
+    .index__section__complementos img {
+        order: 1;
+    }
+
+    #blister-choco {
+        width: 600px;
+        height: 600px;
+        position: absolute;
+        top: -200px;
+        left: 30px;
+    }
+
+
+    /*suscribite*/
+
+    .index__suscribite h3 {
+        font-size: 1.375rem;
+    }
+
+    .index__suscribite__form {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .suscribite__form {
+        justify-content: flex-start;
+    }
+
+    .index__suscribite__form__input {
+        width: 400px;
+    }
+
+    .index__suscribite__form__rrss {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+@media (min-width:768px) {
+
+    
+    /*coffee capsule box*/
+    .index__section__box img {
+        width: 450px;
+        height: 450px;
+        position: relative;
+        right: 80px;
+        top: -500px;
+
+        
+    }
+
+    .index__section__box__coffee-capsule {
+        height: 450px;
+        margin-right: 70px;
+        
+    }
+
+    .index__section__box__coffee-capsule h3 {
+        width: 500px;
+        display: flex;
+        justify-content: end;
+        margin-left: 115px;
+        margin-bottom: 30px;
+    }
+
+    .index__section__box__coffee-capsule p {
+        margin-left: 20px;
+    }
+
+    .index__section__box__coffee-capsule-button {
+        margin-left: 700px;
+    }
+
+
+    /*destacados*/
+    .card {
+        /* width: calc(100%/3); */
+    }
+
+    .index__section__carrousel__destacados h2 {
+        position: relative;
+        top: -350px;
+    }
+
+    .carousel carousel-dark slide
+
+
+    /*complementos*/
+    #blister-choco {
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top: -170px;
+        left: -45px;
+    }
+}
+
+
+/*desktop///////////////////////////////////////////*/
+
+
 @media (min-width:1024px) {
     .btn-primary {
         height: 35px;
@@ -437,8 +665,185 @@ left: 170px;
         position: relative;
         margin-bottom: 10px;
     }
-    #imgs1-b {
-        display: none;
+
+
+    .index__photo {
+        width: 100%;
     }
+
+    .contenedor-cafe-molido {
+        position: relative;
+        top: 50px;
+        width: 90%;
+    }
+
+    /*carrusel elegi tu sabor*/
+
+    .swiper-slide img {
+        width: 200px;
+        height: 200px;
+    }
+
+
+    /*coffee capsule box*/
+
+    .index__section__box img {
+        width: 500px;
+        height: 500px;
+        position: relative;
+        left: -290px;
+        top: -500px;
+    }
+
+    .index__section__box__coffee-capsule h3 {
+        width: 600px;
+        display: flex;
+        justify-content: end;
+        margin: 0 0 40px 120px;
+
+    }
+
+    .index__section__box__coffee-capsule p {
+        position: relative;
+        left: 300px;
+    }
+
+    .index__section__box__coffee-capsule-button {
+        margin-left: 830px;
+    }
+
+    /*destacados*/
+
+    .card {
+        /* width: calc(100%/4); */
+    }
+
+    /*complementos*/
+
+    #blister-choco {
+        position: absolute;
+        top: -200px;
+        left: 20px;
+        width: 600px;
+        height: 600px;
+        
+    }
+
+    .complementos h3 {
+        padding-right: 110px;
+    }
+
+    .complementos p {
+        margin: 0 120px 20px 0;
+
+        width: 600px;
+    }
+
+    .complementos button {
+        width: 180px;
+        height: 50px;
+        border-radius: 5px;
+        margin-right: 145px;
+    }
+
+
+    .index__suscribite__form__rrss {
+        font-size: 30px;
+    }
+
+    .suscribite__form {
+        padding-top: 12px;
+    }
+
+    .index__suscribite h3 {
+        font-size: 24px;
+    }
+
+    .index__suscribite__form__input {
+        width: 35.75rem;
+    }
+
 }
 
+/*desktop//////////////////////////*/
+
+@media (min-width: 1280px) {
+    .swiper-slide img {
+        width: 300px;
+        height: 300px;
+    }
+
+    /*Box coffee capsule*/
+
+    .index__section__box__coffee-capsule {
+        /*position: relative;
+        left: -15px;*/
+        height: 450px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .index__section__box img {
+        width: 700px;
+        height: 700px;
+        position: relative;
+        left: -360px;
+        top: -600px;
+    }
+
+    .index__section__box__coffee-capsule h3 {
+        font-size: 45px;
+        display: flex;
+        justify-content: end;
+        margin-left: 390px ;
+        margin-bottom: 60px;
+    }
+
+    .index__section__box__coffee-capsule p {
+        position: relative;
+        left: 450px;
+        font-size: 1.625rem;
+        padding-bottom: 30px;
+    }
+
+    .index__section__box__coffee-capsule-button {
+        margin-left: 1030px;
+    }
+
+
+}
+
+@media (min-width: 1440px) {
+
+    .index__section__box__coffee-capsule {
+        width: 1000px;
+        height: 500px;
+    }
+
+    .index__section__box img {
+        position: relative;
+        left: -360px;
+        top: -600px;
+    }
+
+    .index__section__box__coffee-capsule h3 {
+        display: flex;
+        justify-content: end;
+        margin-left: 290px ;
+        margin-bottom: 30px;
+    }
+
+    #p-arma {
+        width: 500px;
+        margin: 0 30px 10px 0;
+    }
+
+    #p-disfruta {
+        padding-right: 80px;
+    }
+
+    .index__section__box__coffee-capsule-button {
+        margin-left: 960px;
+    }
+
+}

@@ -23,12 +23,10 @@ li {
 body {
     font-family: 'inter';  
     background-image: url(/img/fondo-accesorios-cafe.PNG);
+    margin: 0;
 }
 
-#contenedor { 
-    max-width: 1800px;
-    margin: 0 auto;
-}
+
 
 textarea {
     resize: none;

@@ -1,10 +1,12 @@
 const express = require('express');
 const {dashboard, search} = require('../controllers/adminControllers');
 const router = express.Router();
+const checkAdmin = require('../middlewares/checkAdmin');
 
-/* admin */
+
+/* dashboard */
 router
-  .get('/dashboard', dashboard)
-  .get('/search', search)
+  .get('/dashboard',checkAdmin, dashboard)
+  .get('/search',checkAdmin, search)
 
 module.exports = router;

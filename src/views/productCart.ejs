@@ -1,17 +1,74 @@
 <!DOCTYPE html>
 <html lang="es">
-  <%- include('./partials/head', {title: 'productCart'}) %>
-<body>
-  <%- include('./partials/header')%>
-    <main class="main_productcart">
+<%- include('./partials/head', {title: 'productCart' }) %>
+
+  <body>
+    <%- include('./partials/header')%>
+
+  <main class="container">
+      <section class="main_container_section_card ">
+
+        <div class="section_div_carrito">
+          <h2>Carrito</h2>
+        </div>
+             
+        <div class="section_div_img">
+          <img src="/img/capsulaazul.png" alt="">
+        </div>
+
+          <div class="section_div_cafeinatopia">
+            <div class="section_div_cafeinatopia h2"> 
+              <h2>Cafeinatopia</h2>
+            </div>
+           <div class="section_div_cafeinatopia h3">
+            <h3>Capsulas Expresso <br>Latte Vainilla</h3>
+           </div>
+            
+            <div>
+              <div class="section_div_cafeinatopia_label">
+                <label for="cantidad"></label>
+                <select name="cantidad" id="cantidad">
+                  <option value="1">1</option>
+                </select>
+              </div>
+              <div class="section_div_cafeinatopia h5">
+                <h5>$2.550,00</h5>
+              </div>
+            </div>
+
+          </div>
+      
+
+       
+        <div class="section_div_finalizar">
+          <div class="section_div_finalizar_subtotal">
+            <h4 class="section_div_finalizar_subtotal h4">Subtotal</h4>
+            <p class="section_div_finalizar_subtotal p">$2.550,00</p>
+          </div>
+
+          <div>
+            <div class="section_div_finalizar_total">
+              <h3 class="section_div_finalizar_total h3">Total</h3>
+              <p class="section_div_finalizar_total p">$2.550,00</p>
+            </div>
+            <div class="section_div_finalizar_total button">
+            <button type="submit">FINALIZAR COMPRA</button>
+          </div>
+          </div>
+        </div>
+      </section>
+   
+
+
+
 
         <div class="div_imagen_logo_productcart">
-        <img class="imagen_logo_productcart" src="/img/Logo-Cafeinatopia-1.png" alt="">
-    </div>
+        
+     </div>
 
        <div class="productCart_container">
                 <section class="uno_productcart">
-
+                  <img class="imagen_logo_productcart" src="/img/Logo-Cafeinatopia-1.png" alt="">
                  <h1 class="titular_productcart">Identificacion</h1>
         
                 <form id="Formulario" method="post">
@@ -55,11 +112,12 @@
         
             </section>
           </div>
-
+         
+         
           <div class="productCart_container">
-            
+          
                 <section id="entrega" class="dos_productcart">
-
+                  <img class="imagen_logo_productcart" src="/img/Logo-Cafeinatopia-1.png" alt="">
                   <h1 class="titular_productcart">Entrega</h1>
     
                     
@@ -109,7 +167,7 @@
 
 
                 <section id="pago" class="tres_productcart">
-
+                  <img class="imagen_logo_productcart" src="/img/Logo-Cafeinatopia-1.png" alt="">
             <h1 class="titular_productcart">Pago</h1>
                     
                     <form action="#">
@@ -163,11 +221,12 @@
             
 
 
-    </main>
-    
-    <%- include('./partials/footer.ejs') %>
-    
+  </main>
 
- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-</body>
+    <!--<%- include('./partials/footer.ejs') %>-->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  </body>
+
 </html>

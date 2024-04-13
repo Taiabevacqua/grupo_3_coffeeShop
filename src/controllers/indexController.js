@@ -6,14 +6,14 @@ module.exports = {
     index: (req,res) =>{
 
         db.Products.findAll({
-            include : [
-                'category',
-                ]
+            where : {
+                categoryId : 3
+            }
         })
     
-          .then(products =>{
+          .then(capsulas =>{
            return res.render('index',{
-                products
+                capsulas
            })
         })
         .catch(error => console.log(error))
@@ -54,5 +54,24 @@ module.exports = {
 
         .catch(error => console.log(error))
     },
+
+    sucursales: (req, res) => {
+        res.render("sucursales")   
+       },
+       complementos: (req, res) => {
+        res.render("complementos")
+       }, 
+    
+       capsulas: (req, res) => {
+        res.render("capsulas")
+       },
+    
+       cafeteras: (req, res) => { 
+        res.render("cafeteras")
+       },
+    
+       cafeMolido: (req, res) =>{
+        res.render("cafeMolido")
+       },
 }
   

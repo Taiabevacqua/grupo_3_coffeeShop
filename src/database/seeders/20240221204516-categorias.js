@@ -7,27 +7,27 @@ module.exports = {
     await queryInterface.bulkInsert('categories',
     [
       {
-      name: 'cafeteras',
+      name: 'Cafeteras',
       createdAt: new Date(),
       updatedAt: new Date(),
       },
       {
-        name: 'chocolate',
+        name: 'Chocolate',
         createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
-        name: 'capsulas',
+        name: 'Cápsulas',
         createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
-        name: 'cafeEnGrano',
+        name: 'Café en grano',
         createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
-        name: 'cafeMolido',
+        name: 'Café molido',
         createdAt: new Date(),
         updatedAt: new Date(),
       },

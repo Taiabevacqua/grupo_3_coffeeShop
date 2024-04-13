@@ -21,18 +21,27 @@
    <section class="header__menu">
 
       <a href="" class="header__bars"><i class="fa fa-bars"></i></a>
-      <a href="/">
-         <img src="/img/Logo-Cafeinatopia-1.png" alt="logo-cafeinatopia">
+      <a href="/" class="header__logo">
+         <img  src="/img/Logo-Cafeinatopia-1.png" alt="logo-cafeinatopia">
       </a>
 
 
       <nav class="header__nav">
 
          <ul>
-            <li><a href="/cafe-molido">Café Molido</a></li>
-            <li><a href="/capsulas">Cápsulas</a></li>
-            <li><a href="/cafeteras">Cafeteras</a></li>
-            <li><a href="/complementos">Complementos</a></li>
+            <li><a href="/products?id=5&category=Café Molido">Café Molido</a></li>
+            <li><a href="/products?id=3&category=Cápsulas">Cápsulas</a></li>
+            <li><a href="/products?id=1&category=Cafeteras">Cafeteras</a></li>
+            <li><a href="/products?id=2&category=Complementos">Complementos</a></li>
+            <% if (locals.userLogin) { %>
+               <% if (userLogin.role === 1) { %>
+                   <li class="animate__animated animate__fadeInDown"><a href="/dashboard">dashboard</a></li>
+               <% }%>
+               
+   
+            
+           <% } %>
+       
          </ul>
 
       </nav>
