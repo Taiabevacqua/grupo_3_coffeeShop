@@ -26,6 +26,9 @@ module.exports = {
       image: {
         type: Sequelize.STRING
       },
+      outstanding : {
+        type : Sequelize.BOOLEAN
+      },
       categoryId: {
         type: Sequelize.INTEGER,
         references : {

@@ -1,4 +1,5 @@
 const fs = require("fs");
+const { Op } = require("sequelize");
 
 const { validationResult } = require("express-validator");
 
@@ -169,16 +170,24 @@ module.exports = {
 
   
   search: (req, res) => {
+
     const { keywords } = req.query;
 
-    return res.render("", {
-      productos: productos.filter(
-        (producto) =>
-          producto.nombre.toLowerCase().includes(keywords.toLowerCase()) ||
-          producto.descripcion.toLowerCase().includes(keywords.toLowerCase())
-      ),
-      keywords,
-    });
+      db.Products.findAll({
+        where : {
+          name : {
+            [Op.substring] : keywords
+          }
+          
+        }
+      }).then(products => {
+        return res.render('products',{
+          products,
+          title : 'Resultado de la búsqueda: ' + keywords,
+          keywords
+        })
+      })
+;
   },
 
   remove: (req, res) => {

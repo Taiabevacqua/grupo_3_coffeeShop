@@ -136,54 +136,34 @@
             <p id="p-disfruta">¡Disfruta del café perfecto!</p>
             <button class="index__section__box__coffee-capsule-button" type="button">Viví la experiencia</button>
           </div>
+         
+        
         </section>
+     
         <!--/section box-->
+        <section class="index__section__carousel__sabor" style="position:absolute; top: 1980px; left: 0px; width: 100%;">
 
+        <h2>Destacados</h2>
 
-        <!--carrusel destacados-->
-        <!-- 
-        <section class="index__section__carrousel__destacados ">
-          <h2>Destacados</h2>
-
-          <div id="carouselExample" class="carousel slide">
-
-            <div class="carousel-inner" >
-              <div class="carousel-item active" style="background-color: var(--colorblanco);">
-                <img src="/img/capsulavioleta.png" class="d-block w-100" alt="...">
-                <h5 class="card-title">Cápsulas Descf </h5>
-                <p>Pack x6 UN</p>
-              <p class="card-text">$2250</p>
-              <button class="button_Amas" style="width: 100%;" >Agregar al carrito </button>
+        <div class="d-flex flex-column flex-lg-row justify-content-center gap-3" >
+          <% destacados.forEach(({id, image, name}) => { %>
+            <a href="/products/productDetail/<%= id %>" style="text-decoration: none;">
+              <div class="card shadow card-destacado" style="width: 18rem;" >
+                <img src="/img/<%= image %>" height="180px" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><%= name %></h5>
+                </div>
               </div>
-              <div class="carousel-item" style="background-color: var(--colorblanco);">
-                <img src="/img/pack cafe molido.png" class="d-block w-100" alt="...">
-                <h5 class="card-title">Café Molido Intenso 260 G.</h5>
-                <p class="card-text">$3350</p>
-                <button class="button_Amas">Agregar al carrito </button>
-              </div>
-              <div class="carousel-item" style="background-color: var(--colorblanco);">
-                <img src="/img/maquinadecafe.png" class="d-block w-100" alt="...">
-                <h5 class="card-title">Cafetera Ocean Negra. </h5>
-                <p class="card-text">$110.000</p>
-                <button class="button_Amas">Agregar al carrito </button>
-              </div>
-            </div>
-
-
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-
-        </section>-->
-        <!--/carrusel destacados-->
-
-
+            </a>
+          <% }) %>
+            <style>
+              .card-destacado:hover {
+                transition: all 0.5s ease;
+                transform: scale(1.05);
+              }
+            </style>
+        </div>
+      </section>
 
         <!--section complementos-->
         <section class="index__section__complementos">

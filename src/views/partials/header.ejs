@@ -46,10 +46,10 @@
 
       </nav>
 
-      <div class="search-bar">
-         <input id="input" type="text">
+      <form class="search-bar" action="/products/search">
+         <input id="input" type="text" name="keywords">
          <button type="submit"><i class="fas fa-search"></i></button>
-      </div>
+      </form>
 
       <div class="header__iconos">
          <div>
@@ -67,8 +67,12 @@
                   <a href="/users/login"><i class="fa-solid fa-user"></i></i></a>
                </div>
 
-               <div class="cart">
+               <div class="cart position-relative">
                   <a href="/productCart"><i class="fa-solid fa-cart-shopping"></i></a>
+                  <span id="cart-total-items" class="position-absolute bottom-50 start-100 translate-middle badge rounded-pill bg-light text-dark">
+                     
+                     <span class="visually-hidden">unread messages</span>
+                   </span>
                </div>
                <% } %>
       </div>
@@ -86,3 +90,4 @@
    </section>
 
 </header>
+<script src="/javascripts/cart.js"></script>

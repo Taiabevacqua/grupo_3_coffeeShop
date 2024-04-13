@@ -162,18 +162,7 @@ padding: 15px 0;
 .form_box_productcart input:hover{
 border: 2px solid #E99203;
 }
-.button_productcart{
-background-color: #E99203 ;
-color: black;
-padding: 10px 15px;
-margin: 20px 0;
-border: #E99203;
-display: flex;
-text-align: center;
-justify-content: center;
-align-items: center; 
-font-weight: 600;
-}
+.button_productcart{background-color: #E99203;color: black;padding: 10px 15px;/* margin: 20px 0; */border: #E99203;display: flex;text-align: center;justify-content: center;align-items: center;font-weight: 600;}
 .uno_productcart .button_productcart{
 margin-left: 35%;
 }
