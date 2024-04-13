@@ -435,11 +435,6 @@ align-items: center;
         font-size: 24px;
     }
 
-    #truck {
-        position: relative;
-        left: 320px;
-    }
-
     .header__env-mediosPago .credit-card-h4 {
         position: relative;
         right: 14.375rem;
@@ -456,19 +451,8 @@ align-items: center;
     }
     
     .credit-card-h4 {
-
+        position: relative;
     }
     
 }
 
-@media (min-width: 1440px) {
-    #truck {
-        position: relative;
-        left: 250px;
-    }
-
-    .credit-card-h4 {
-        position: relative;
-       
-    }
-}
