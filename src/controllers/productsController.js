@@ -251,6 +251,18 @@ module.exports = {
       })
       
     }).catch(error => console.log(error))
+  },
+  box : (req,res) => {
+    db.Products.findAll({
+      where : {
+        categoryId : 3,
+      }
+    }).then(products => {
+      return res.render('box',{
+        products,
+      })
+      
+    }).catch(error => console.log(error))
   }
  
 };

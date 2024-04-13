@@ -27,7 +27,7 @@
    },
    {
       "id": 3,
-      "name": "Cápsulas Variadas",
+      "name": "Cápsulas Variadas x 6",
       "description": "Pruebá nuestra varidad de cápsulas. Armá la caja a tu gusto. Date una caricia al alma con nuestra mejor selección de café en cápsulas",
       "price": "4200",
       "discount": 10,
@@ -36,7 +36,7 @@
       "imagen2": "caja-seleccion-cafeinatopia.png",
       "stock": "40",
       "sabor": "c",
-      "outstanding" : true
+      "outstanding" : false
    },
    {
       "id": 4,
@@ -105,7 +105,7 @@
    },
    {
       "id": 9,
-      "name": "Cápsula break office Descafeinado",
+      "name": "Cápsula Descafeinado",
       "description": "Date un pequeño descanso para sentir la esencia de nuestro café con sutiles notas de chocolate, equilibrado entre sabor y suavidad, ideales para máquinas de café de oficina  ",
       "price": "3200",
       "discount": 15,
@@ -115,5 +115,18 @@
       "stock": "30",
       "sabor": "i",
       "outstanding" : true
+   },
+   {
+      "id": 3,
+      "name": "Cápsulas Variadas x 12",
+      "description": "Pruebá nuestra varidad de cápsulas. Armá la caja a tu gusto. Date una caricia al alma con nuestra mejor selección de café en cápsulas",
+      "price": "8200",
+      "discount": 10,
+      "category": "otro",
+      "imagen": "caja-seleccion-cafeinatopia.png",
+      "imagen2": "caja-seleccion-cafeinatopia.png",
+      "stock": "40",
+      "sabor": "c",
+      "outstanding" : false
    }
 ]

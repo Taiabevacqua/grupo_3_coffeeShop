@@ -1,5 +1,5 @@
 const express = require('express');
-const { detail, add, cafeteras, capsulas, cafeengrano, edit, create,  update, search, remove, list } = require('../controllers/productsController');
+const { detail, add, cafeteras, capsulas, cafeengrano, edit, create,  update, search, remove, list, box } = require('../controllers/productsController');
 
 const router = express.Router();
 const upload = require('../middlewares/upload');
@@ -23,6 +23,7 @@ router
     .put('/update/:id',upload.single('image'),productEditValidatior,update)
     .get('/agregar', create)
     .get('/search', search)
+    .get('/box',box)
     .delete("/eliminar/:id", remove)
     
     
