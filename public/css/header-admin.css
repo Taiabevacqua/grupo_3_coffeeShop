@@ -403,6 +403,8 @@
 
     }
     
+
+    
     
     /*/////////////////////////////////////////////*/
     @media (min-width: 1440px) {
@@ -417,11 +419,14 @@
             width: 70%;
             margin-right: 20px;
             margin-top: 28px;
+            display: flex;
+            flex-wrap: wrap;
 
         }
     
         .header__nav__admin a {
             font-size: 24px;
+          align-items: end;
         }
     
         .search-bar__admin{
@@ -431,6 +436,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
+          
             gap: 10px;
             margin: 0;
             padding: 0;
