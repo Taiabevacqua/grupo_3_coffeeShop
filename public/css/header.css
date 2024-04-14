@@ -51,6 +51,12 @@ align-items: center;
     text-decoration: none;
 }
 
+/*.header__nav {
+    flex-direction: column;
+    align-items: start;
+    padding: 2rem;
+}*/
+
 .header__nav a {
     color: var(--colorrojo);
     font-size: 1rem;
@@ -320,6 +326,19 @@ align-items: center;
 
 /*/////////////////////////////////////////////////////////*/
 
+/*tablet*/
+@media (min-width: 768px) {
+    .search-bar button{
+        top: 10.8%;
+    }
+    .header__logo {
+        width: 80px;
+        height: 80px;
+        margin-left: 10px;
+    }
+}
+    
+/*/////////////////////////////////////////////////////////*/
 /*desktop*/
 @media (min-width: 1024px) {
     .header__menu {
@@ -424,6 +443,8 @@ align-items: center;
     }
 }
 
+
+/*/////////////////////////////////////////////*/
 @media (min-width: 1440px) {
 
 
