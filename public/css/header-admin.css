@@ -1,48 +1,445 @@
-
-   
-@media (min-width: 1440px) { 
-
-.search-bar-admin{
-   display: none;
-}
-
-.header__nav__admin {
-width: 70%;
-margin-right: 20px;
-margin-top: 28px;
-}
-
-.header__nav__admin ul{
+.header__admin{
+    width: 100% ;
+    margin: 0 auto;
+    max-width: 1440px;
+    
+    }
+    .header__datos__admin {
+    background-color: var(--colorrojo);
+    color: var(--colorblanco);
+    font-size: 0.5625rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 10px;
-    margin: 0;
-    padding: 0;
-}
-
-.header__nav__admin li {
-    margin: 0;
-    padding: 0;
-}
-
-.header__nav__admin a {
-    font-size: 1rem;
-    display: flex;
-    margin: 5px;
-    text-decoration: none;
-    color: var(--colorrojo);
-    font-size: 14px;
-    font-weight: 700;
-}
-
-
-.header__iconos__admin {
-    margin-right: 15px;
-    display: flex;
-    /*justify-content: space-around;*/
     align-items: center;
-}
+    height: 35px;text-align: center;
+    }
+    .header__datos__tel__admin {
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    }
+    .header__datos__email__admin {
+        width: 30%;
+    }
+    
+    .header__datos__sucursales__admin {
+        width: 30%;
+    }
+    
+    .header__menu__admin {
+        background-color: var(--colorocre);
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px 0px 10px;
+        text-decoration: none;
+    }
+    
+    .header__logo__admin{
+        width: 5.3125rem;
+    } 
+    
+    .header__bars__admin {
+        color: var(--colorrojo);
+        font-size: 1.875rem;
+        width: 20%;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 20px;
+        position: relative;
+        top: 8px;
+        text-decoration: none;
+    }
+    
+    /*.header__nav__admin {
+        flex-direction: column;
+        align-items: start;
+        padding: 2rem;
+    }*/
+    
+    .header__nav__admin a {
+        color: var(--colorrojo);
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    
+    .search-bar__admin {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+    }
+    
+    .search-bar__admin input {
+        background-color: var(--colorblanco);
+        width: 90%;
+    }
+    
+    .search-bar__admin button {
+        font-size: 0.8125rem;
+    }
+    
+    #lupa-mobile__admin {
+        color: var(--colorrojo);
+    }
+    
+    
+    .header__iconos__admin {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 120px;
+        font-size: 1.375rem;
+    }
+    
+    .user__admin a {
+        color: var(--colorrojo);
+    
+    }
+    
+    .cart__admin a {
+        color: var(--colorrojo);
+    }
+    
+    
+    
+   
+    
+    
+    
+    /*mobile*/
+    @media (max-width: 480px) {
+    
+       .header__nav__admin {
+        display: none;
+       }
+    
+       .header__datos__admin {
+        display: none;
+       }
+    
+       .search-bar__admin input {
+        display: none;
+       }
+    
+       .search-bar__admin button {
+        display: none;
+       }
+    }
+    
+    
+    /*/////////////////////////////////////////////////////////*/
+    /*tablet*/
+    @media (min-width: 481px) {
+    
+        .header__bars__admin {
+            display: none;
+        }
+    
+        .header__datos__admin {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            padding: 10px;
+            height: 50px;
+        }
+    
+        .header__datos__tel__admin {
+            position: relative;
+            bottom: 12px;
+        }
+    
+        .header__datos__admin h4 {
+            color: var(--colorblanco);
+            font-size: 0.9375rem;
+            margin: 0;
+        }
+    
+        .header__datos__tel__admin i {
+            display: flex;
+            font-size: 1.25rem;
+            width: 20px;
+            position: relative;
+            top: 18px;
+            left: 20px;
+        }
+    
+        .header__datos__tel__admin h4 {
+            display: flex;
+            position: relative;
+            left: 60px;
+        }
+    
+        .header__datos__email__admin {
+            position: relative;
+            bottom: 12px;
+        }
+    
+        .header__datos__email__admin i {
+            display: flex;
+            font-size: 1.25rem;
+            width: 20px;
+            position: relative;
+            top: 18px;
+            left: 15px;
+        }
+    
+        .header__datos__email__admin h4 {
+            display: flex;
+            position: relative;
+            left: 50px;
+        }
+    
+        .header__datos__sucursales__admin {
+            position: relative;
+            bottom: 12px;
+        }
+    
+        .header__datos__sucursales__admin i {
+            display: flex;
+            font-size: 1.25rem;
+            width: 20px;
+            position: relative;
+            top: 18px;
+            left: 80px;
+        }
+    
+        .header__datos__sucursales__admin h4 {
+            display: flex;
+            position: relative;
+            left: 120px;
+        }
+    
+        .header__menu__admin {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    
+        .header__menu__logo__admin{
+            width: 100px;
+            height: 100px;
+        }
+    
+        .header__nav__admin {
+        width: 57%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        }
+    
+        .header__nav__admin ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 10px;
+            margin: 0;
+            padding: 0;
+        }
+    
+        .header__nav__admin li {
+            margin: 0;
+            padding: 0;
+        }
+    
+        .header__nav__admin a {
+            font-size: 1rem;
+            display: flex;
+            margin: 5px;
+            text-decoration: none;
+        }
+    
+        .search-bar__admin {
+            width: 19%;
+            justify-content: space-evenly;
+        }
+    
+        #input__admin {
+            border-radius: 5%;
+            height: 25px;
+        }
+    
+        .search-bar__admin button {
+            cursor: pointer;
+            position: absolute;
+            right: 100px;
+            top: 11%;
+            transform: translateY(-139%);
+            border: none;
+            padding: 0;
+            width: 15px;
+            height: 15px;
+            background-color: var(--colorblanco)
+        }
+    
+        .header__iconos__admin {
+            width: 10%;
+            justify-content: space-around;
+            font-size: 1.25rem;
+        }
+    
+        .user__admin {
+            position: relative;
+            left: -10px;
+        }
+    
+        .cart__admin {
+            position: relative;
+            left: -10px;
+        }
+    
+        #lupa-mobile__admin {
+            display: none;
+        }
+    
 
-}
+    
+       
+    
+        
+    }
+    
+    /*/////////////////////////////////////////////////////////*/
+    
+    /*tablet*/
+    @media (min-width: 768px) {
+        .search-bar__admin button{
+            top: 10.8%;
+        }
+        .header__logo__admin {
+            width: 80px;
+            height: 80px;
+            margin-left: 10px;
+        }
+    }
+        
+    /*/////////////////////////////////////////////////////////*/
+    /*desktop*/
+    @media (min-width: 1024px) {
+        .header__menu__admin {
+            height: auto;
+        }
+        
+        .header__logo__admin {
+            width: 100px;
+            }
+    
+        .header__datos__tel__admin i{
+            display: flex;
+            position: relative;
+            left: 80px;
+        }
+    
+        .header__datos__tel__admin h4 {
+            display: flex;
+            position: relative;
+            left: 130px;
+        }
+    
+        .header__datos__email__admin i {
+            display: flex;
+            position: relative;
+            left: 75px;
+        }
+    
+        .header__datos__email__admin h4 {
+            display: flex;
+            position: relative;
+            left: 125px;
+        }
+    
+        .header__datos__sucursales__admin i {
+            display: flex;
+            position: relative;
+            left: 100px;
+        }
+    
+        .header__datos__sucursales__admin h4 {
+            display: flex;
+            position: relative;
+            left: 150px;
+        }
+    
+        .header__menu__admin{
+            display: flex;
+            justify-content: center;
+        }
+    
+        .header__nav__admin {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    
+        .header__nav__admin a{
+            gap: 50px;
+            font-size: 20px;
+            margin: 10px;
+        }
+    
+        .search-bar__admin button {
+            cursor: pointer;
+            position: relative;
+            left: -30px;
+            top: 25%;
+            border: none;
+           
+        }
+    
+        .user__admin {
+            position: relative;
+            left: -30px;
+        }
+    
+        .cart__admin {
+            position: relative;
+            left: -30px;
+        }
 
+    }
+    
+    
+    /*/////////////////////////////////////////////*/
+    @media (min-width: 1440px) {
+        .header__menu__admin{
+            text-align: center;
+               justify-content: space-around;
+             
+           }
+           
+    
+        .header__nav__admin {
+            width: 70%;
+            margin-right: 20px;
+            margin-top: 28px;
+
+        }
+    
+        .header__nav__admin a {
+            font-size: 24px;
+        }
+    
+        .search-bar__admin{
+            display: none;
+         }
+         .header__nav__admin ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 10px;
+            margin: 0;
+            padding: 0;
+        }
+        
+    
+       
+       
+
+        
+    }
+   
