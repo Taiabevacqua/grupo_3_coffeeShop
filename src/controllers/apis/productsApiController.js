@@ -9,6 +9,15 @@ const getAllProducts = async(req,res) => {
                     association : 'category',
                     attributes : ['name']
                 },
+                {
+                    association : 'originId',
+                    attributes : ['name']
+                },
+                {
+                    association : 'flavorId',
+                    attributes : ['name']
+                },
+                
                
             ],
             attributes : ['id', 'name', 'description', 'image', 'price', 'discount', 'categoryId','originId', 'flavorId'],

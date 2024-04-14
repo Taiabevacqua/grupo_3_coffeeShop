@@ -1,36 +1,26 @@
-import {Container, Col, Row, Table} from 'react-bootstrap'
-import { ListProduct } from '../components/Products/ListProduct'
+import {Container, Col, Row} from 'react-bootstrap'
 import { FormProduct } from '../components/Products/FormProduct'
 import { useEffect, useState } from 'react'
+import { ListProduct } from '../components/Products/ListProduct'
+import { getAllProducts } from '../services'
 
 export const ProductPage = () => {
 
   const [products, setProduts]= useState([])
-  useEffect(()=>{
-    const getAllProducts= async () =>{
-      try {
-        const response= await fetch('http://localhost:3000/apis/products');
-        const result= await response.json();
-        if (result.ok) {
-          console.log(result);
-          setProduts(result.products)
-        }
-
-      } catch (error) {
-        console.error
-      }
-
-      getAllProducts()
-    }
+  
+  useEffect(()=> {
+    getAllProducts()
+   .then((products) =>{
+    setProduts(products)
+   })
+   .catch((error) => console.log(error))
   }, [])
+   
 
   return (
     <Container>
       <Row>
        
-        <Col sm={12}>
-        <FormProduct/>
-        </Col>
         <Col sm={12}>
         <ListProduct products={products}/>
         </Col>
