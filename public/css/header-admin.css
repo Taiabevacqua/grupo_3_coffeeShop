@@ -1,7 +1,6 @@
 
    
-
-
+@media (min-width: 1440px) { 
 
 .search-bar-admin{
    display: none;
@@ -45,5 +44,5 @@ margin-top: 28px;
     align-items: center;
 }
 
-
+}
 
