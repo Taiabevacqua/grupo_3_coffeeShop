@@ -759,7 +759,7 @@
     }
 
     .complementos h3 {
-        padding-right: 110px;
+        padding-right: 140px;
     }
 
     .complementos p {
@@ -875,6 +875,17 @@
         margin-left: 960px;
     }
 
+    .index__section__complementos {
+        height: 450px;
+    }
+
+    #blister-choco {
+        top: -160px;
+        left: 20px;
+        width: 650px;
+        height: 650px;
+    }
+
     .complementos h3 {
         margin-right: 210px;
 
@@ -885,7 +896,7 @@
     }
 
     .complementos button {
-        margin-right: 330px;
+        margin-right: 380px;
     }
     
 }
