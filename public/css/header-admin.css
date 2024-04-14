@@ -1,13 +1,39 @@
-.search-bar{
+.search-bar-admin{
    display: none;
 }
 
-.header__nav {
+.header__nav__admin {
 width: 70%;
 margin-right: 20px;
+margin-top: 28px;
 }
 
-.header__iconos {
+.header__nav__admin ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.header__nav__admin li {
+    margin: 0;
+    padding: 0;
+}
+
+.header__nav__admin a {
+    font-size: 1rem;
+    display: flex;
+    margin: 5px;
+    text-decoration: none;
+    color: var(--colorrojo);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+
+.header__iconos__admin {
     margin-right: 25px;
 }
 

@@ -406,9 +406,9 @@ align-items: center;
         cursor: pointer;
         position: relative;
         left: -30px;
-        top: 27%;
+        top: 25%;
         border: none;
-        margin-bottom: 10px;
+       
     }
 
     .user {
