@@ -16,6 +16,11 @@ const transferLocals = require('./middlewares/transferLocals');
 const cookiesCheck = require('./middlewares/cookiesCheck');
 //const { log } = require('console');/
 
+const cors = require('cors')
+
+const corsOptions={
+  origin: 'http://localhost:5173'
+}
 
 const app = express();
 
@@ -35,6 +40,10 @@ app.use(cookieParser());
 
 app.use(express.static(path.join(__dirname,'..', 'public')));
 
+
+/* Configuracion de cors */
+app.use(cors(corsOptions))
+
  /* Soporte para métodos PUT, PATCH & DELETE */
 app.use(methodOverride('_method'))
 
@@ -47,6 +56,8 @@ app.use(methodOverride('_method'))
 
 .use(cookiesCheck)
 .use(transferLocals)
+
+
 
 /* rutas*/ 
 app.use('/', indexRouter);

@@ -3,14 +3,17 @@ const db = require('../../database/models');
 
 const getAllProducts = async(req,res) => {
     try {
-        const { count, rows } =  await db.Product.findAndCountAll({
+        const { count, rows } =  await db.Products.findAndCountAll({
             include : [
                 {
                     association : 'category',
                     attributes : ['name']
-                }
+                },
+               
             ],
-            attributes : ['id', 'name', 'description']
+            attributes : ['id', 'name', 'description', 'image', 'price', 'discount', 'categoryId','originId', 'flavorId'],
+            limit: req.query.limit,
+            offset: req.skip,
         })
 
         const products = rows.map(product => {
@@ -35,15 +38,10 @@ const getAllProducts = async(req,res) => {
 
 const getOneProduct = async (req,res) => {
     try {
-        const product = await db.Product.findByPk(req.params.id,{
+        const product = await db.Products.findByPk(req.params.id,{
             include : [
                 {
                     association : 'category',
-                    attributes : ['name']
-                },
-
-                {
-                    association : 'images',
                     attributes : ['name']
                 }
             ],
@@ -54,11 +52,9 @@ const getOneProduct = async (req,res) => {
 
         const productCustom = {
             ...product.dataValues,
-            image : `${req.protocol}://${req.get('host')}/images/products/${product.mainImage}`,
+            image : `${req.protocol}://${req.get('host')}/img/${product.image}`,
             category : product.category.name,
-            images: product.images.map(image => ({
-                name: `${req.protocol}://${req.get('host')}/images/products/${image.name}`
-            }))
+            
         }
 
         return res.status(200).json({
