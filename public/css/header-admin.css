@@ -1,3 +1,8 @@
+
+   
+
+
+
 .search-bar-admin{
    display: none;
 }
@@ -28,12 +33,17 @@ margin-top: 28px;
     margin: 5px;
     text-decoration: none;
     color: var(--colorrojo);
-    font-size: 1rem;
+    font-size: 14px;
     font-weight: 700;
 }
 
 
 .header__iconos__admin {
-    margin-right: 25px;
+    margin-right: 15px;
+    display: flex;
+    /*justify-content: space-around;*/
+    align-items: center;
 }
+
+
 
