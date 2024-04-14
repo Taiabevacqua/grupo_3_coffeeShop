@@ -154,7 +154,7 @@
     width: 400px;
     height: 400px;
     position: relative;
-    bottom: 770px;
+    bottom: 700px;
 }
 
 .index__section__box__coffee-capsule {
@@ -168,7 +168,7 @@
     justify-content: end;
     position: relative;
     order: -1;
-    top: -100px;
+    top: -30px;
 }
 
 .index__section__box__coffee-capsule h3 {
@@ -194,7 +194,10 @@
     margin: 15px 15px 15px 65px;
     border-radius: 5px;
     font-size: 15px;
-
+    
+}
+.index__section__box__coffee-capsule-button a {
+    margin-top: 10px;
 }
 
 
@@ -643,12 +646,12 @@
     /*destacados*/
 
 
-    .index__section__carrousel__destacados h2 {
+    /*.index__section__carrousel__destacados h2 {
         position: relative;
         top: -350px;
-    }
-
-    .carousel carousel-dark slide
+    }*/
+   
+    
 
     /*complementos*/
     #blister-choco {
@@ -676,6 +679,12 @@
 .carousel-caption {
     display: none;
 }
+}
+
+@media (max-width:1023px) {
+    .index__section__carousel__sabor {
+        display: none;
+    }
 }
 
 /*desktop///////////////////////////////////////////*/
@@ -878,4 +887,5 @@
     .complementos button {
         margin-right: 330px;
     }
+    
 }
