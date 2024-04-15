@@ -24,12 +24,17 @@
                           </tr>
                         </thead>
                         <tbody>
-                            <% products.forEach(({id,name,description,price,image}) => { %>
+                            <% products.forEach(({id,name,description,price,image,discount}) => { %>
                                 <tr>
                                     <th scope="row"><%= id %></th>
                                     <td><%= name %></td>
                                     <td><%= description %></td>
-                                    <td><%= price %></td>
+                                    <td><% if (discount>0) { %>
+                                        <% var discountedPrice = price - (price * (discount / 100)); %>
+                                        <p><%= discountedPrice %> </p>
+                                    <% } else { %>
+                                        <p><%= price %></p>
+                                    <% } %>
                                   <td>
                                     <div class="d-flex gap-2">
                                         <button type="submit" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#showProductModal<%= id %>"><i class="fa-solid fa-eye"></i></button>

@@ -24,7 +24,7 @@
                   <div class="col-12 col-md-6 mb-3">
                     <div class="form-floating">
 
-                      <input name="name" type="text" class="form-control" id="name">
+                      <input name="name" type="text" class="form-control <%= (locals.errors && errors.name) && 'is-invalid' %>" id="name" value="<%= locals.old && old.name %>">
                       <label for="name">Nombre</label>
                       <small class="text-danger ms-2"><%= (locals.errors && errors.name) && errors.name.msg %></small>
 
@@ -34,7 +34,7 @@
 
                   <div class="col-12 col-md-3 mb-3">
                     <div class="form-floating">
-                      <input name="price" type="text" class="form-control" id="price">
+                      <input name="price" type="text" class="form-control" id="price" <%= (locals.errors && errors.price)  && 'is-invalid'%> value="<%= locals.old && old.price %>">
                       <label for="price">Precio</label>
                       <small class="text-danger ms-2"><%= (locals.errors && errors.price) && errors.price.msg %></small>
 
@@ -42,7 +42,7 @@
                   </div>
                   <div class="col-12 col-md-3 mb-3">
                     <div class="form-floating">
-                      <input name="discount" type="text" class="form-control" id="discount">
+                      <input name="discount" type="text" class="form-control" id="discount" <%= (locals.errors && errors.discount)  && 'is-invalid'%> value="<%= locals.old && old.discount %>">
                       <label for="discount">Descuento</label>
                       <small class="text-danger ms-2"><%= (locals.errors && errors.discount) && errors.discount.msg %></small>
 
@@ -51,10 +51,10 @@
                   <div class="col-12 col-md-4 mb-3">
                     <div class="form-floating ">
                       <select name="category" class="form-select" id="category"
-                        aria-label="Floating label select example">
+                        aria-label="Floating label select example"<%= (locals.errors && errors.category)  && 'is-invalid'%> value="<%= locals.old && old.category %>">
                         <option value="" selected hidden>Seleccione...</option>
                         <% categories.forEach(c => { %>
-                          <option value="<%= c.id %>"><%= c.name %></option>
+                          <option value="<%= c.id %>" <%= (locals.old && old.categoryId) && old.categoryId == c.id ? 'selected' : null %>><%= c.name %></option>
 
                         <% }) %>
                       </select>
@@ -65,8 +65,8 @@
                   </div>
                   <div class="col-12 col-md-4 mb-3">
                     <div class="form-floating ">
-                      <select name="origin" class="form-select" id="origin"
-                        aria-label="Floating label select example">
+                      <select name="originId" class="form-select" id="originId"
+                        aria-label="Floating label select example" <%= (locals.errors && errors.originId)  && 'is-invalid'%> value="<%= locals.old && old.originId %>"> >
                         <option value="" selected hidden>Seleccione...</option>
                         <% origins.forEach(o => { %>
                           <option value="<%= o.id %>"><%= o.country %></option>
@@ -81,7 +81,7 @@
                   <div class="col-12 col-md-4 mb-3">
                     <div class="form-floating ">
                       <select name="flavor" class="form-select" id="flavor"
-                        aria-label="Floating label select example">
+                        aria-label="Floating label select example" >
                         <option value="" selected hidden>Seleccione...</option>
                         <% flavors.forEach(f => { %>
                           <option value="<%= f.id %>"><%= f.name %></option>
@@ -96,7 +96,7 @@
                   <div class="col-12 mb-3">
                     <div class="form-floating">
                       <textarea name="description" class="form-control" id="description"
-                       style="resize: none; height: 200px"></textarea>
+                       style="resize: none; height: 200px" <%= (locals.errors && errors.description) && 'is-invalid' %> id="description" style="height: 150px;"><%= locals.old && old.description %></textarea>
                       <label for="floatingTextarea2">Descripción</label>
                       <small class="text-danger ms-2"><%= (locals.errors && errors.description) && errors.description.msg %></small>
 

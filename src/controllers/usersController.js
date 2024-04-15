@@ -60,7 +60,7 @@ module.exports={
                 req.session.userLogin = {
                     id,
                     name : firstName,
-                    role : rolesId
+                    role : +rolesId
                 }
                 remember && res.cookie('GranoDeOro_user', req.session.userLogin, {
                     maxAge : 1000 * 60 * 2

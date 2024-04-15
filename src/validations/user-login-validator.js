@@ -1,4 +1,7 @@
 const { check, body } = require("express-validator");
+const {compareSync} = require('bcryptjs');
+
+
 const db = require('../database/models')
 module.exports = [
     check("email")
@@ -12,8 +15,7 @@ module.exports = [
                 email : req.body.email
               } 
             }).then(user => {
-                console.log(user);
-                if(!user) {
+                if(!user || !compareSync(value, user.password)) {
                     return Promise.reject()
                 }
             }).catch(error => {

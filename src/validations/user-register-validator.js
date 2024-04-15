@@ -39,15 +39,15 @@ module.exports = [
         .isLength({
             min: 6,
             max: 12
-        }),
-    body('passwordConfirm')
-        .notEmpty().withMessage('Debe confirmar la contraseña').bail()
+        }).withMessage('La contraseña debe tener entre 6 y 12 caracteres'),
+        body('passwordConfirm')
+        .notEmpty().withMessage('Debe confirmar la contraseña')
         .custom((value, {req}) => {
             if(value != req.body.password){
                 return false
             }
             return true
         }).withMessage('Las contraseñas no coinciden'),
-    check('terms')
+    check('remember')
         .notEmpty().withMessage('Debe aceptar los terminos y condiciones')
 ]

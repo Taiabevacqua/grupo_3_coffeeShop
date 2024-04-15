@@ -5,7 +5,9 @@ module.exports= [
         .notEmpty().withMessage('El nombre es obligatorio'),
         check('discount')
         .notEmpty().withMessage('Si el producto no tiene descuento ingrese 0'),
-        
+         
+        check('originId')
+        .notEmpty().withMessage('El origen es obligatorio'),
         check('flavor')
         .notEmpty().withMessage('El sabor es obligatorio'),
     check('price')
@@ -14,7 +16,6 @@ module.exports= [
         .notEmpty().withMessage('Se require especificar una categoría').bail(),
     body('image')
         .custom((value, {req}) => {
-            console.log(req.file);
             if(!req.file){
                 return false
             }

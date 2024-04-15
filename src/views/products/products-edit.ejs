@@ -27,16 +27,28 @@
                           <li class="breadcrumb-item active" aria-current="page">Editar articulo</li>
                         </ol>
                       </nav>
+
                       <h3>Editando:"<%= name %>"</h3>
                       <hr>
                 </div>
                 <div class="card-body">
                     <form action="/products/update/<%= id %>?_method=PUT" class="row" method="POST" enctype="multipart/form-data">
                           
+
+                      <div class="row d-flex flex-wrap justify-content-center mr-4 align-items-center mb-3 w-100">
+                        <div class="row d-flex  gap-2 w-50">
+
+                        <input name="image" type="file" class="form-control" id="image" hidden>
+                          <label class="btn btn-lg btn-outline-secondary w-100" for="image">Editar imagen </label>
+                          <small class="text-danger ms-2"><%= (locals.errors && errors.image) && errors.image.msg %></small>
+                              <img class="mx-auto d-block my-3" src="../../img/<%= image %>" width="20px" class="img-fluid" alt="">
+                          </div>
+                  </div>
+
                           <div class="col-12 col-md-6 mb-3">
                               <div class="form-floating ">
                                   <input name="name" type="text" class="form-control" id="name" value="<%= name %>" >
-                                  <label for="nombre">Nombre</label>
+                                  <label for="name">Nombre</label>
                                   <small class="text-danger ms-2"><%= (locals.errors && errors.name) && errors.name.msg %></small>
                                 </div>
 
@@ -45,7 +57,7 @@
                           <div class="col-12 col-md-3 mb-3">
                             <div class="form-floating">
                                 <input name="price" type="number" class="form-control" id="price" value="<%= price %>" >
-                                <label for="precio">Precio actual: </label>
+                                <label for="price">Precio actual: </label>
                                 <small class="text-danger ms-2"><%= (locals.errors && errors.price) && errors.price.msg %></small>
                               </div>
                            </div>
@@ -58,7 +70,7 @@
                               </div>
                              </div>
 
-
+                             
 
 
                              <div class="col-12 col-md-4 mb-3">
@@ -115,19 +127,17 @@
 
                               </div>
                             </div>
-                         
-                            <div class="col-12 mb-3  d-flex justify-content-between">
-                              <div class="">
-                                <input name="image" type="file" class="form-control" id="image" hidden>
-                                <label class="btn btn-lg btn-outline-secondary w-100" for="image">Cargar imagen</label>
-                                <small class="text-danger ms-2"><%= (locals.errors && errors.image) && errors.image.msg %></small>
 
-                              </div>
-                              <button type="submit" class="btn btn-lg btn-dark">Guardar cambios</button>
-                            </div>
+
+                            <button type="submit" class="btn btn-lg btn-dark justify-content-end">Guardar cambios</button>
+
+    
+                          
                           
                         </div>
-          
+
+                        </div>
+                         
                         </form>
           
                       </div>
