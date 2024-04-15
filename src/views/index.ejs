@@ -6,11 +6,11 @@
 
     <%- include('./partials/header') %>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <a href="https://api.whatsapp.com/send?phone=1234567891&text=Hola,%20me%20gustaria%20Obtener%20más%20información" class="float pulse"
-      target="_blank">
-      <i class="fa fa-whatsapp my-float "></i>
-    </a>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+      <a href="https://api.whatsapp.com/send?phone=1234567891&text=Hola,%20me%20gustaria%20Obtener%20más%20información"
+        class="float pulse" target="_blank">
+        <i class="fa fa-whatsapp my-float "></i>
+      </a>
 
       <main class="index__main">
         <!--banner-->
@@ -33,7 +33,8 @@
                   alt="Slide 1">
 
                 <div class="carousel-caption col-md-4">
-                  <button class="btn btn-primary px-1 py-0 fs-5 mt-5">Quiero café</button>
+                  <a href="/products?id=5&category=Café%20Molido"><button class="btn button fw-bold px-3 py- fs-6 mt-5 "
+                      style="background-color: var(--colorocre); color: var(--colorrojo);">Quiero café</button></a>
                 </div>
               </div>
 
@@ -101,12 +102,12 @@
             <div class="swiper-wrapper">
 
               <!-- Slides -->
-              <% [...capsulas, ...capsulas].forEach(({id, name, image}) => { %>
-                 <div class="swiper-slide">
-                <a href="/products/productDetail/<%= id %>"><img src="/img/<%= image %>" alt="Cápsula azul"></a>
-              </div>
-              <% }) %>
-          
+              <% [...capsulas, ...capsulas].forEach(({id, name, image})=> { %>
+                <div class="swiper-slide">
+                  <a href="/products/productDetail/<%= id %>"><img src="/img/<%= image %>" alt="Cápsula azul"></a>
+                </div>
+                <% }) %>
+
             </div>
 
             <!-- If we need navigation buttons -->
@@ -126,39 +127,48 @@
 
           <div class="index__section__box__coffee-capsule">
             <h3>Coffee Capsule Box</h3>
-            <p id="p-arma">Armá tu box de cápsulas con la selección de<br>tu preferencia para crear una
-              experiencia<br>de café
+            <p id="p-arma">Armá tu box de cápsulas con la<br>selección de tu preferencia para crear<br>una
+              experiencia de café
               única y a medida</p>
             <p id="p-disfruta">¡Disfruta del café perfecto!</p>
-            <a class="index__section__box__coffee-capsule-button" style="text-decoration: none;" href="/products/box">Viví la experiencia</a>
+            <a class="index__section__box__coffee-capsule-button" style="text-decoration: none;"
+              href="/products/box">Viví la experiencia</a>
           </div>
-         
+
         </section>
         <!--/section box-->
 
         <!--section Destacados-->
-        <section class="index__section__carousel__sabor" style="position:absolute; top: 1980px; left: 0px; width: 100%;">
+        <section class="index__section__carousel__destacados"
+          style="position:absolute; top: 1980px; left: 0px; width: 100%;">
 
-        <h2>Destacados</h2>
+          <h2>Destacados</h2>
 
-        <div class="d-flex flex-column flex-lg-row justify-content-center gap-3" >
-          <% destacados.forEach(({id, image, name}) => { %>
-            <a href="/products/productDetail/<%= id %>" style="text-decoration: none;">
-              <div class="card shadow card-destacado" style="width: 18rem;" >
-                <img src="/img/<%= image %>" height="180px" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title"><%= name %></h5>
+          <div class="d-flex flex-column flex-lg-row justify-content-center gap-3">
+            <% destacados.forEach(({id, image, name, price})=> { %>
+              <a href="/products/productDetail/<%= id %>" style="text-decoration: none;">
+                <div class="card shadow card-destacado " style="width: 18rem;">
+                  <img src="/img/<%= image %>" height="180px" class="card-img-top img-fluid" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title" style="color: var(--colorrojo);">
+                      <%= name %>
+                    </h5>
+                    <h3 class="card-price d-flex justify-content-end fs-5" style="color:var(--colorrojo);">$<%= price %>
+                    </h3>
+
+                  </div>
                 </div>
-              </div>
-            </a>
-          <% }) %>
-            <style>
-              .card-destacado:hover {
-                transition: all 0.5s ease;
-                transform: scale(1.05);
-              }
-            </style>
-        </div>
+              </a>
+              <% }) %>
+                <style>
+                  .card-destacado:hover {
+                    transition: all 0.5s ease;
+                    transform: scale(1.05);
+                  }
+
+                </style>
+
+          </div>
         </section>
         <!--section destacados-->
 
@@ -204,7 +214,8 @@
 
               <div class="index__suscribite__form__rrss">
                 <i class="fa-brands fa-facebook-f"></i>
-                <a href="https://www.instagram.com/cafeinatopia.coffee.shop/?hl=es-la"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.instagram.com/cafeinatopia.coffee.shop/?hl=es-la" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
                 <i class="fa-brands fa-youtube"></i>
                 <i class="fa-brands fa-linkedin-in"></i>
               </div>
@@ -231,7 +242,7 @@
         <!--swiper-->
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-        
+
         <!--script-elegidos-->
         <script>
           const swiper = new Swiper('.swiper-elegidos', {
@@ -263,6 +274,6 @@
 
   </body>
 
- 
+
 
 </html>

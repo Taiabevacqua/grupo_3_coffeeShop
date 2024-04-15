@@ -1,32 +1,32 @@
-<header class="header">
-  <section class="header__datos">
+<header class="header__admin">
+  <section class="header__datos__admin">
 
-     <div class="header__datos__tel">
+     <div class="header__datos__tel__admin">
         <i class="fa-solid fa-phone"></i>
         <h4>54 911 1234-5678</h4>
      </div>
 
-     <div class="header__datos__email">
+     <div class="header__datos__email__admin">
         <i class="fa-solid fa-envelope"></i>
         <h4>info@cafeinatopia.com</h4>
      </div>
 
-     <div class="header__datos__sucursales">
+     <div class="header__datos__sucursales__admin">
         <i class="fa-solid fa-store"></i>
         <h4>Sucursales</h4>
      </div>
 
   </section>
 
-  <section class="header__menu">
+  <section class="header__menu__admin">
 
-     <a href="" class="header__bars"><i class="fa fa-bars"></i></a>
-     <a href="/" class="header__logo">
-        <img class="header__logo__img" src="/img/Logo-Cafeinatopia-1.png" alt="logo-cafeinatopia">
+     <a href="" class="header__bars__admin"><i class="fa fa-bars"></i></a>
+     <a href="/" class="header__logo__admin">
+        <img class="header__logo__img__admin" src="/img/Logo-Cafeinatopia-1.png" alt="logo-cafeinatopia">
      </a>
 
 
-     <nav class="header__nav">
+     <nav class="header__nav__admin">
 
         <ul>
            <li><a href="/cafe-molido">Café Molido</a></li>
@@ -38,28 +38,28 @@
 
      </nav>
 
-     <div class="search-bar">
+     <div class="search-bar__admin">
         <input id="input" type="text">
         <button type="submit"><i class="fas fa-search"></i></button>
      </div>
 
-     <div class="header__iconos">
-        <div>
-           <i id="lupa-mobile" class="fa-solid fa-magnifying-glass"></i>
+     <div class="header__iconos__admin">
+        <div >
+           <i id="lupa-mobile__admin" class="fa-solid fa-magnifying-glass"></i>
         </div>
         <% if (locals.userLogin) { %>
-           <div class="user">
+           <div class="user__admin">
               <a href="/users/perfil"><i class="fa-solid fa-address-card"></i></a>
            </div>
-           <div class="user">
+           <div class="user__admin">
               <a href="/users/salir"><i class="fa-solid fa-sign-out"></i></a>
            </div>
            <% }else{ %>
-              <div class="user">
+              <div class="user__admin">
                  <a href="/users/login"><i class="fa-solid fa-user"></i></i></a>
               </div>
 
-              <div class="cart">
+              <div class="cart__admin">
                  <a href="/productCart"><i class="fa-solid fa-cart-shopping"></i></a>
               </div>
               <% } %>
