@@ -420,6 +420,12 @@ align-items: center;
         position: relative;
         left: -30px;
     }
+
+    .table-dashboard {
+        position: relative;
+        left: 455px;
+        bottom: -7.7px;
+    }
   
    .header__env-mediosPago {
     display: flex;
