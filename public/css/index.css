@@ -839,6 +839,13 @@
         margin-left: 1030px;
     }
 
+    .index__section__carousel__destacados h2{
+        color: var(--colorrojo);
+        font-size: 35px;
+        font-weight: 700;
+        text-align: center;
+        margin: 30px 0;
+    }
 
 }
 
@@ -898,5 +905,6 @@
     .complementos button {
         margin-right: 380px;
     }
+   
     
 }
