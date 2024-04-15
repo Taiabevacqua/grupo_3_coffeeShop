@@ -120,6 +120,8 @@
                               <div class="">
                                 <input name="image" type="file" class="form-control" id="image" hidden>
                                 <label class="btn btn-lg btn-outline-secondary w-100" for="image">Cargar imagen</label>
+                                <img src="`../../../public/img/${}`" class="rounded mx-auto d-block" alt="...">
+
                                 <small class="text-danger ms-2"><%= (locals.errors && errors.image) && errors.image.msg %></small>
 
                               </div>

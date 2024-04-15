@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import { useState } from 'react';
-import { Button, Modal, Table } from "react-bootstrap"
+import { Button, Table } from "react-bootstrap"
 import { ModalProduct } from './ModalProduct';
 import { getProduct } from '../../services';
 import { ModalFormProduct } from './ModalFormProduct';
@@ -10,6 +10,11 @@ export const ListProduct = ({ products}) => {
   const [show, setShow] = useState(false);
   const [productDetail, setProdDetail]= useState({});
 
+  const [showForm, setShowForm] = useState(false);
+
+  const [formValue, setFormValues]= useState({});
+
+
   const handleClose = () => setShow(false);
   const handleShow = async (id) => {
     
@@ -18,19 +23,30 @@ export const ListProduct = ({ products}) => {
     setShow(true)
   }
   
-  const [showForm, setShowForm] = useState(false);
   
-  const handleCloseForm = () => setShowForm(false);
-  const handleShowForm = async (id) => {
+  
+ const handleCloseForm= () => setShowForm(false);
+  const handleShowForm = async (id) =>{
+     
+    if (id) {
+      const product = await getProduct(id);
 
-   if (id) {
-  setShowForm(true)
+      setFormValues(product)
 
-   }
-  }
-
+      setShowForm(true)
+    }else{
+      setShowForm(true)
+    }
+    }
+ 
   return (
     <>
+    <div className="d-flex justify-content-end my-3 ">
+    <Button variant='dark' className='btn- d-flex'  onClick={handleShowForm}>
+    <i className="fa-solid fa-plus"></i> 
+    
+     </Button>
+     </div>
     <Table striped bordered hover>
     <thead>
       <tr>
@@ -52,13 +68,16 @@ export const ListProduct = ({ products}) => {
                     <td>{prod.price}</td>
                     <td>
                       <div className='d-flex'>
-                      <Button  className='btn-sm'  onClick={ () => handleShow(prod.id)}>
+                      <Button variant='primary' className='btn-sm'  onClick={ () => handleShow(prod.id)}>
                         <i className="fa-solid fa-eye"></i>
                         </Button>
+                        <ModalProduct show={show} handleClose={handleClose} prod={productDetail}/>
 
-                      <Button variant='success'  className='btn-sm'  onClick={ () => handleShowForm(prod.id)}>
+                      <Button variant='success' className='btn-sm d-flex'  onClick={ () => handleShowForm(prod.id)}>
                       <i className="fa-solid fa-pencil"></i> 
                        </Button>
+                       <ModalFormProduct show={showForm} handleClose={handleCloseForm} prod={formValue}/>
+
                     </div>
                     </td>
                   </tr>)
@@ -67,10 +86,8 @@ export const ListProduct = ({ products}) => {
     </tbody>
   </Table> 
   
-  <ModalProduct show={show} handleClose={handleClose} prod={productDetail}/>
-  <ModalFormProduct show={showForm} handleClose={handleCloseForm} prod={productDetail}/>
-
   </>
+  
 )
 
 };

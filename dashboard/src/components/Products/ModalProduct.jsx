@@ -1,9 +1,8 @@
 import PropTypes from 'prop-types'
-import { Product } from '../home/Product'
 import { Modal, Button, Row, Col } from 'react-bootstrap'
 
 
-export const ModalProduct = ({show, handleClose,prod, product}) => {
+export const ModalProduct = ({show, handleClose,prod,}) => {
   return (
     <Modal show={show} onHide={handleClose} size='lg' centered>
 

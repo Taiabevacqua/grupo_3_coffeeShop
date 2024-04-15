@@ -18,12 +18,16 @@
 
    </section>
 
+</nav>
+
    <section class="header__menu">
 
       <a href="" class="header__bars"><i class="fa fa-bars"></i></a>
       <a href="/" class="header__logo">
          <img  src="/img/Logo-Cafeinatopia-1.png" alt="logo-cafeinatopia">
       </a>
+
+
 
 
       <nav class="header__nav">
@@ -35,7 +39,7 @@
             <li><a href="/products?id=2&category=Complementos">Complementos</a></li>
             <% if (locals.userLogin) { %>
                <% if (userLogin.role === 1) { %>
-                   <li class="animate__animated animate__fadeInDown"><a href="/dashboard">dashboard</a></li>
+                   <li><a href="/dashboard"><i class="fa-solid fa-table-columns"></i></a></li>
                <% }%>
                
    
@@ -61,6 +65,13 @@
             </div>
             <div class="user">
                <a href="/users/salir"><i class="fa-solid fa-sign-out"></i></a>
+            </div>
+            <div class="cart position-relative">
+               <a href="/productCart"><i class="fa-solid fa-cart-shopping"></i></a>
+               <span id="cart-total-items" class="position-absolute bottom-50 start-100 translate-middle badge rounded-pill bg-light text-dark">
+                  
+                  <span class="visually-hidden">unread messages</span>
+                </span>
             </div>
             <% }else{ %>
                <div class="user">
