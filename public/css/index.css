@@ -483,7 +483,7 @@
     .index__section__box img {
         position: relative;
         left: -180px;
-        top: -450px;
+        top: -250px;
         width: 500px;
         height: 500px;
     }
@@ -675,14 +675,14 @@
     }
 }
 
-@media (max-width:768px){ 
-.carousel-caption {
+@media (max-width:1024px){ 
+.carousel-caption button {
     display: none;
 }
 }
 
 @media (max-width:1023px) {
-    .index__section__carousel__sabor {
+    .index__section__carousel__destacados {
         display: none;
     }
 }
