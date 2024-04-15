@@ -10,17 +10,18 @@ const getAllProducts = async(req,res) => {
                     attributes : ['name']
                 },
                 {
-                    association : 'originId',
-                    attributes : ['name']
+                    association : 'origin',
+                    attributes : ['country']
                 },
                 {
-                    association : 'flavorId',
+                    association : 'flavor',
                     attributes : ['name']
                 },
                 
                
             ],
-            attributes : ['id', 'name', 'description', 'image', 'price', 'discount', 'categoryId','originId', 'flavorId'],
+            
+            attributes : ['id', 'name', 'description', 'image', 'price', 'discount'],
             limit: req.query.limit,
             offset: req.skip,
         })
@@ -52,10 +53,18 @@ const getOneProduct = async (req,res) => {
                 {
                     association : 'category',
                     attributes : ['name']
-                }
+                },
+                {
+                    association : 'origin',
+                    attributes : ['country']
+                },
+                {
+                    association : 'flavor',
+                    attributes : ['name']
+                },
             ],
             attributes :{
-                exclude : ['categoryId', 'createdAt', 'updatedAt']
+                exclude : ['categoryId', 'createdAt', 'updatedAt', 'originId' , 'flavorId', 'originId']
             }
         })
 
